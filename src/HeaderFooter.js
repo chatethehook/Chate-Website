@@ -32,7 +32,7 @@ class SpecialHeader extends HTMLElement {
             </nav>
             `
         }
-        if (window.location.hostname == '/articles') {
+        if (window.location.hostname == '/articles.html') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
@@ -63,7 +63,7 @@ class SpecialHeader extends HTMLElement {
             </nav>
             `
         }
-        if (window.location.hostname == '/events') {
+        if (window.location.hostname == '/events.html') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
