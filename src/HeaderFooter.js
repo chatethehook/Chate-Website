@@ -2,7 +2,7 @@ alert(window.location.pathname)
 class SpecialHeader extends HTMLElement {
     connectedCallback () {
         
-        if (window.location.hostname == '/articles.html') {
+        if (window.location.hostname === '/articles.html') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
@@ -33,7 +33,7 @@ class SpecialHeader extends HTMLElement {
             </nav>
             `
         }
-        else if (window.location.hostname == '/events.html') {
+        else if (window.location.hostname === '/events.html') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
@@ -64,7 +64,7 @@ class SpecialHeader extends HTMLElement {
             </nav>
             `
         }
-        else if (window.location.pathname == '/') {
+        else if (window.location.pathname === '/') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
