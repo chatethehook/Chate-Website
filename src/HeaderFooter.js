@@ -1,6 +1,7 @@
+alert(window.location.pathname)
 class SpecialHeader extends HTMLElement {
     connectedCallback () {
-        if (window.location.hostname == 'chatethehook.netlify.app') {
+        if (window.location.pathname == '/') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
@@ -31,7 +32,7 @@ class SpecialHeader extends HTMLElement {
             </nav>
             `
         }
-        if (window.location.hostname == 'chatethehook.netlify.app/articles') {
+        if (window.location.hostname == '/articles') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
@@ -62,7 +63,7 @@ class SpecialHeader extends HTMLElement {
             </nav>
             `
         }
-        if (window.location.hostname == 'chatethehook.netlify.app/events') {
+        if (window.location.hostname == '/events') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
