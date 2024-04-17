@@ -1,7 +1,7 @@
 alert(window.location.hostname)
 class SpecialHeader extends HTMLElement {
     connectedCallback () {
-        if (window.location.hostname == 'www.chatethehook.netlify.app') {
+        if (window.location.hostname == 'chatethehook.netlify.app') {
             this.innerHTML = `
             <nav class="navbar navbar-expand-sm bg-body sticky-top">
                 <div class="container-fluid">
