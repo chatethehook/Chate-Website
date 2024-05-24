@@ -1,34 +1,123 @@
 :root {
     --primary-color: #5ce1e6;
+    --text-accent: #0CB4BB; 
     --accent-color: #f2dea2;
     --bg-color: #FFFF;
-    --contrast-color: #000;
+    --contrast-color: #9b8f8f;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+html,
+body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+}
+.panel {
+    width: 100% !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        overflow-x: hidden !important;
 }
 
 .primary {
     color: var(--primary-color);
 }
+.text-accent {
+    color: var(--text-accent);
+}
 
+.blue-gradient {
+    background: linear-gradient(181.62deg, rgba(200, 240, 242, 0.05) -0.45%, rgba(196, 253, 255, 0.65) 82.51%);
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    height: 500px;
+    gap: 0px;
+    
+}
+.header-links {
+    font-weight: 500 !important;
+    text-align: center !important;
+    margin: 0px;
+}
+
+.logo {
+    display: block;
+        width: 89px;
+        height: 89px;
+        top: 1px;
+        left: 600px;
+        gap: 0px;
+        opacity: 0px;
+        margin: 0 auto;
+    
+}
+.header-button {
+    color: #233142;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 3px 24px;
+    border-style: none;
+    margin: 5px 1px;
+    background-color:var(--primary-color);
+    transition: all 200ms ease-in-out;
+    box-shadow: 1px 1px 1px .25px #455d7a;
+}
+.social-media {
+    color: #4C6869;
+    margin:4px;
+}
+hr {
+    margin: 2px !important;
+}
 p, h1, h2, h3 {
-    line-height: 1.5 !important;
+    font-family: "Lexend", sans-serif !important;
 }
 
 p {
-    font-size: 19px !important; 
+    
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    line-height: 28px !important;
+    letter-spacing: 0.03em !important;
+    text-align: left !important;
 }
 
 h1 {
-    font-size: 64px !important;
+    
+    
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    line-height: 52.7px !important;
+    text-align: left !important;
 }
 
 h2 {
-    font-size: 40px !important;
+    
+    font-size: 20px !important;
+    font-weight: 200 !important;
+    line-height: 31px !important;
+    text-align: left !important;
 
 
 }
 
 h3 {
-    font-size: 32px !important;
+    font-size: 18px !important;
+    font-weight: 200 !important;
+    line-height: 22.5px !important;
+    text-align: left !important;
+}
 
+special-header {
+    padding: 0px !important;
+}
+
+.navbar-inner {
+    background: transparent !important;
 }

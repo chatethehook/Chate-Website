@@ -1,11 +1,11 @@
-alert(window.location.pathname)
 class SpecialHeader extends HTMLElement {
     connectedCallback () {
         
         if (window.location.pathname === '/articles.html') {
             this.innerHTML = `
-            <nav class="navbar navbar-expand-sm bg-body sticky-top">
-                <div class="container-fluid">
+            <hr \>
+            <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
+                <div class="container-fluid m-2">
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -22,10 +22,10 @@ class SpecialHeader extends HTMLElement {
                     id="navbarNavAltMarkup"
                 >
                     <div class="navbar-nav">
-                    <a class="nav-link" href="/">Home</a>
-                    <a class="nav-link active" aria-current="page" href="/articles.html">Articles</a>
+                    <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                    <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
-                    <a class="nav-link" href="/events.html">Events</a>
+                    <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
                     
                     </div>
                 </div>
@@ -35,8 +35,9 @@ class SpecialHeader extends HTMLElement {
         }
         else if (window.location.pathname === '/events.html') {
             this.innerHTML = `
-            <nav class="navbar navbar-expand-sm bg-body sticky-top">
-                <div class="container-fluid">
+            <hr \>
+            <nav class="navbar navbar-expand-sm  sticky-top w-100 navbar-transparent p-0">
+                <div class="container-fluid m-2">
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -53,10 +54,10 @@ class SpecialHeader extends HTMLElement {
                     id="navbarNavAltMarkup"
                 >
                     <div class="navbar-nav">
-                    <a class="nav-link" href="/">Home</a>
-                    <a class="nav-link" href="/articles.html">Articles</a>
+                    <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
-                    <a class="nav-link active" aria-current="page" href="/events.html">Events</a>
+                    <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
                     
                     </div>
                 </div>
@@ -66,8 +67,13 @@ class SpecialHeader extends HTMLElement {
         }
         else if (window.location.pathname === '/') {
             this.innerHTML = `
-            <nav class="navbar navbar-expand-sm bg-body sticky-top">
-                <div class="container-fluid">
+            
+            <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
+            
+            <hr \>
+            
+            <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
+                <div class="container-fluid m-2">
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -79,20 +85,31 @@ class SpecialHeader extends HTMLElement {
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="social-media" href="" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a class="social-media" href="" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                <a class="social-media" href="" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
                 >
                     <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    <a class="nav-link" href="/articles.html">Articles</a>
+                    <a class="nav-link active" aria-current="page" href="/"><h3 class= "header-links">Home</h3></a>
+                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
-                    <a class="nav-link" href="/events.html">Events</a>
+                    <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
                     
                     </div>
                 </div>
+                <div >
+                    <button class="header-button"><p class="header-links" >Apply</p></button>
+                </div>
                 </div>
             </nav>
+            
+        </div>
             `
         }
         
