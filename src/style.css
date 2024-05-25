@@ -2,41 +2,37 @@
     --primary-color: #5ce1e6;
     --text-accent: #0CB4BB; 
     --accent-color: #f2dea2;
-    --bg-color: #FFFF;
+    --bg-color: #f6f6f6;
     --contrast-color: #9b8f8f;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-html,
-body {
-    width: 100% !important;
-    height: 100% !important;
-    margin: 0px !important;
-    padding: 0px !important;
-    overflow-x: hidden !important;
-}
-.panel {
-    width: 100% !important;
-        margin: 0px !important;
-        padding: 0px !important;
-        overflow-x: hidden !important;
-}
 
 .primary {
     color: var(--primary-color);
 }
-.text-accent {
+.textaccent {
     color: var(--text-accent);
+}
+.textwhite {
+    color: var(--bg-color);
+}
+.background-gray {
+    background-color: var(--bg-color);
+}
+.background-blue {
+    background: linear-gradient(90deg, #5CE1E6 0%, #0FC4CB 101.04%);
 }
 
 .blue-gradient {
     background: linear-gradient(181.62deg, rgba(200, 240, 242, 0.05) -0.45%, rgba(196, 253, 255, 0.65) 82.51%);
     width: 100%;
+
 }
 
 .row {
     width: 100%;
-    height: 500px;
+    height: auto;
     gap: 0px;
     
 }
@@ -85,22 +81,20 @@ p {
     font-weight: 300 !important;
     line-height: 28px !important;
     letter-spacing: 0.03em !important;
-    text-align: left !important;
+    text-align: left ;
 }
 
 h1 {
-    
-    
-    font-size: 34px !important;
-    font-weight: 700 !important;
-    line-height: 52.7px !important;
-    text-align: left !important;
+        font-size: 34px !important;
+            font-weight: 700 !important;
+            line-height: 52.7px !important;
+            text-align: left;
 }
 
 h2 {
     
     font-size: 20px !important;
-    font-weight: 200 !important;
+    font-weight: 500 !important;
     line-height: 31px !important;
     text-align: left !important;
 
