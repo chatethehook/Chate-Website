@@ -3,6 +3,7 @@ class SpecialHeader extends HTMLElement {
         
         if (window.location.pathname === '/articles.html') {
             this.innerHTML = `
+            <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
             <hr \>
             <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
                 <div class="container-fluid m-2">
@@ -17,6 +18,10 @@ class SpecialHeader extends HTMLElement {
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
@@ -29,12 +34,16 @@ class SpecialHeader extends HTMLElement {
                     
                     </div>
                 </div>
+                <div >
+                    <button class="header-button"><p class="header-links" >Apply</p></button>
+                </div>
                 </div>
             </nav>
             `
         }
         else if (window.location.pathname === '/events.html') {
             this.innerHTML = `
+            <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
             <hr \>
             <nav class="navbar navbar-expand-sm  sticky-top w-100 navbar-transparent p-0">
                 <div class="container-fluid m-2">
@@ -49,6 +58,10 @@ class SpecialHeader extends HTMLElement {
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
@@ -60,6 +73,9 @@ class SpecialHeader extends HTMLElement {
                     <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
                     
                     </div>
+                </div>
+                <div >
+                    <button class="header-button"><p class="header-links" >Apply</p></button>
                 </div>
                 </div>
             </nav>
@@ -85,12 +101,10 @@ class SpecialHeader extends HTMLElement {
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="social-media" href="" 
+                <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                <a class="social-media" href="" 
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-                <a class="social-media" href="" 
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
