@@ -133,8 +133,8 @@ class SpecialFooter extends HTMLElement {
     connectedCallback () {
         this.innerHTML = `
             <div class="footer">
-                <div class="row p-3 mx-5">
-                    <div class="col-3" >
+                <div class="row  ml-5">
+                    <div class="col-3 py-5" >
                         <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
                         <h3 class="text-center"> <span class="textaccent fw-medium"> ချိတ် </span> Your Dreams </h3>
                         <div class="text-center">
@@ -146,6 +146,7 @@ class SpecialFooter extends HTMLElement {
                         
                     </div>
                     <div class="col-3 mt-5" >
+                        <br \> 
                         <h3 class="fw-medium"> Webinars </h3>
                         <p class="m-0"> Upcoming Webinars </p>
                         <p> Past Webinars </p>
