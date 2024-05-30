@@ -133,7 +133,7 @@ class SpecialFooter extends HTMLElement {
     connectedCallback () {
         this.innerHTML = `
             <div class="footer">
-                <div class="row  ml-5">
+                <div class="row  pl-5">
                     <div class="col-3 py-5" >
                         <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
                         <h3 class="text-center"> <span class="textaccent fw-medium"> ချိတ် </span> Your Dreams </h3>
