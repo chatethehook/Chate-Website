@@ -133,23 +133,24 @@ class SpecialFooter extends HTMLElement {
     connectedCallback () {
         this.innerHTML = `
             <div class="footer">
-                <br />
-                <p>
-                    <a
-                        class="primary"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Chate</a
-                    >
-                    source code
-                    <a
-                        href="https://github.com/salamijason/chate-website"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >github</a
-                    >
-                </p>
+                <div class="row p-3 mx-5">
+                    <div class="col-3" >
+                        <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
+                        <h3 class="text-center"> <span class="textaccent fw-medium"> ချိတ် </span> Your Dreams </h3>
+                        <div class="text-center">
+                            <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                            <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3 mt-5" >
+                        <h3 class="fw-medium"> Webinars </h3>
+                        <p class="m-0"> Upcoming Webinars </p>
+                        <p> Past Webinars </p>
+                    </div>
+                </div>
             </div>
         `
         

@@ -2,7 +2,8 @@
     --primary-color: #5ce1e6;
     --text-accent: #0CB4BB; 
     --accent-color: #f2dea2;
-    --bg-color: #f6f6f6;
+    --bg-color: #f6f6f6; 
+    --bg-blue: #E1F3F4;
     --contrast-color: #9b8f8f;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -108,8 +109,9 @@ h3 {
     text-align: left !important;
 }
 
-special-header {
-    padding: 0px !important;
+
+.footer {
+    background: var(--bg-blue) !important;
 }
 
 .navbar-inner {
