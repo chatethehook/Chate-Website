@@ -7,36 +7,35 @@ class SpecialHeader extends HTMLElement {
             <hr \>
             <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
                 <div class="container-fluid m-2">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                <a class="social-media" href="https://www.instagram.com/chate_thehook" 
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                <div
-                    class="collapse navbar-collapse justify-content-center"
-                    id="navbarNavAltMarkup"
-                >
-                    <div class="navbar-nav">
-                    <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-                    <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <div
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                            <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
-                    <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
-                    
+                            <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                        
+                        </div>
                     </div>
-                </div>
-                <div >
-                    <button class="header-button"><p class="header-links" >Apply</p></button>
-                </div>
+                    <div >
+                        <button class="header-button"><p class="header-links" >Apply</p></button>
+                    </div>
                 </div>
             </nav>
             `
