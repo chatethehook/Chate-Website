@@ -1,6 +1,5 @@
 let pastContent = `
-<div class="container-fluid background-gray pb-5">
-                <div
+<div
                     class="justify-content-center p-2 d-flex"
                     style="padding-right: 50px"
                 >
@@ -68,83 +67,75 @@ let pastContent = `
                     <p>Nyan Lin Htet</p>
                     </div>
                 </div>
-            </div>
 `;
 let newContent = `
-<div class="container-fluid background-gray pb-5">
-                <div
-                    class="justify-content-center p-2 d-flex"
-                    style="padding-right: 50px"
-                >
-                    <h1 class="">
-                    Upcoming
-                    <span class="textaccent text-center">Webinars</span>
-                    </h1>
-                </div>
-                <div class="row p-2">
-                    <div class="col-3">
-                    <iframe
-                        src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA"
-                    >
-                    </iframe>
-                    <h2 class="m-0">
-                        What Are Top Colleges Looking For?&nbsp;
-                        <span class="textaccent"
-                        ><p class="d-inline m-0 text-right">02/06/2024</p></span
-                        >
-                    </h2>
-                    <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 5</p>
-                    <p>Min Thaik Aung Saw</p>
-                    </div>
-                </div>
-            </div>
+<div
+        class="justify-content-center p-2 d-flex"
+        style="padding-right: 50px"
+      >
+        <h1 class="">
+          Upcoming
+          <span class="textaccent text-center">Webinars</span>
+        </h1>
+      </div>
+      <div class="row p-2">
+        <div class="col-3">
+          <iframe
+            src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA"
+          >
+          </iframe>
+          <h2 class="m-0">
+            What Are Top Colleges Looking For?&nbsp;
+            <span class="textaccent"
+              ><p class="d-inline m-0 text-right">02/06/2024</p></span
+            >
+          </h2>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 5</p>
+          <p>Min Thaik Aung Saw</p>
+        </div>
+      </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
 let newwebButton = document.querySelector(`#newweb-button`);
 let pastwebButton = document.querySelector(`#pastweb-button`);
+let webinarsection = document.querySelector(`#webinar-panel`);
 
 // button changes
 function changeToAll(event) {
-    //event.preventDefault();
+    event.preventDefault();
     
     allwebButton.classList.add(`clicked`);
     newwebButton.classList.remove(`clicked`);
     pastwebButton.classList.remove('clicked');
-    reload();
+
+    webinarsection.innerHTML = newContent + pastContent;
+    
 }
 function changeToNew(event) {
-    //event.preventDefault();
+    event.preventDefault();
     
     allwebButton.classList.remove(`clicked`);
     newwebButton.classList.add(`clicked`);
     pastwebButton.classList.remove('clicked');
-    reload();
+    
+    webinarsection.innerHTML = newContent;
+
+    
 }
 function changeToPast(event) {
-    //event.preventDefault();
+    event.preventDefault();
     
     allwebButton.classList.remove(`clicked`);
     newwebButton.classList.remove(`clicked`);
     pastwebButton.classList.add('clicked');
-    reload();
+    
+    webinarsection.innerHTML = pastContent;
+
 }
 
 allwebButton.addEventListener(`click`,changeToAll);
 newwebButton.addEventListener(`click`,changeToNew);
 pastwebButton.addEventListener(`click`,changeToPast);
 
-class Webinars extends HTMLElement {
-    connectedCallback () {
-        if (allwebButton.classList.contains(`clicked`)) {
-        
-            this.innerHTML = newContent + pastContent;
-        } else if (newwebButton.classList.contains(`clicked`)) {
-            this.innerHTML = newContent;
-        } else if (pastwebButton.classList.contains(`clicked`)) {
-            this.innerHTML = pastContent;    
-        }
-    }
-}
 
-customElements.define('webinar-panel',Webinars);
 
