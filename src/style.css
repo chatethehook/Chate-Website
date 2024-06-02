@@ -117,3 +117,33 @@ h3 {
 .navbar-inner {
     background: transparent !important;
 }
+
+button.selector,
+input.search,
+button.selector-current {
+    color: #233142;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border-style: none;
+    margin: 5px 5px;
+    background-color: var(--bg-blue);
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 1px 2px 0px #ABC3C4;
+}
+
+button.selector:hover {
+    background-color: #233142;
+    color: #e3e3e3
+}
+
+button.selector.clicked {
+    background-color: #0B7177;
+}
+
+button.selector.clicked:hover {
+    color: #233142
+}
+iframe {
+    border-radius: 5px;
+}

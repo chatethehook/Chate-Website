@@ -27,7 +27,6 @@ class SpecialHeader extends HTMLElement {
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-                            <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
                             <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
                         
@@ -67,7 +66,6 @@ class SpecialHeader extends HTMLElement {
                 >
                     <div class="navbar-nav">
                     <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
                     <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
                     
@@ -110,7 +108,6 @@ class SpecialHeader extends HTMLElement {
                 >
                     <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="/"><h3 class= "header-links">Home</h3></a>
-                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
                     <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
                     
@@ -135,7 +132,7 @@ class SpecialFooter extends HTMLElement {
                 <div class="row  pl-5">
                     <div class="col-3 py-5" >
                         <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
-                        <h3 class="text-center"> <span class="textaccent fw-medium"> ချိတ် </span> Your Dreams </h3>
+                        <h3 class="text-center"> <span class="textaccent fw-semibold"> ချိတ် </span> Your Dreams </h3>
                         <div class="text-center">
                             <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
                             target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
