@@ -149,6 +149,7 @@ button.selector:hover {
 
 button.selector.clicked {
     background-color: #0B7177;
+    color: #e3e3e3
 }
 
 button.selector.clicked:hover {
