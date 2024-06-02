@@ -161,4 +161,6 @@ button.selector.clicked:hover {
 }
 iframe {
     border-radius: 5px;
+    width: auto;
+    height: auto;
 }
