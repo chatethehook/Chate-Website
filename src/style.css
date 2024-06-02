@@ -18,6 +18,10 @@
 .textwhite {
     color: var(--bg-color);
 }
+
+.textorange {
+    color:#D68321;
+}
 .background-gray {
     background-color: var(--bg-color);
 }

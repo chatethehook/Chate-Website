@@ -21,8 +21,9 @@ let pastContent = `
             ><p class="d-inline m-0 text-right">26/05/2024</p></span
             >
         </h2>
+        <p class="textorange m-0">Rachel Soe</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 4</p>
-        <p>Rachel Soe</p>
+        
         </div>
         <div class="col-3">
         <iframe
@@ -35,8 +36,8 @@ let pastContent = `
             ><p class="d-inline m-0 text-right">09/05/2024</p></span
             >
         </h2>
+        <p class="textorange m-0">Yin Min Thant</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 3</p>
-        <p>Yin Min Thant</p>
         </div>
         <div class="col-3">
         <iframe
@@ -49,8 +50,8 @@ let pastContent = `
             ><p class="d-inline m-0 text-right">20/04/2024</p></span
             >
         </h2>
+        <p class="textorange m-0">Sai Nyi Bhone Htut, Myat Nadi Kyaw</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 2</p>
-        <p>Sai Nyi Bhone Htut, Myat Nadi Kyaw</p>
         </div>
         <div class="col-3">
         <img
@@ -64,8 +65,8 @@ let pastContent = `
             ><p class="d-inline m-0 text-right">14/04/2024</p></span
             >
         </h2>
+        <p class="textorange m-0">Nyan Lin Htet</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 1</p>
-        <p>Nyan Lin Htet</p>
         </div>
     </div>
 `;
@@ -92,8 +93,8 @@ let newContent = `
               ><p class="d-inline m-0 text-right">02/06/2024</p></span
             >
           </h2>
+          <p class="textorange m-0">Min Thaik Aung Saw</p>
           <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 5</p>
-          <p>Min Thaik Aung Saw</p>
         </div>
       </div>
 `;
