@@ -10,7 +10,7 @@ let pastContent = `
         </h1>
     </div>
     <div class="row p-2">
-        <div class="col-3">
+        <div class="col-sm-3">
         <iframe
             src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA"
         >
@@ -25,7 +25,7 @@ let pastContent = `
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 4</p>
         
         </div>
-        <div class="col-3">
+        <div class="col-sm-3">
         <iframe
             src="https://www.youtube.com/embed/YOwYQ56EZaA?si=1nCk3neoXNqL4by9"
         >
@@ -39,7 +39,7 @@ let pastContent = `
         <p class="textorange m-0">Yin Min Thant</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 3</p>
         </div>
-        <div class="col-3">
+        <div class="col-sm-3">
         <iframe
             src="https://www.youtube.com/embed/HRfzWAFDMQk?si=Yg7OvPHK8tSN_lju"
         >
@@ -53,7 +53,7 @@ let pastContent = `
         <p class="textorange m-0">Sai Nyi Bhone Htut, Myat Nadi Kyaw</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 2</p>
         </div>
-        <div class="col-3">
+        <div class="col-sm-3">
         <img
             src="media/webinar resources/nlhfirstwebinar.png"
             alt="webinar thumbnail"
@@ -81,7 +81,7 @@ let newContent = `
         </h1>
       </div>
       <div class="row p-2">
-        <div class="col-3">
+        <div class="col-sm-3">
           <img
                         src="media/webinar resources/Zoom_background.png"
                         alt="webinar thumbnail"
