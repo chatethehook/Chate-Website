@@ -69,6 +69,16 @@
     color: #4C6869;
     margin:4px;
 }
+
+.footer-link {
+    color: #233142;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: #304b6d;
+    text-decoration: none;
+}
+
 hr {
     margin: 2px !important;
 }

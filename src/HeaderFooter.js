@@ -143,9 +143,9 @@ class SpecialFooter extends HTMLElement {
                     </div>
                     <div class="col-3 mt-5" >
                         <br \> 
-                        <h3 class="fw-medium"> Webinars </h3>
-                        <p class="m-0"> Upcoming Webinars </p>
-                        <p> Past Webinars </p>
+                        <h3 class="fw-medium"> Events </h3>
+                        <a class="footer-link" href="/events.html"><p class="m-0"> All Webinars </p></a>
+                        
                     </div>
                 </div>
             </div>
