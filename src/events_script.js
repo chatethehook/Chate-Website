@@ -56,7 +56,7 @@ let pastContent = `
         <img
             src="media/webinar resources/nlhfirstwebinar.png"
             alt="webinar thumbnail"
-            class="img-fluid rounded"
+            class="img-fluid rounded pb-2"
         />
         <h2 class="m-0">
             US College Admissions Overview&nbsp;
