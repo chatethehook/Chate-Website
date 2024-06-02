@@ -80,10 +80,11 @@ let newContent = `
       </div>
       <div class="row p-2">
         <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA"
-          >
-          </iframe>
+          <img
+                        src="media/webinar resources/Zoom_background.png"
+                        alt="webinar thumbnail"
+                        class="img-fluid rounded pb-2"
+                    />
           <h2 class="m-0">
             What Are Top Colleges Looking For?&nbsp;
             <span class="textaccent"
@@ -99,6 +100,8 @@ let allwebButton = document.querySelector(`#allweb-button`);
 let newwebButton = document.querySelector(`#newweb-button`);
 let pastwebButton = document.querySelector(`#pastweb-button`);
 let webinarsection = document.querySelector(`#webinar-panel`);
+
+webinarsection.innerHTML = newContent + pastContent;
 
 // button changes
 function changeToAll(event) {
