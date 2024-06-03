@@ -164,3 +164,16 @@ iframe {
     width: auto;
     height: auto;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    filter: invert(100%);
+}
+.carousel {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.carousel-item > .row > div {
+    height: 360px;
+}
