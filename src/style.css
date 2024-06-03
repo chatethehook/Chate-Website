@@ -159,9 +159,10 @@ button.selector.clicked {
 button.selector.clicked:hover {
     color: #233142
 }
+
 iframe {
     border-radius: 5px;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
