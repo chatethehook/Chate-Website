@@ -164,3 +164,8 @@ iframe {
     width: auto;
     height: auto;
 }
+.icon {
+    display: block;
+    margin: 0 auto;
+}
+
