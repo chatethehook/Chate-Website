@@ -33,7 +33,7 @@ class SpecialHeader extends HTMLElement {
                         </div>
                     </div>
                     <div >
-                        <button class="header-button"><p class="header-links" >Apply</p></button>
+                    <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdS6GU9ZrUWQaqX-tQLlWpljR92DlXnOlGVn0LtGzR9RftTXw/viewform?usp=sf_link" role="button">Apply</a>
                     </div>
                 </div>
             </nav>
@@ -72,7 +72,7 @@ class SpecialHeader extends HTMLElement {
                     </div>
                 </div>
                 <div >
-                    <button class="header-button"><p class="header-links" >Apply</p></button>
+                    <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdS6GU9ZrUWQaqX-tQLlWpljR92DlXnOlGVn0LtGzR9RftTXw/viewform?usp=sf_link" role="button">Apply</a>
                 </div>
                 </div>
             </nav>
@@ -114,7 +114,8 @@ class SpecialHeader extends HTMLElement {
                     </div>
                 </div>
                 <div >
-                    <button class="header-button"><p class="header-links" >Apply</p></button>
+                    
+                    <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdS6GU9ZrUWQaqX-tQLlWpljR92DlXnOlGVn0LtGzR9RftTXw/viewform?usp=sf_link" role="button">Apply</a>
                 </div>
                 </div>
             </nav>
