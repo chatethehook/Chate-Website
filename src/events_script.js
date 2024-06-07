@@ -25,7 +25,6 @@ let pastContent = `
           <p class="textorange m-0">Min Thaik Aung Saw</p>
           <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 5</p>
         </div>
-    <div class="row p-2">
         <div class="col-3 pb-3">
         <iframe
             src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA"
@@ -99,7 +98,8 @@ let newContent = `
           <span class="textaccent text-center">Webinars</span>
         </h1>
       </div>
-      
+      <div class="row p-2">
+        
       </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
