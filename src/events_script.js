@@ -73,7 +73,7 @@ let pastContent = `
         </div>
         <div class="col-3 pb-3">
         <img
-            src="media/webinar resources/nlhfirstwebinar.png"
+            src="media/webinar resources/ASK THE HOOK.png"
             alt="webinar thumbnail"
             class="img-fluid rounded pb-2"
         />
