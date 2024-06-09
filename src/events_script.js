@@ -19,7 +19,7 @@ let pastContent = `
           <h2 class="m-0">
             What Are Top Colleges Looking For?&nbsp;
             <span class="textaccent"
-              ><p class="d-inline m-0 text-right">02/06/2024</p></span
+            ><p class="d-inline m-0 text-right">02/06/2024</p></span
             >
           </h2>
           <p class="textorange m-0">Min Thaik Aung Saw</p>

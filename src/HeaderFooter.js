@@ -19,9 +19,12 @@ class SpecialHeader extends HTMLElement {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.instagram.com/chate_thehook" 
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                
                     <div
                         class="collapse navbar-collapse justify-content-center"
                         id="navbarNavAltMarkup">
@@ -60,6 +63,9 @@ class SpecialHeader extends HTMLElement {
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                 <a class="social-media" href="https://www.instagram.com/chate_thehook" 
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
@@ -102,6 +108,9 @@ class SpecialHeader extends HTMLElement {
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                 <a class="social-media" href="https://www.instagram.com/chate_thehook" 
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
