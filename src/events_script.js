@@ -12,7 +12,7 @@ let pastContent = `
     <div class="row p-2">
         <div class="col-3 pb-3">
           <img
-                        src="media/webinar resources/Zoom_background.png"
+                        src="media/webinar resources/whatarecollegeslookingfor.jpg"
                         alt="webinar thumbnail"
                         class="img-fluid rounded pb-2"
                     />
