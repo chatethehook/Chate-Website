@@ -11,6 +11,21 @@ let pastContent = `
     </div>
     <div class="row p-2">
         <div class="col-3 pb-3">
+          <iframe
+            src="https://www.youtube.com/embed/pLIlUeuaELw?si=8Mu7mfcsoH7Z6XgK"
+            class="responsive-iframe"
+        >
+        </iframe>
+          <h2 class="m-0">
+            "တက္ကသိုလ်များဆီသို့" Program မိတ်ဆက်&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">16/06/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Aung Htoo Han</p>
+          <p class="m-1"></p>
+        </div>
+        <div class="col-3 pb-3">
           <img
                         src="media/webinar resources/whatarecollegeslookingfor.jpg"
                         alt="webinar thumbnail"
@@ -99,7 +114,21 @@ let newContent = `
         </h1>
       </div>
       <div class="row p-2">
-        
+        <div class="col-3 pb-3">
+          <img
+                        src="media/webinar resources/Ko Wai Yan's Webinar Thumbnail .png"
+                        alt="webinar thumbnail"
+                        class="img-fluid rounded pb-2"
+                    />
+          <h2 class="m-0">
+            What Are Top Colleges Looking For?&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">23/06/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Wai Yan Wing Aung</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
+        </div>
       </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
