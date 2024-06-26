@@ -69,6 +69,19 @@
     transition: all 200ms ease-in-out !important;
     box-shadow: 1px 1px 1px .25px #455d7a !important;
 }
+
+.accent-button {
+    color: #233142 !important;
+    font-weight: 500 !important;
+    border-radius: 20px !important;
+    padding: 5px 24px !important;
+    border-style: none !important;
+    margin: 5px 1px !important;
+    background-color: var(--accent-color) !important;
+    transition: all 200ms ease-in-out !important;
+    box-shadow: 1px 1px 1px .25px #455d7a !important;
+}
+
 .social-media {
     color: #4C6869;
     margin:4px;
