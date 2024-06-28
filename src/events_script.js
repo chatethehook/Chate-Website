@@ -10,6 +10,21 @@ let pastContent = `
         </h1>
     </div>
     <div class="row p-2">
+    <div class="col-3 pb-3">
+          <iframe
+            src="https://www.youtube.com/embed/sNl1rv3X39k?si=G72gCtCq4qutrH0q"
+            class="responsive-iframe"
+        >
+        </iframe>
+          <h2 class="m-0">
+            Financial Aid at US Colleges&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">23/06/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Wai Yan Wing Aung</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
+        </div>
         <div class="col-3 pb-3">
           <iframe
             src="https://www.youtube.com/embed/pLIlUeuaELw?si=8Mu7mfcsoH7Z6XgK"
@@ -22,7 +37,8 @@ let pastContent = `
             ><p class="d-inline m-0 text-right">16/06/2024</p></span
             >
           </h2>
-          <p class="textorange m-0">Aung Htoo Han</p>
+          <p class="textorange m-0">ချိတ်</p>
+          <p class="m-1">Official Program Announcement</p>
           <p class="m-1"></p>
         </div>
         <div class="col-3 pb-3">
@@ -116,18 +132,18 @@ let newContent = `
       <div class="row p-2">
         <div class="col-3 pb-3">
           <img
-                        src="media/webinar resources/Ko Wai Yan's Webinar Thumbnail .png"
+                        src="media/webinar resources/Zoom_background.png"
                         alt="webinar thumbnail"
                         class="img-fluid rounded pb-2"
                     />
           <h2 class="m-0">
-            What Are Top Colleges Looking For?&nbsp;
+            Extracurricular Activities for Colleges&nbsp;
             <span class="textaccent"
-            ><p class="d-inline m-0 text-right">23/06/2024</p></span
+            ><p class="d-inline m-0 text-right">01/07/2024</p></span
             >
           </h2>
-          <p class="textorange m-0">Wai Yan Wing Aung</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
+          <p class="textorange m-0">Yoon Wendy Aung</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
         </div>
       </div>
 `;
