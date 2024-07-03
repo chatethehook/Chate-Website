@@ -10,7 +10,22 @@ let pastContent = `
         </h1>
     </div>
     <div class="row p-2">
-    <div class="col-3 pb-3">
+      <div class="col-3 pb-3">
+          <iframe
+            src="https://www.youtube.com/embed/I-2qd55aBeA?si=S866eQe4PZDAxCO0"
+            class="responsive-iframe"
+          >
+          </iframe>
+          <h2 class="m-0">
+            Extracurricular Activities for Colleges&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">01/07/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Yoon Wendy Aung</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
+        </div>
+      <div class="col-3 pb-3">
           <iframe
             src="https://www.youtube.com/embed/sNl1rv3X39k?si=G72gCtCq4qutrH0q"
             class="responsive-iframe"
@@ -130,21 +145,7 @@ let newContent = `
         </h1>
       </div>
       <div class="row p-2">
-        <div class="col-3 pb-3">
-          <img
-                        src="media/webinar resources/Zoom_background.png"
-                        alt="webinar thumbnail"
-                        class="img-fluid rounded pb-2"
-                    />
-          <h2 class="m-0">
-            Extracurricular Activities for Colleges&nbsp;
-            <span class="textaccent"
-            ><p class="d-inline m-0 text-right">01/07/2024</p></span
-            >
-          </h2>
-          <p class="textorange m-0">Yoon Wendy Aung</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
-        </div>
+        
       </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
