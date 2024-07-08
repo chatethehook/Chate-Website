@@ -145,12 +145,14 @@ class SpecialFooter extends HTMLElement {
                 <div class="row  pl-5">
                     <div class="col-3 py-5" >
                         <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
-                        <h3 class="text-center"> <span class="textaccent fw-semibold"> ချိတ် </span> Your Dreams </h3>
+                        <h3 class="text-center"> <span class="textaccent fw-semibold"> Chate </span> Your Dreams </h3>
                         <div class="text-center">
                             <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
-                            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                             <a class="social-media" href="https://www.instagram.com/chate_thehook" 
-                            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                             target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                         </div>
                         
                     </div>
