@@ -23,7 +23,7 @@ let pastContent = `
             >
           </h2>
           <p class="textorange m-0">Yoon Wendy Aung</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 8</p>
         </div>
       <div class="col-3 pb-3">
           <iframe
@@ -38,7 +38,7 @@ let pastContent = `
             >
           </h2>
           <p class="textorange m-0">Wai Yan Wing Aung</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
         </div>
         <div class="col-3 pb-3">
           <iframe
@@ -52,9 +52,10 @@ let pastContent = `
             ><p class="d-inline m-0 text-right">16/06/2024</p></span
             >
           </h2>
-          <p class="textorange m-0">ချိတ်</p>
+          <p class="textorange m-0">ချိတ် Admissions Officers</p>
           <p class="m-1">Official Program Announcement</p>
-          <p class="m-1"></p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
+
         </div>
         <div class="col-3 pb-3">
           <img
