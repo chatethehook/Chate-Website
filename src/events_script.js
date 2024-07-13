@@ -146,7 +146,21 @@ let newContent = `
         </h1>
       </div>
       <div class="row p-2">
-        
+        <div class="col-3 pb-3">
+          <img
+                        src="media/webinar resources/Zoom_background.png"
+                        alt="webinar thumbnail"
+                        class="img-fluid rounded pb-2"
+                    />
+          <h2 class="m-0">
+            Doing the Best with What I Have&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">14/07/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">John Ten Khant</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 9</p>
+        </div>
       </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
