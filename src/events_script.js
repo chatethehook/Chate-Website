@@ -1,5 +1,5 @@
-let pastContent = `
-    
+let pastContent = 
+  `
     <div
         class="justify-content-center p-2 d-flex"
         style="padding-right: 50px"
@@ -10,6 +10,21 @@ let pastContent = `
         </h1>
     </div>
     <div class="row p-2">
+      <div class="col-3 pb-3">
+          <img
+                        src="media/webinar resources/Zoom_background.png"
+                        alt="webinar thumbnail"
+                        class="img-fluid rounded pb-2"
+                    />
+          <h2 class="m-0">
+            Fully Funded Undergraduate Scholarship in the US with a GED&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">21/07/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Allei Mar</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 10</p>
+      </div>
       <div class="col-3 pb-3">
           <img
                         src="media/webinar resources/Zoom_background.png"
@@ -162,6 +177,21 @@ let newContent = `
       </div>
       <div class="row p-2">
         
+        <div class="col-3 pb-3">
+          <img
+                        src="media/webinar resources/Zoom_background.png"
+                        alt="webinar thumbnail"
+                        class="img-fluid rounded pb-2"
+                    />
+          <h2 class="m-0">
+            Transferring from community college to universities&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">28/07/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thet Htoo Naung</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 11</p>
+        </div>
       </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
