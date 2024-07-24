@@ -13,6 +13,11 @@ body {
     width: 100vw;
 }
 
+.border-light {
+    --bs-border-opacity: 0 !important;
+    border-color: rgba(var(--bg-color), var(--bs-border-opacity)) !important;
+}
+
 .article {
     background-color: var(--bg-color) !important;
 }
