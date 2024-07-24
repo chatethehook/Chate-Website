@@ -24,6 +24,8 @@ class SpecialHeader extends HTMLElement {
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                     <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://t.me/chatethehook" 
+                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
                 
                     <div
                         class="collapse navbar-collapse justify-content-center"
@@ -67,6 +69,8 @@ class SpecialHeader extends HTMLElement {
                         target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                     <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
                         target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://t.me/chatethehook" 
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
                 
                     <div
                         class="collapse navbar-collapse justify-content-center"
@@ -128,6 +132,12 @@ class SpecialHeader extends HTMLElement {
             rel="noopener noreferrer"
             ><i class="fa-brands fa-youtube" aria-hidden="true"></i
           ></a>
+          <a class="social-media" 
+          href="https://t.me/chatethehook" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-telegram" aria-hidden="true"></i
+          ></a>
 
           <div
             class="collapse navbar-collapse justify-content-center"
@@ -175,6 +185,8 @@ class SpecialFooter extends HTMLElement {
                              target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                             <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
                                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            <a class="social-media" href="https://t.me/chatethehook" 
+                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
                         </div>
                         
                     </div>
