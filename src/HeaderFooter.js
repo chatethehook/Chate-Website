@@ -40,7 +40,7 @@ class SpecialHeader extends HTMLElement {
                     <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSctyiEOsy1r3ef4RFfu5SZg48fl0PWcNasSrIIZJ7EZYF9dfQ/viewform?usp=sf_link" role="button">Apply</a>
                     </div>
                 </div>
-                </div>
+                
             </nav>
             `
         }

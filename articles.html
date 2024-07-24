@@ -21,13 +21,165 @@
     />
   </head>
   <body>
-    <special-header></special-header>
-    <div class="container-lg">
-      <h1>Coming soon...</h1>
+    <div class="container-fluid background-gray pb-3">
+      <img class="logo" src="media/logo-transparent.png" alt="" srcset="" />
+      <hr \ />
+      <nav
+        class="navbar navbar-expand-sm sticky-top w-100 navbar-transparent p-0"
+      >
+        <div class="container-fluid m-2">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a
+            class="social-media"
+            href="https://www.facebook.com/profile.php?id=61557409119325"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a
+            class="social-media"
+            href="https://www.instagram.com/chate_thehook"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a
+            class="social-media"
+            href="https://www.youtube.com/@Chate_TheHook"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-youtube" aria-hidden="true"></i
+          ></a>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" href="/"
+                ><h3 class="header-links">Home</h3></a
+              >
+
+              <a class="nav-link" href="/events.html"
+                ><h3 class="header-links">Events</h3></a
+              >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/articles.html"
+                ><h3 class="header-links">Articles</h3></a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              class="btn btn-primary header-button"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSctyiEOsy1r3ef4RFfu5SZg48fl0PWcNasSrIIZJ7EZYF9dfQ/viewform?usp=sf_link"
+              role="button"
+              >Apply</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="row align-items-center">
+        <div
+          class="justify-content-center p-2 d-flex"
+          style="padding-right: 50px"
+        >
+          <h1 class="">
+            All
+            <span class="textaccent text-center">Articles</span>
+          </h1>
+        </div>
+      </div>
+      <div class="row m-2" id="row">
+        <div class="card m-2" style="width: 18rem">
+          <img
+            src="..."
+            class="card-img-top rounded mt-2 mb-0"
+            alt="..."
+            id="${image}"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="${title}">title</h5>
+
+            <h6 class="card-subtitle mb-2 text-body-secondary" id="${date}">
+              1/1/1
+            </h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary" id="${labels}">
+              labels
+            </h6>
+
+            <!-- Button trigger modal -->
+            <button
+              id="${link}"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#${modal}"
+            >
+              Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="${modal}"
+              tabindex="-1"
+              aria-labelledby="${modalTitle}"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="${modalTitle}">
+                      ${modalTitle} CHANGE LATER
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <span
+                    class="fw-semibold m-2 text-body-secondary"
+                    id="${modaldate}"
+                  >
+                    1/1/1
+                  </span>
+                  <span
+                    class="fw-semibold m-2 mt-0 text-body-secondary"
+                    id="${modallabels}"
+                  >
+                    labels
+                  </span>
+                  <div id="${modalBody}" class="modal-body">
+                    ${modalBody} CHANGE LATER
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="w-25 mx-auto selector" id="moreContent">show more</button>
     </div>
+
     <special-footer></special-footer>
     <script src="src/HeaderFooter.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="src\articles_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
