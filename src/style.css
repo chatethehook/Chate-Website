@@ -13,6 +13,10 @@ body {
     width: 100vw;
 }
 
+.article {
+    background-color: var(--bg-color) !important;
+}
+
 .primary {
     color: var(--primary-color);
 }

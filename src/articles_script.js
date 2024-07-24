@@ -39,7 +39,7 @@ function populatePage (response) {
       let modaldate = `modaldate`+i;
       let modallabels = `modallabels`+i;
       let cardSkel = 
-        `<div class="card m-2" style="width: 18rem">
+        `<div class="card border-light article m-2" style="width: 18rem">
         <img
           src="..."
           class="card-img-top rounded mt-2 mb-0"
@@ -64,7 +64,7 @@ function populatePage (response) {
             data-bs-toggle="modal"
             data-bs-target="#${modal}"
           >
-            Launch demo modal
+            Read
           </button>
 
           <!-- Modal -->
@@ -127,7 +127,7 @@ function populatePage (response) {
       let modaldate = `modaldate`+i;
       let modallabels = `modallabels`+i;
       let cardSkel = 
-        `<div class="card m-2" style="width: 18rem">
+        `<div class="card border-light article m-2" style="width: 18rem">
         <img
           src="..."
           class="card-img-top rounded mt-2 mb-0"
@@ -152,7 +152,7 @@ function populatePage (response) {
             data-bs-toggle="modal"
             data-bs-target="#${modal}"
           >
-            Launch demo modal
+            Read
           </button>
 
           <!-- Modal -->
