@@ -11,53 +11,83 @@ let pastContent =
     </div>
     <div class="row p-2">
       <div class="col-3 pb-3">
-          <iframe src="https://www.youtube.com/embed/xn7rv-xiWAM?si=F3xTD-WwxZeaaeui" 
-            class="responsive-iframe" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-          <h2 class="m-0">
-            Fully Funded Undergraduate Scholarship in the US with a GED&nbsp;
-            <span class="textaccent"
-            ><p class="d-inline m-0 text-right">21/07/2024</p></span
-            >
-          </h2>
-          <p class="textorange m-0">Allei Mar</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 10</p>
+        <img
+                      src="media/webinar resources/Zoom_background.png"
+                      alt="webinar thumbnail"
+                      class="img-fluid rounded pb-2"
+                  />
+        <h2 class="m-0">
+          Stepping into UK Universities&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">08/08/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">Swan Yee Htun Wah</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 12</p>
       </div>
       <div class="col-3 pb-3">
-          <iframe src="https://www.youtube.com/embed/C60d95ecPMg?si=mHv0uHckFzfwtFsD" 
-            class="responsive-iframe" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-          <h2 class="m-0">
-            Doing the Best with What I Have&nbsp;
-            <span class="textaccent"
-            ><p class="d-inline m-0 text-right">14/07/2024</p></span
-            >
-          </h2>
-          <p class="textorange m-0">John Ten Khant</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 9</p>
+        <img
+                      src="media/webinar resources/Zoom_background.png"
+                      alt="webinar thumbnail"
+                      class="img-fluid rounded pb-2"
+                  />
+        <h2 class="m-0">
+          Transferring from community college to universities&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">28/07/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">Thet Htoo Naung</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 11</p>
       </div>
       <div class="col-3 pb-3">
-          <iframe src="https://www.youtube.com/embed/I-2qd55aBeA?si=S866eQe4PZDAxCO0" 
-            class="responsive-iframe" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-          <h2 class="m-0">
-            Extracurricular Activities for Colleges&nbsp;
-            <span class="textaccent"
-            ><p class="d-inline m-0 text-right">01/07/2024</p></span
-            >
-          </h2>
-          <p class="textorange m-0">Yoon Wendy Aung</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 8</p>
-        </div>
+        <iframe src="https://www.youtube.com/embed/xn7rv-xiWAM?si=F3xTD-WwxZeaaeui" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h2 class="m-0">
+          Fully Funded Undergraduate Scholarship in the US with a GED&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">21/07/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">Allei Mar</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 10</p>
+      </div>
+      <div class="col-3 pb-3">
+        <iframe src="https://www.youtube.com/embed/C60d95ecPMg?si=mHv0uHckFzfwtFsD" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h2 class="m-0">
+          Doing the Best with What I Have&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">14/07/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">John Ten Khant</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 9</p>
+      </div>
+      <div class="col-3 pb-3">
+        <iframe src="https://www.youtube.com/embed/I-2qd55aBeA?si=S866eQe4PZDAxCO0" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h2 class="m-0">
+          Extracurricular Activities for Colleges&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">01/07/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">Yoon Wendy Aung</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 8</p>
+      </div>
       <div class="col-3 pb-3">
         <iframe src="https://www.youtube.com/embed/sNl1rv3X39k?si=G72gCtCq4qutrH0q" 
             class="responsive-iframe" 
@@ -192,14 +222,15 @@ let newContent = `
                         class="img-fluid rounded pb-2"
                     />
           <h2 class="m-0">
-            Transferring from community college to universities&nbsp;
+            Study in the UK&nbsp;
             <span class="textaccent"
-            ><p class="d-inline m-0 text-right">28/07/2024</p></span
+            ><p class="d-inline m-0 text-right">18/08/2024</p></span
             >
           </h2>
-          <p class="textorange m-0">Thet Htoo Naung</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 11</p>
+          <p class="textorange m-0">Rachel Joy @ Yamin Thet</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13</p>
         </div>
+
       </div>
 `;
 let allwebButton = document.querySelector(`#allweb-button`);
