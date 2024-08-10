@@ -12,7 +12,7 @@ let pastContent =
     <div class="row p-2">
       <div class="col-3 pb-3">
         <img
-                      src="media/webinar resources/Zoom_background.png"
+                      src="media/webinar resources/Zoom_background.webp"
                       alt="webinar thumbnail"
                       class="img-fluid rounded pb-2"
                   />
@@ -27,7 +27,7 @@ let pastContent =
       </div>
       <div class="col-3 pb-3">
         <img
-                      src="media/webinar resources/Zoom_background.png"
+                      src="media/webinar resources/Zoom_background.webp"
                       alt="webinar thumbnail"
                       class="img-fluid rounded pb-2"
                   />
@@ -124,7 +124,7 @@ let pastContent =
       </div>
       <div class="col-3 pb-3">
         <img
-          src="media/webinar resources/whatarecollegeslookingfor.jpg"
+          src="media/webinar resources/whatarecollegeslookingfor.webp"
           alt="webinar thumbnail"
           class="img-fluid rounded pb-2"
         />
@@ -188,7 +188,7 @@ let pastContent =
       </div>
       <div class="col-3 pb-3">
         <img
-            src="media/webinar resources/ASK THE HOOK.png"
+            src="media/webinar resources/ASK THE HOOK.webp"
             alt="webinar thumbnail"
             class="img-fluid rounded pb-2"
         />
@@ -217,7 +217,7 @@ let newContent = `
         
         <div class="col-3 pb-3">
           <img
-                        src="media/webinar resources/Zoom_background.png"
+                        src="media/webinar resources/Zoom_background.webp"
                         alt="webinar thumbnail"
                         class="img-fluid rounded pb-2"
                     />
