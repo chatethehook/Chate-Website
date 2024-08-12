@@ -3,7 +3,7 @@ class SpecialHeader extends HTMLElement {
         
         if (window.location.pathname === '/articles.html') {
             this.innerHTML = `
-            <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
+            <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             <hr \>
             <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
                 <div class="container-fluid m-2">
@@ -48,7 +48,7 @@ class SpecialHeader extends HTMLElement {
         }
         else if (window.location.pathname === '/events.html') {
             this.innerHTML = `
-            <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
+            <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             <hr \>
             <nav class="navbar navbar-expand-sm  sticky-top w-100 navbar-transparent p-0">
                 <div class="container-fluid m-2">
@@ -94,7 +94,7 @@ class SpecialHeader extends HTMLElement {
         else if (window.location.pathname === '/') {
             this.innerHTML = `
             
-            <img class="logo" src="media/logo-transparent.png" alt="" srcset="" />
+            <img class="logo" src="media/logo-transparent.webp" alt="" srcset="" />
 
       <hr \ />
 
@@ -176,7 +176,7 @@ class SpecialFooter extends HTMLElement {
             <div class="footer">
                 <div class="row  pl-5">
                     <div class="col-3 py-5" >
-                        <img class="logo" src="media/logo-transparent.png" alt="" srcset="">
+                        <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
                         <h3 class="text-center"> <span class="textaccent fw-semibold"> Chate </span> Your Dreams </h3>
                         <div class="text-center">
                             <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
