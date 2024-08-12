@@ -12,7 +12,7 @@ let pastContent =
     <div class="row p-2">
       <div class="col-3 pb-3">
         <img
-                      src="media/webinar resources/Zoom_background.webp"
+                      src="media/webinar resources/Swan Yee.webp"
                       alt="webinar thumbnail"
                       class="img-fluid rounded pb-2"
                   />
@@ -27,7 +27,7 @@ let pastContent =
       </div>
       <div class="col-3 pb-3">
         <img
-                      src="media/webinar resources/Zoom_background.webp"
+                      src="media/webinar resources/Ko Thet Htoo Naung.webp"
                       alt="webinar thumbnail"
                       class="img-fluid rounded pb-2"
                   />
