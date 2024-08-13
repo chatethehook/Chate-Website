@@ -80,6 +80,7 @@ class SpecialHeader extends HTMLElement {
                         <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
 
                         <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                        <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
                         
                         </div>
                     </div>
@@ -151,6 +152,11 @@ class SpecialHeader extends HTMLElement {
               <a class="nav-link" href="/events.html"
                 ><h3 class="header-links">Events</h3></a
               >
+
+              <a class="nav-link" href="/articles.html"
+                ><h3 class= "header-links">Articles</h3></a
+              >
+                        
             </div>
           </div>
           <div>
@@ -175,7 +181,7 @@ class SpecialFooter extends HTMLElement {
         this.innerHTML = `
             <div class="footer">
                 <div class="row  pl-5">
-                    <div class="col-3 py-5" >
+                    <div class="col-3 py-5 m-2" >
                         <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
                         <h3 class="text-center"> <span class="textaccent fw-semibold"> Chate </span> Your Dreams </h3>
                         <div class="text-center">
