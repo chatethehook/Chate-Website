@@ -11,11 +11,12 @@ let pastContent =
     </div>
     <div class="row p-2">
       <div class="col-3 pb-3">
-        <img
-                      src="media/webinar resources/Swan Yee.webp"
-                      alt="webinar thumbnail"
-                      class="img-fluid rounded pb-2"
-                  />
+        <iframe src="https://www.youtube.com/embed/pM91wTXkhJI?si=P5BtPrK89k7x1KmG" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
         <h2 class="m-0">
           Stepping into UK Universities&nbsp;
           <span class="textaccent"
@@ -26,11 +27,12 @@ let pastContent =
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 12</p>
       </div>
       <div class="col-3 pb-3">
-        <img
-                      src="media/webinar resources/Ko Thet Htoo Naung.webp"
-                      alt="webinar thumbnail"
-                      class="img-fluid rounded pb-2"
-                  />
+        <iframe src="https://www.youtube.com/embed/jmHSHLbcIXc?si=X11wN_gyVV9-_w0i" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
         <h2 class="m-0">
           Transferring from community college to universities&nbsp;
           <span class="textaccent"
