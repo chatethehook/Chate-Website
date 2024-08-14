@@ -206,5 +206,5 @@ iframe {
     padding-right: 10%;
 }
 .carousel-item > .row > div {
-    height: 400px;
+    height: max-content;
 }
