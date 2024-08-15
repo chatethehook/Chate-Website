@@ -1,4 +1,4 @@
-let pastContent = 
+let pastWebinars = 
   `
     <div
         class="justify-content-center p-2 d-flex"
@@ -205,80 +205,177 @@ let pastContent =
       </div>
     </div>
 `;
-let newContent = `
+let newWebinars = `
 <div
-        class="justify-content-center p-2 d-flex"
-        style="padding-right: 50px"
+class="justify-content-center p-2 d-flex"
+style="padding-right: 50px"
+>
+  <h1 class="">
+    Upcoming
+    <span class="textaccent text-center">Webinars</span>
+  </h1>
+</div>
+<div class="row p-2">
+  
+  <div class="col-3 pb-3">
+    <img
+                  src="media/webinar resources/Zoom_background.webp"
+                  alt="webinar thumbnail"
+                  class="img-fluid rounded pb-2"
+              />
+    <h2 class="m-0">
+      Study in the UK&nbsp;
+      <span class="textaccent"
+      ><p class="d-inline m-0 text-right">18/08/2024</p></span
       >
-        <h1 class="">
-          Upcoming
-          <span class="textaccent text-center">Webinars</span>
-        </h1>
-      </div>
-      <div class="row p-2">
-        
-        <div class="col-3 pb-3">
-          <img
-                        src="media/webinar resources/Zoom_background.webp"
-                        alt="webinar thumbnail"
-                        class="img-fluid rounded pb-2"
-                    />
-          <h2 class="m-0">
-            Study in the UK&nbsp;
-            <span class="textaccent"
-            ><p class="d-inline m-0 text-right">18/08/2024</p></span
-            >
-          </h2>
-          <p class="textorange m-0">Rachel Joy @ Yamin Thet</p>
-          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13</p>
-        </div>
+    </h2>
+    <p class="textorange m-0">Rachel Joy @ Yamin Thet</p>
+    <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13</p>
+  </div>
 
-      </div>
+</div>
 `;
+let suTuPyuContent = `
+<div
+class="justify-content-center p-2 d-flex"
+style="padding-right: 50px"
+>
+  <h1 class="">
+    စုတုပြု
+    <span class="textaccent text-center">Video Series</span>
+  </h1>
+</div>
+<div class="row p-2">
+  
+  <div class="col-3 pb-3">
+    <iframe src="https://www.youtube.com/embed/DMwt8OBGQSM?si=hB4YU6UHSmIJIRNZ" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <h2 class="m-0">
+      2024 MIT Essay&nbsp;
+      <span class="textaccent"
+      ><p class="d-inline m-0 text-right">13/08/2024</p></span
+      >
+    </h2>
+    <p class="textorange m-0">Written by <span class="fw-bold">Nyan Lin Htet @ Alex</span></p>
+    <p class="m-1">Read by Phyu Thant Kyi</p>
+    <p class="m-1">"စုတုပြု" Video Series, Episode 1</p>
+  </div>
+
+</div>
+`;
+
 let allwebButton = document.querySelector(`#allweb-button`);
 let newwebButton = document.querySelector(`#newweb-button`);
 let pastwebButton = document.querySelector(`#pastweb-button`);
-let webinarsection = document.querySelector(`#webinar-panel`);
+
+let sutupyuButton = document.querySelector(`#sutupyu-button`);
+
+let eventsSection = document.querySelector(`#events-panel`);
+
+eventsSection.innerHTML = newWebinars + pastWebinars;
+
+// changing content as page reloads
+if (window.location.href.indexOf("AllWebinars") > -1) {
+  console.log(`all is true`);
+  eventsSection.innerHTML = newWebinars + pastWebinars;   
+
+  allwebButton.classList.add(`clicked`);
+  newwebButton.classList.remove(`clicked`);
+  pastwebButton.classList.remove('clicked');
+  sutupyuButton.classList.remove(`clicked`);
+  
+} else if (window.location.href.indexOf("UpcomingWebinars") > -1) {
+  console.log(`new is true`);
+  eventsSection.innerHTML = newWebinars;
+
+  allwebButton.classList.remove(`clicked`);
+  newwebButton.classList.add(`clicked`);
+  pastwebButton.classList.remove('clicked');
+  sutupyuButton.classList.remove(`clicked`);
+
+} else if (window.location.href.indexOf("PastWebinars") > -1) {
+  console.log(`past is true`);
+  eventsSection.innerHTML = pastWebinars;
+
+  allwebButton.classList.remove(`clicked`);
+  newwebButton.classList.remove(`clicked`);
+  pastwebButton.classList.add('clicked');
+  sutupyuButton.classList.remove(`clicked`);
+
+} else if (window.location.href.indexOf("SuTuPyu") > -1) {
+  console.log(`stp is true`);
+  eventsSection.innerHTML = suTuPyuContent;
+
+  allwebButton.classList.remove(`clicked`);
+  newwebButton.classList.remove(`clicked`);
+  pastwebButton.classList.remove('clicked');
+  sutupyuButton.classList.add(`clicked`);
+}
 
 
-webinarsection.innerHTML = newContent + pastContent;
 
-// button changes
-function changeToAll(event) {
-    event.preventDefault();
+// changing content as webinar buttons are clicked
+function changeURLToAll(event) {
+  event.preventDefault();
+  
+  allwebButton.classList.add(`clicked`);
+  newwebButton.classList.remove(`clicked`);
+  pastwebButton.classList.remove('clicked');
+  sutupyuButton.classList.remove(`clicked`);
+  
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Webinars', '/events.html#AllWebinars');
+  eventsSection.innerHTML = newWebinars + pastWebinars;   
+}
+function changeURLToNew(event) {
+  event.preventDefault();
+  
+  allwebButton.classList.remove(`clicked`);
+  newwebButton.classList.add(`clicked`);
+  pastwebButton.classList.remove('clicked');
+  sutupyuButton.classList.remove(`clicked`); 
+
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'New Webinars', '/events.html#UpcomingWebinars');
+  eventsSection.innerHTML = newWebinars;
+}
+function changeURLToPast(event) {
+  event.preventDefault();
+  
+  allwebButton.classList.remove(`clicked`);
+  newwebButton.classList.remove(`clicked`);
+  pastwebButton.classList.add('clicked');
+  sutupyuButton.classList.remove(`clicked`);
+  
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'Past Webinars', '/events.html#PastWebinars');
+  eventsSection.innerHTML = pastWebinars;
+}
+
+// sutupyu button changes
+function changeURLToSuTuPyu(event) {
+  event.preventDefault();
     
-    allwebButton.classList.add(`clicked`);
-    newwebButton.classList.remove(`clicked`);
-    pastwebButton.classList.remove('clicked');
+  allwebButton.classList.remove(`clicked`);
+  newwebButton.classList.remove(`clicked`);
+  pastwebButton.classList.remove('clicked');
+  sutupyuButton.classList.add(`clicked`);
 
-    webinarsection.innerHTML = newContent + pastContent;
+  // editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'SuTuPyu', '/events.html#SuTuPyu');
+  eventsSection.innerHTML = suTuPyuContent;
     
 }
-function changeToNew(event) {
-    event.preventDefault();
-    
-    allwebButton.classList.remove(`clicked`);
-    newwebButton.classList.add(`clicked`);
-    pastwebButton.classList.remove('clicked');
-    
-    webinarsection.innerHTML = newContent;
 
-    
-}
-function changeToPast(event) {
-    event.preventDefault();
-    
-    allwebButton.classList.remove(`clicked`);
-    newwebButton.classList.remove(`clicked`);
-    pastwebButton.classList.add('clicked');
-    
-    webinarsection.innerHTML = pastContent;
+allwebButton.addEventListener(`click`,changeURLToAll);
+newwebButton.addEventListener(`click`,changeURLToNew);
+pastwebButton.addEventListener(`click`,changeURLToPast);
 
-}
-
-allwebButton.addEventListener(`click`,changeToAll);
-newwebButton.addEventListener(`click`,changeToNew);
-pastwebButton.addEventListener(`click`,changeToPast);
+sutupyuButton.addEventListener(`click`,changeURLToSuTuPyu);
 
 
 

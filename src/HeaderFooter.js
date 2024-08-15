@@ -199,7 +199,10 @@ class SpecialFooter extends HTMLElement {
                     <div class="col-3 mt-5" >
                         <br \> 
                         <h3 class="fw-medium"> Events </h3>
-                        <a class="footer-link" href="/events.html"><p class="m-0"> All Webinars </p></a>
+                        <a class="footer-link" target="_self" href="/events.html#AllWebinars"><p class="m-0"> All Webinars </p></a>
+                        <a class="footer-link" target="_self" href="/events.html#UpcomingWebinars"><p class="m-0"> Upcoming Webinars </p></a>
+                        <a class="footer-link" target="_self" href="/events.html#PastWebinars"><p class="m-0"> Past Webinars </p></a>
+                        <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု </p></a>
                         
                     </div>
                 </div>
