@@ -7,7 +7,7 @@ moreButton.addEventListener(`click`,increaseContent);
 
 //api variables
 let key = `AIzaSyCJn0ZPR1n0Eqh4xWzTkL6GUE2qpjEWNwU`;
-let blogID = `1691183849438288523`;
+let blogID = `136726928350551179`;
 let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}`;
 
 //total content on page
