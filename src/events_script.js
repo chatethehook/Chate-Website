@@ -10,6 +10,38 @@ let pastWebinars =
         </h1>
     </div>
     <div class="row p-2">
+        <div class="col-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/GVaAJLHp62A?si=_7GlIJczsuzH9scU" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h2 class="m-0">
+          UWC and US Universities&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">25/08/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">Htet Htet Paing</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 14</p>
+      </div>
+      <div class="col-3 pb-3">
+        <iframe src="https://www.youtube.com/embed/IIGXhLFzaxY?si=HxGiDrSKutbIqL0P" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <h2 class="m-0">
+          Study in the UK&nbsp;
+          <span class="textaccent"
+          ><p class="d-inline m-0 text-right">18/08/2024</p></span
+          >
+        </h2>
+        <p class="textorange m-0">Yamin Thet @ Rachel Joy</p>
+        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13</p>
+      </div>
       <div class="col-3 pb-3">
         <iframe src="https://www.youtube.com/embed/pM91wTXkhJI?si=P5BtPrK89k7x1KmG" 
           class="responsive-iframe" 
@@ -216,7 +248,7 @@ style="padding-right: 50px"
   </h1>
 </div>
 <div class="row p-2">
-  
+  <!--
   <div class="col-3 pb-3">
     <img
                   src="media/webinar resources/Zoom_background.webp"
@@ -224,15 +256,15 @@ style="padding-right: 50px"
                   class="img-fluid rounded pb-2"
               />
     <h2 class="m-0">
-      Study in the UK&nbsp;
+      CommonApp Walkthrough&nbsp;
       <span class="textaccent"
-      ><p class="d-inline m-0 text-right">18/08/2024</p></span
+      ><p class="d-inline m-0 text-right">08/09/2024</p></span
       >
     </h2>
-    <p class="textorange m-0">Rachel Joy @ Yamin Thet</p>
-    <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13</p>
+    <p class="textorange m-0">Aung Khant Paing</p>
+    <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 15</p>
   </div>
-
+  -->
 </div>
 `;
 let suTuPyuContent = `
@@ -264,7 +296,7 @@ style="padding-right: 50px"
     <p class="m-1">Read by Phyu Thant Kyi</p>
     <p class="m-1">"စုတုပြု" Video Series, Episode 1</p>
   </div>
-
+  
 </div>
 `;
 
