@@ -6,7 +6,7 @@ let moreButton = document.querySelector(`#moreContent`);
 moreButton.addEventListener(`click`,increaseContent);
 
 //api variables
-import BLOGGER_API_KEY from "./bloggerapikey";
+import BLOGGER_API_KEY from "./bloggerapikey.js";
 let key = BLOGGER_API_KEY;
 
 let blogID = `136726928350551179`;
