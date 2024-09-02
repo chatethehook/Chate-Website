@@ -6,7 +6,9 @@ let moreButton = document.querySelector(`#moreContent`);
 moreButton.addEventListener(`click`,increaseContent);
 
 //api variables
-let key = `AIzaSyCJn0ZPR1n0Eqh4xWzTkL6GUE2qpjEWNwU`;
+import BLOGGER_API_KEY from "./bloggerapikey";
+let key = BLOGGER_API_KEY;
+
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
 let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=8`;
@@ -181,4 +183,4 @@ function populatePage (response) {
 }
 
 
-axios.get(blogUrl).then(populatePage);
+//axios.get(blogUrl).then(populatePage);
