@@ -183,4 +183,4 @@ function populatePage (response) {
 }
 
 
-//axios.get(blogUrl).then(populatePage);
+axios.get(blogUrl).then(populatePage);
