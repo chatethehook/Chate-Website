@@ -1,4 +1,3 @@
-# Local Netlify folder
 .netlify
 .vscode
 node_modules
