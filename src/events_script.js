@@ -119,7 +119,7 @@ let pastWebinars =
           ><p class="d-inline m-0 text-right">01/07/2024</p></span
           >
         </h2>
-        <p class="textorange m-0">Yoon Wendy Aung</p>
+        <p class="textorange m-0">Yone Waddy Aung</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 8</p>
       </div>
       <div class="col-3 pb-3">
@@ -135,7 +135,7 @@ let pastWebinars =
           ><p class="d-inline m-0 text-right">23/06/2024</p></span
           >
         </h2>
-        <p class="textorange m-0">Wai Yan Wing Aung</p>
+        <p class="textorange m-0">Wai Yan Win Aung</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
       </div>
       <div class="col-3 pb-3">   
