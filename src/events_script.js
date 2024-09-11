@@ -9,7 +9,23 @@ let pastWebinars =
         <span class="textaccent text-center">Webinars</span>
         </h1>
     </div>
+    
     <div class="row p-2">
+        <div class="col-3 pb-3">
+          <img
+                        src="media/webinar resources/Zoom_background.webp"
+                        alt="webinar thumbnail"
+                        class="img-fluid rounded pb-2"
+                    />
+          <h2 class="m-0">
+            CommonApp Walkthrough&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">08/09/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Aung Khant Paing</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 15</p>
+        </div>
         <div class="col-3 pb-3">
           <iframe src="https://www.youtube.com/embed/GVaAJLHp62A?si=_7GlIJczsuzH9scU" 
           class="responsive-iframe" 
@@ -248,7 +264,7 @@ style="padding-right: 50px"
   </h1>
 </div>
 <div class="row p-2">
-  <!--
+<!--
   <div class="col-3 pb-3">
     <img
                   src="media/webinar resources/Zoom_background.webp"
