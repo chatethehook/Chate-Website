@@ -118,6 +118,19 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
+      src="media/members/Allei Mar.webp"
+      alt="Allei Mar"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Allei Mar</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
       src="media/members/Nyan Lin Htet2.webp"
       alt="Nyan Lin Htet"
       class="rounded img-fluid"
@@ -561,6 +574,11 @@ document.addEventListener('DOMContentLoaded', function() {
               ${members[29]}
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[30]}
+            </div>
+          </div>
           
         </div>
         <a
@@ -600,8 +618,7 @@ document.addEventListener('DOMContentLoaded', function() {
               ${members[4]}
               ${members[5]}
               ${members[6]}
-              <div class="col p-3">
-              </div>
+              <div class="col p-3"></div>
             </div>
           </div>
 
@@ -654,8 +671,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="row">
               ${members[28]}
               ${members[29]}
-              <div class="col p-3">
-              </div>
+              ${members[30]}
               <div class="col p-3">
               </div>
             </div>
