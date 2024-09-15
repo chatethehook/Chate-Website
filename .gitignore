@@ -1,0 +1,4 @@
+.netlify
+.vscode
+node_modules
+blogger_api_key.js
