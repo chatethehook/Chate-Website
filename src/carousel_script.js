@@ -105,12 +105,12 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Thu Rein Linn.webp"
-      alt="Thu Rein Linn"
+      src="media/members/Allei Mar.webp"
+      alt="Allei Mar"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Thu Rein Linn</h2>
+    <h2 class="text-center">Allei Mar</h2>
     <p class="text-center">
       <span class="textaccent">Admissions Advisor</span>
       <br />
@@ -118,12 +118,12 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Allei Mar.webp"
-      alt="Allei Mar"
+      src="media/members/Thu Rein Linn.webp"
+      alt="Thu Rein Linn"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Allei Mar</h2>
+    <h2 class="text-center">Thu Rein Linn</h2>
     <p class="text-center">
       <span class="textaccent">Admissions Advisor</span>
       <br />
@@ -466,6 +466,11 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="carousel-item">
             <div class="row">
+              ${members[7]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
               ${members[8]}
             </div>
           </div>
@@ -577,6 +582,11 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="carousel-item">
             <div class="row">
               ${members[30]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[31]}
             </div>
           </div>
           
@@ -618,7 +628,7 @@ document.addEventListener('DOMContentLoaded', function() {
               ${members[4]}
               ${members[5]}
               ${members[6]}
-              <div class="col p-3"></div>
+              ${members[7]}
             </div>
           </div>
 
@@ -672,8 +682,7 @@ document.addEventListener('DOMContentLoaded', function() {
               ${members[28]}
               ${members[29]}
               ${members[30]}
-              <div class="col p-3">
-              </div>
+              ${members[31]}
             </div>
           </div>
 
