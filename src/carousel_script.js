@@ -114,6 +114,7 @@ const members = [
     <p class="text-center">
       <span class="textaccent">Admissions Advisor</span>
       <br />
+      Berea College '27
     </p>
   </div>`,
   `<div class="col p-3">
@@ -127,6 +128,7 @@ const members = [
     <p class="text-center">
       <span class="textaccent">Admissions Advisor</span>
       <br />
+      Drexel University '28
     </p>
   </div>`,
   `<div class="col p-3">
