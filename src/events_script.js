@@ -1,5 +1,4 @@
-let pastWebinars = 
-  `
+let pastWebinars = `
     <div
         class="justify-content-center p-2 d-flex"
         style="padding-right: 50px"
@@ -12,11 +11,12 @@ let pastWebinars =
     
     <div class="row p-2">
         <div class="col-3 pb-3">
-          <img
-                        src="media/webinar resources/Zoom_background.webp"
-                        alt="webinar thumbnail"
-                        class="img-fluid rounded pb-2"
-                    />
+          <iframe src="https://www.youtube.com/embed/RM1r0l_KSGw?si=W9U1GGc-WNdHaeSE" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
           <h2 class="m-0">
             CommonApp Walkthrough&nbsp;
             <span class="textaccent"
@@ -28,11 +28,11 @@ let pastWebinars =
         </div>
         <div class="col-3 pb-3">
           <iframe src="https://www.youtube.com/embed/GVaAJLHp62A?si=_7GlIJczsuzH9scU" 
-          class="responsive-iframe" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
         <h2 class="m-0">
           UWC and US Universities&nbsp;
           <span class="textaccent"
@@ -295,6 +295,24 @@ style="padding-right: 50px"
 </div>
 <div class="row p-2">
   
+  <div class="col-3 pb-3">
+    <iframe src="https://www.youtube.com/embed/vbB0sdRjTQ4?si=8RONA5K3fRMd4ueu" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <h2 class="m-0">
+      2024 Dartmouth Essay&nbsp;
+      <span class="textaccent"
+      ><p class="d-inline m-0 text-right">16/09/2024</p></span
+      >
+    </h2>
+    <p class="textorange m-0">Written by <span class="fw-bold">Wai Yan Win Aung</span></p>
+    <p class="m-1">Read by Myat Hmu Thwin</p>
+    <p class="m-1">"စုတုပြု" Video Series, Episode 2</p>
+  </div>
+
   <div class="col-3 pb-3">
     <iframe src="https://www.youtube.com/embed/DMwt8OBGQSM?si=hB4YU6UHSmIJIRNZ" 
           class="responsive-iframe" 
