@@ -3,11 +3,13 @@
 let row = document.querySelector(`#row`)
 //more
 let moreButton = document.querySelector(`#moreContent`);
+let moreSection = document.querySelector(`#moreSection`);
 moreButton.addEventListener(`click`,increaseContent);
 
 //api variables
 import BLOGGER_API_KEY from "./bloggerapikey.js";
 let key = BLOGGER_API_KEY;
+
 
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
@@ -18,7 +20,9 @@ let cards = ``;
 let data = [];
 let count = 0;
 function increaseContent (event) {
+
   axios.get(blogUrl).then(populatePage);
+  
 }
 
 
@@ -39,7 +43,8 @@ function populatePage (response) {
     nextPageToken = response.data.nextPageToken;
     blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=8&pageToken=${nextPageToken}`;
   } else {
-    null;
+    nextPageToken = `end`;
+    moreSection.innerHTML = ``;
   }
   
     for (let i = count; i< data.length; i++) {
@@ -150,13 +155,15 @@ function populatePage (response) {
     cardLabels.innerHTML = labels;
     let imgLink = ``;
 
-    if (data[i].content.indexOf(`.png`) != -1){
-      imgLink = data[i].content.substring(data[i].content.indexOf(`https`),data[i].content.indexOf(`.png`)+4);
-    } else if (data[i].content.indexOf(`.jpg`) != -1) {
-      imgLink = data[i].content.substring(data[i].content.indexOf(`https`),data[i].content.indexOf(`.jpg`)+4);
-    } else if (data[i].content.indexOf(`.jpeg`) != -1) {
-      imgLink = data[i].content.substring(data[i].content.indexOf(`https`),data[i].content.indexOf(`.jpeg`)+5);
-    }
+    /*
+    if (data[i].content.indexOf(`.png"`) != -1){
+      imgLink = data[i].content.substring(data[i].content.indexOf(`https`),data[i].content.indexOf(`.png"`)+4);
+    } else if (data[i].content.indexOf(`.jpg"`) != -1) {
+      imgLink = data[i].content.substring(data[i].content.indexOf(`<a href="https`)+9,data[i].content.indexOf(`.jpg"`)+4);
+    } 
+    */
+   
+    imgLink= data[i].content.substring(data[i].content.indexOf(`https`), data[i].content.indexOf(`.jpg"`)+4);
     console.log(`image link:` + imgLink);
 
     cardImage.src = imgLink;
