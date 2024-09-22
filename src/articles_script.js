@@ -35,7 +35,7 @@ function populatePage (response) {
 
   //prepping for "more" button
   if (response.data.nextPageToken != null ){
-    console.log(response.data.nextPageToken);
+    console.log(`next page token:` + response.data.nextPageToken);
     nextPageToken = response.data.nextPageToken;
     blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=8&pageToken=${nextPageToken}`;
   } else {
@@ -157,6 +157,8 @@ function populatePage (response) {
     } else if (data[i].content.indexOf(`.jpeg`) != -1) {
       imgLink = data[i].content.substring(data[i].content.indexOf(`https`),data[i].content.indexOf(`.jpeg`)+5);
     }
+    console.log(`image link:` + imgLink);
+
     cardImage.src = imgLink;
 
     //MODAL BULLSHIT
