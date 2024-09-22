@@ -109,7 +109,7 @@ function populatePage (response) {
                   ></button>
                 </div>
                 <span
-                  class="fw-semibold m-2 text-body-secondary"
+                  class="fw-semibold m-2 text-body-secondary textaccent"
                   id="${modaldate}"
                 >
                   1/1/1
