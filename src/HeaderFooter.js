@@ -210,6 +210,13 @@ class SpecialFooter extends HTMLElement {
                         <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု </p></a>
                         
                     </div>
+                    <div class="col-3 mt-5" >
+                        <br \> 
+                        <h3 class="fw-medium"> Articles </h3>
+                        <a class="footer-link" target="_self" href="/articles"><p class="m-0"> All Articles </p></a>
+                        
+                        
+                    </div>
                 </div>
             </div>
         `
