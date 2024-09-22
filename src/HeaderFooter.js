@@ -158,6 +158,10 @@ class SpecialHeader extends HTMLElement {
                     <a class="nav-link" href="/events.html"
                         ><h3 class="header-links">Events</h3></a
                     >
+                    
+                    <a class="nav-link" href="/articles.html"
+                    ><h3 class= "header-links">Articles</h3></a
+                    >
                     </div>
                 </div>
                 <div>
