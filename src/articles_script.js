@@ -17,7 +17,6 @@ moreButton.addEventListener(`click`,increaseContent);
 import BLOGGER_API_KEY from "./bloggerapikey.js";
 let key = BLOGGER_API_KEY;
 
-
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
 let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=32`;
