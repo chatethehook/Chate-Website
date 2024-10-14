@@ -3,12 +3,10 @@ let pastWebinars = `
         class="justify-content-center p-2 d-flex"
         style="padding-right: 50px"
     >
-        <!--
         <h1 class="">
         Past
         <span class="textaccent text-center">Webinars</span>
         </h1>
-        -->
     </div>
     
     <div class="row p-2">
@@ -259,13 +257,11 @@ let newWebinars = `
 <div
 class="justify-content-center p-2 d-flex"
 style="padding-right: 50px"
-> 
-  <!--
+>
   <h1 class="">
     Upcoming
     <span class="textaccent text-center">Webinars</span>
   </h1>
-  -->
 </div>
 <div class="row p-2">
 <!--
