@@ -14,9 +14,8 @@ let moreSection = document.querySelector(`#moreSection`);
 moreButton.addEventListener(`click`,increaseContent);
 
 //api variables
-//import BLOGGER_API_KEY from "./bloggerapikey.js";
-//let key = BLOGGER_API_KEY;
-let key = 'AIzaSyCJn0ZPR1n0Eqh4xWzTkL6GUE2qpjEWNwU';
+import BLOGGER_API_KEY from "./bloggerapikey.js";
+let key = BLOGGER_API_KEY;
 
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
@@ -33,7 +32,7 @@ let filterTwo = [`Application Requirements`];
 let filterThree = [`About ချိတ် - The Hook`];
 let filterFour = [`Webinar Announcement`];
 let desiredContent = [filterOne, filterTwo, filterThree, filterFour];
-let desiredFilter = 0; 
+let desiredFilter = -1; 
 
 // reset page
 function resetPage(event) {
