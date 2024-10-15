@@ -3,10 +3,17 @@ let pastWebinars = `
         class="justify-content-center p-2 d-flex"
         style="padding-right: 50px"
     >
-        <h1 class="">
+      <!--  
+      <h1 class="">
         Past
         <span class="textaccent text-center">Webinars</span>
-        </h1>
+      </h1>
+      -->
+      <h1 class="text-center">
+        All
+        <span class="textaccent text-center">Webinars</span>
+      </h1>
+        
     </div>
     
     <div class="row p-2">
@@ -258,10 +265,12 @@ let newWebinars = `
 class="justify-content-center p-2 d-flex"
 style="padding-right: 50px"
 >
+  <!--
   <h1 class="">
     Upcoming
     <span class="textaccent text-center">Webinars</span>
   </h1>
+  -->
 </div>
 <div class="row p-2">
 <!--
@@ -335,8 +344,8 @@ style="padding-right: 50px"
 `;
 
 let allwebButton = document.querySelector(`#allweb-button`);
-let newwebButton = document.querySelector(`#newweb-button`);
-let pastwebButton = document.querySelector(`#pastweb-button`);
+//let newwebButton = document.querySelector(`#newweb-button`);
+//let pastwebButton = document.querySelector(`#pastweb-button`);
 
 let sutupyuButton = document.querySelector(`#sutupyu-button`);
 
@@ -350,10 +359,10 @@ if (window.location.href.indexOf("AllWebinars") > -1) {
   eventsSection.innerHTML = newWebinars + pastWebinars;   
 
   allwebButton.classList.add(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.remove(`clicked`);
-  
+  /*
 } else if (window.location.href.indexOf("UpcomingWebinars") > -1) {
   console.log(`new is true`);
   eventsSection.innerHTML = newWebinars;
@@ -371,14 +380,14 @@ if (window.location.href.indexOf("AllWebinars") > -1) {
   newwebButton.classList.remove(`clicked`);
   pastwebButton.classList.add('clicked');
   sutupyuButton.classList.remove(`clicked`);
-
+*/
 } else if (window.location.href.indexOf("SuTuPyu") > -1) {
   console.log(`stp is true`);
   eventsSection.innerHTML = suTuPyuContent;
 
   allwebButton.classList.remove(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.add(`clicked`);
 }
 
@@ -389,14 +398,14 @@ function changeURLToAll(event) {
   event.preventDefault();
   
   allwebButton.classList.add(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.remove(`clicked`);
   
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Webinars', '/events.html#AllWebinars');
   eventsSection.innerHTML = newWebinars + pastWebinars;   
-}
+} /*
 function changeURLToNew(event) {
   event.preventDefault();
   
@@ -421,14 +430,14 @@ function changeURLToPast(event) {
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'Past Webinars', '/events.html#PastWebinars');
   eventsSection.innerHTML = pastWebinars;
 }
-
+*/
 // sutupyu button changes
 function changeURLToSuTuPyu(event) {
   event.preventDefault();
     
   allwebButton.classList.remove(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.add(`clicked`);
 
   // editing url
@@ -438,8 +447,8 @@ function changeURLToSuTuPyu(event) {
 }
 
 allwebButton.addEventListener(`click`,changeURLToAll);
-newwebButton.addEventListener(`click`,changeURLToNew);
-pastwebButton.addEventListener(`click`,changeURLToPast);
+//newwebButton.addEventListener(`click`,changeURLToNew);
+//pastwebButton.addEventListener(`click`,changeURLToPast);
 
 sutupyuButton.addEventListener(`click`,changeURLToSuTuPyu);
 
