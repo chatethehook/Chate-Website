@@ -205,9 +205,11 @@ class SpecialFooter extends HTMLElement {
                         <br \> 
                         <h3 class="fw-medium"> Events </h3>
                         <a class="footer-link" target="_self" href="/events.html#AllWebinars"><p class="m-0"> All Webinars </p></a>
+                        <!--
                         <a class="footer-link" target="_self" href="/events.html#UpcomingWebinars"><p class="m-0"> Upcoming Webinars </p></a>
                         <a class="footer-link" target="_self" href="/events.html#PastWebinars"><p class="m-0"> Past Webinars </p></a>
-                        <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု </p></a>
+                        -->
+                        <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
                         
                     </div>
                     <div class="col-3 mt-5" >
@@ -221,6 +223,17 @@ class SpecialFooter extends HTMLElement {
                         
                         
                     </div>
+                </div>
+                <div class="mx-5">
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                        <a property="dct:title" rel="cc:attributionURL" href="https://chatethehook.com/">ချိတ် - The Hook Official Website</a> by 
+                        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://chatethehook.com/">ချိတ် - The Hook</a> is licensed under 
+                        <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0
+                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                        </a>
+                    </p> 
                 </div>
             </div>
         `

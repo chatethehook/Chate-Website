@@ -3,13 +3,37 @@ let pastWebinars = `
         class="justify-content-center p-2 d-flex"
         style="padding-right: 50px"
     >
-        <h1 class="">
+      <!--  
+      <h1 class="">
         Past
         <span class="textaccent text-center">Webinars</span>
-        </h1>
+      </h1>
+      -->
+      <h1 class="text-center">
+        All
+        <span class="textaccent text-center">Webinars</span>
+      </h1>
+        
     </div>
     
     <div class="row p-2">
+      
+        <div class="col-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/ujOhp7wzUF4?si=e9uIPtSWU_z5PVyl" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            UCAS Walkthrough&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">21/09/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Julia Moe Chan Myae</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 16</p>
+        </div>
         <div class="col-3 pb-3">
           <iframe src="https://www.youtube.com/embed/RM1r0l_KSGw?si=W9U1GGc-WNdHaeSE" 
             class="responsive-iframe" 
@@ -258,10 +282,12 @@ let newWebinars = `
 class="justify-content-center p-2 d-flex"
 style="padding-right: 50px"
 >
+  <!--
   <h1 class="">
     Upcoming
     <span class="textaccent text-center">Webinars</span>
   </h1>
+  -->
 </div>
 <div class="row p-2">
 <!--
@@ -296,6 +322,24 @@ style="padding-right: 50px"
 <div class="row p-2">
   
   <div class="col-3 pb-3">
+    <iframe src="https://www.youtube.com/embed/BVY2fMzcBvo?si=8BNFODatn4jB2DPm" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <h2 class="m-0">
+      2024 Swarthmore Accepted Essay&nbsp;
+      <span class="textaccent"
+      ><p class="d-inline m-0 text-right">08/10/2024</p></span
+      >
+    </h2>
+    <p class="textorange m-0">Written by <span class="fw-bold">Sai Nyi Bhone Htut</span></p>
+    <p class="m-1">Read by Phyu Thant Kyi</p>
+    <p class="m-1">"စုတုပြု" Video Series, Episode 3</p>
+  </div>
+
+  <div class="col-3 pb-3">
     <iframe src="https://www.youtube.com/embed/vbB0sdRjTQ4?si=8RONA5K3fRMd4ueu" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -303,7 +347,7 @@ style="padding-right: 50px"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
     <h2 class="m-0">
-      2024 Dartmouth Essay&nbsp;
+      2024 Dartmouth Accepted Essay&nbsp;
       <span class="textaccent"
       ><p class="d-inline m-0 text-right">16/09/2024</p></span
       >
@@ -321,7 +365,7 @@ style="padding-right: 50px"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
     <h2 class="m-0">
-      2024 MIT Essay&nbsp;
+      2024 MIT Accepted Essay&nbsp;
       <span class="textaccent"
       ><p class="d-inline m-0 text-right">13/08/2024</p></span
       >
@@ -335,8 +379,8 @@ style="padding-right: 50px"
 `;
 
 let allwebButton = document.querySelector(`#allweb-button`);
-let newwebButton = document.querySelector(`#newweb-button`);
-let pastwebButton = document.querySelector(`#pastweb-button`);
+//let newwebButton = document.querySelector(`#newweb-button`);
+//let pastwebButton = document.querySelector(`#pastweb-button`);
 
 let sutupyuButton = document.querySelector(`#sutupyu-button`);
 
@@ -350,10 +394,10 @@ if (window.location.href.indexOf("AllWebinars") > -1) {
   eventsSection.innerHTML = newWebinars + pastWebinars;   
 
   allwebButton.classList.add(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.remove(`clicked`);
-  
+  /*
 } else if (window.location.href.indexOf("UpcomingWebinars") > -1) {
   console.log(`new is true`);
   eventsSection.innerHTML = newWebinars;
@@ -371,14 +415,14 @@ if (window.location.href.indexOf("AllWebinars") > -1) {
   newwebButton.classList.remove(`clicked`);
   pastwebButton.classList.add('clicked');
   sutupyuButton.classList.remove(`clicked`);
-
+*/
 } else if (window.location.href.indexOf("SuTuPyu") > -1) {
   console.log(`stp is true`);
   eventsSection.innerHTML = suTuPyuContent;
 
   allwebButton.classList.remove(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.add(`clicked`);
 }
 
@@ -389,14 +433,14 @@ function changeURLToAll(event) {
   event.preventDefault();
   
   allwebButton.classList.add(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.remove(`clicked`);
   
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Webinars', '/events.html#AllWebinars');
   eventsSection.innerHTML = newWebinars + pastWebinars;   
-}
+} /*
 function changeURLToNew(event) {
   event.preventDefault();
   
@@ -421,14 +465,14 @@ function changeURLToPast(event) {
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'Past Webinars', '/events.html#PastWebinars');
   eventsSection.innerHTML = pastWebinars;
 }
-
+*/
 // sutupyu button changes
 function changeURLToSuTuPyu(event) {
   event.preventDefault();
     
   allwebButton.classList.remove(`clicked`);
-  newwebButton.classList.remove(`clicked`);
-  pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.add(`clicked`);
 
   // editing url
@@ -438,8 +482,8 @@ function changeURLToSuTuPyu(event) {
 }
 
 allwebButton.addEventListener(`click`,changeURLToAll);
-newwebButton.addEventListener(`click`,changeURLToNew);
-pastwebButton.addEventListener(`click`,changeURLToPast);
+//newwebButton.addEventListener(`click`,changeURLToNew);
+//pastwebButton.addEventListener(`click`,changeURLToPast);
 
 sutupyuButton.addEventListener(`click`,changeURLToSuTuPyu);
 
