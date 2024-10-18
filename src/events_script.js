@@ -17,6 +17,23 @@ let pastWebinars = `
     </div>
     
     <div class="row p-2">
+      
+        <div class="col-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/ujOhp7wzUF4?si=e9uIPtSWU_z5PVyl" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            UCAS Walkthrough&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">21/09/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Julia Moe Chan Myae</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 16</p>
+        </div>
         <div class="col-3 pb-3">
           <iframe src="https://www.youtube.com/embed/RM1r0l_KSGw?si=W9U1GGc-WNdHaeSE" 
             class="responsive-iframe" 
@@ -305,6 +322,24 @@ style="padding-right: 50px"
 <div class="row p-2">
   
   <div class="col-3 pb-3">
+    <iframe src="https://www.youtube.com/embed/BVY2fMzcBvo?si=8BNFODatn4jB2DPm" 
+          class="responsive-iframe" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <h2 class="m-0">
+      2024 Swarthmore Accepted Essay&nbsp;
+      <span class="textaccent"
+      ><p class="d-inline m-0 text-right">08/10/2024</p></span
+      >
+    </h2>
+    <p class="textorange m-0">Written by <span class="fw-bold">Sai Nyi Bhone Htut</span></p>
+    <p class="m-1">Read by Phyu Thant Kyi</p>
+    <p class="m-1">"စုတုပြု" Video Series, Episode 3</p>
+  </div>
+
+  <div class="col-3 pb-3">
     <iframe src="https://www.youtube.com/embed/vbB0sdRjTQ4?si=8RONA5K3fRMd4ueu" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -312,7 +347,7 @@ style="padding-right: 50px"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
     <h2 class="m-0">
-      2024 Dartmouth Essay&nbsp;
+      2024 Dartmouth Accepted Essay&nbsp;
       <span class="textaccent"
       ><p class="d-inline m-0 text-right">16/09/2024</p></span
       >
@@ -330,7 +365,7 @@ style="padding-right: 50px"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
     <h2 class="m-0">
-      2024 MIT Essay&nbsp;
+      2024 MIT Accepted Essay&nbsp;
       <span class="textaccent"
       ><p class="d-inline m-0 text-right">13/08/2024</p></span
       >
