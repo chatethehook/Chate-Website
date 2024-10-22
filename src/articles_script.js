@@ -8,6 +8,7 @@ let filterOneButton = document.querySelector(`#filterOne-button`);
 let filterTwoButton = document.querySelector(`#filterTwo-button`);
 let filterThreeButton = document.querySelector(`#filterThree-button`);
 let filterFourButton = document.querySelector(`#filterFour-button`);
+let filterFiveButton = document.querySelector(`#filterFive-button`);
 //more button
 let moreButton = document.querySelector(`#moreContent`);
 let moreSection = document.querySelector(`#moreSection`);
@@ -19,7 +20,7 @@ let key = BLOGGER_API_KEY;
 
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
-let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=32`;
+let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=40`;
 
 //content on page
 let cards = ``;
@@ -29,9 +30,10 @@ let count = 0;
 //filters 
 let filterOne = [`Types of Colleges`, `Application Requirements`];
 let filterTwo = [`Application Requirements`];
-let filterThree = [`About ချိတ် - The Hook`];
-let filterFour = [`Webinar Announcement`];
-let desiredContent = [filterOne, filterTwo, filterThree, filterFour];
+let filterThree = [`Types of Colleges`];
+let filterFour = [`About ချိတ် - The Hook`];
+let filterFive = [`Webinar Announcement`];
+let desiredContent = [filterOne, filterTwo, filterThree, filterFour, filterFive];
 let desiredFilter = -1; 
 
 // reset page
@@ -52,7 +54,7 @@ function resetPage(event) {
   cards = ``;
   data = [];
   count = 0;
-  blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=32`;
+  blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=40`;
   nextPageToken = ``;
   moreButton.disabled = false;
 
@@ -103,7 +105,7 @@ function populatePage (response) {
   console.log(`next page token:` + response.data.nextPageToken);
   if (response.data.nextPageToken){
     nextPageToken = response.data.nextPageToken;
-    blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=32&pageToken=${nextPageToken}`;
+    blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=30&pageToken=${nextPageToken}`;
     
   
   } else {
@@ -127,7 +129,7 @@ function populatePage (response) {
       let modallabels = `modallabels`+i;
       
       let cardSkel = 
-        `<div class="card border-light article m-0 mx-auto" style="width: 18rem">
+        `<div class="card border-0 article m-0 mx-1 " style="width: 17rem">
           <img
             src="..."
             class="card-img-top rounded mt-2 mb-0"
@@ -271,6 +273,7 @@ function changeURLToAllArticles(event) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
    
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Articles', '/articles.html#AllArticles');
@@ -286,6 +289,7 @@ function changeURLToFilterOne(event) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
   
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterOne', '/articles.html#FilterOne');
@@ -301,6 +305,7 @@ function changeURLToFilterTwo(event) {
   filterTwoButton.classList.add('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
    
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterTwo', '/articles.html#FilterTwo');
@@ -316,6 +321,7 @@ function changeURLToFilterThree(event) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.add('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
    
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterThree', '/articles.html#FilterThree');
@@ -331,12 +337,29 @@ function changeURLToFilterFour(event) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.add('clicked');
+  filterFiveButton.classList.remove('clicked');
    
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterFour', '/articles.html#FilterFour');
   
   //changing content to desired
   desiredFilter = 3;
+}
+function changeURLToFilterFive(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.add('clicked');
+   
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterFive', '/articles.html#FilterFive');
+  
+  //changing content to desired
+  desiredFilter = 4;
 }
 
 // changing content as page reloads
@@ -349,6 +372,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
 
   //changing content to desired
   desiredFilter = -1;
@@ -363,6 +387,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
 
   //changing content to desired
   desiredFilter = 0;
@@ -377,6 +402,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.add('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
 
   //changing content to desired
   desiredFilter = 1;
@@ -391,6 +417,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.add('clicked');
   filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
 
   //changing content to desired
   desiredFilter = 2;
@@ -405,9 +432,24 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove('clicked');
   filterThreeButton.classList.remove('clicked');
   filterFourButton.classList.add('clicked');
+  filterFiveButton.classList.remove('clicked');
 
   //changing content to desired
   desiredFilter = 3;
+
+  resetPage();
+} else if (window.location.href.indexOf("FilterFive") > -1) {
+  console.log(`filter Five is true`);
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.add('clicked');
+
+  //changing content to desired
+  desiredFilter = 4;
 
   resetPage();
 }
@@ -441,6 +483,12 @@ filterThreeButton.addEventListener(`click`, () => {
 
 filterFourButton.addEventListener(`click`, () => {
   changeURLToFilterFour();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
+filterFiveButton.addEventListener(`click`, () => {
+  changeURLToFilterFive();
   resetPage();
   axios.get(blogUrl).then(populatePage);;
 });
