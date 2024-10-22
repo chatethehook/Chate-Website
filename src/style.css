@@ -26,14 +26,14 @@ body {
     color: var(--primary-color);
 }
 .textaccent {
-    color: var(--text-accent);
+    color: var(--text-accent) !important;
 }
 .textwhite {
     color: var(--bg-color);
 }
 
 .textorange {
-    color:#D68321;
+    color:#D68321 !important;
 }
 .background-gray {
     background-color: var(--bg-color);

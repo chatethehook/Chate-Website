@@ -18,7 +18,7 @@ let pastWebinars = `
     
     <div class="row p-2">
       
-        <div class="col-3 pb-3">
+        <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
           <iframe src="https://www.youtube.com/embed/ujOhp7wzUF4?si=e9uIPtSWU_z5PVyl" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -34,7 +34,7 @@ let pastWebinars = `
           <p class="textorange m-0">Julia Moe Chan Myae</p>
           <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 16</p>
         </div>
-        <div class="col-3 pb-3">
+        <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
           <iframe src="https://www.youtube.com/embed/RM1r0l_KSGw?si=W9U1GGc-WNdHaeSE" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -50,7 +50,7 @@ let pastWebinars = `
           <p class="textorange m-0">Aung Khant Paing</p>
           <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 15</p>
         </div>
-        <div class="col-3 pb-3">
+        <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
           <iframe src="https://www.youtube.com/embed/GVaAJLHp62A?si=_7GlIJczsuzH9scU" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -66,7 +66,7 @@ let pastWebinars = `
         <p class="textorange m-0">Htet Htet Paing</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 14</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/IIGXhLFzaxY?si=HxGiDrSKutbIqL0P" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -82,7 +82,7 @@ let pastWebinars = `
         <p class="textorange m-0">Yamin Thet @ Rachel Joy</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/pM91wTXkhJI?si=P5BtPrK89k7x1KmG" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -98,7 +98,7 @@ let pastWebinars = `
         <p class="textorange m-0">Swan Yee Htun Wah</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 12</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/jmHSHLbcIXc?si=X11wN_gyVV9-_w0i" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -114,7 +114,7 @@ let pastWebinars = `
         <p class="textorange m-0">Thet Htoo Naung</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 11</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/xn7rv-xiWAM?si=F3xTD-WwxZeaaeui" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -130,7 +130,7 @@ let pastWebinars = `
         <p class="textorange m-0">Allei Mar</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 10</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/C60d95ecPMg?si=mHv0uHckFzfwtFsD" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -146,7 +146,7 @@ let pastWebinars = `
         <p class="textorange m-0">John Ten Khant</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 9</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/I-2qd55aBeA?si=S866eQe4PZDAxCO0" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -162,7 +162,7 @@ let pastWebinars = `
         <p class="textorange m-0">Yone Waddy Aung</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 8</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/sNl1rv3X39k?si=G72gCtCq4qutrH0q" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -178,7 +178,7 @@ let pastWebinars = `
         <p class="textorange m-0">Wai Yan Win Aung</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7</p>
       </div>
-      <div class="col-3 pb-3">   
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">   
         <iframe src="https://www.youtube.com/embed/pLIlUeuaELw?si=8Mu7mfcsoH7Z6XgK" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -196,7 +196,7 @@ let pastWebinars = `
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
 
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <img
           src="media/webinar resources/whatarecollegeslookingfor.webp"
           alt="webinar thumbnail"
@@ -211,7 +211,7 @@ let pastWebinars = `
         <p class="textorange m-0">Min Thaik Aung Saw</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 5</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -228,7 +228,7 @@ let pastWebinars = `
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 4</p>
       
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/YOwYQ56EZaA?si=1nCk3neoXNqL4by9" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -244,7 +244,7 @@ let pastWebinars = `
         <p class="textorange m-0">Yin Min Thant</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 3</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/HRfzWAFDMQk?si=Yg7OvPHK8tSN_lju" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -260,7 +260,7 @@ let pastWebinars = `
         <p class="textorange m-0">Sai Nyi Bhone Htut, Myat Nadi Kyaw</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 2</p>
       </div>
-      <div class="col-3 pb-3">
+      <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <img
             src="media/webinar resources/ASK THE HOOK.webp"
             alt="webinar thumbnail"
@@ -291,7 +291,7 @@ style="padding-right: 50px"
 </div>
 <div class="row p-2">
 <!--
-  <div class="col-3 pb-3">
+  <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
     <img
                   src="media/webinar resources/Zoom_background.webp"
                   alt="webinar thumbnail"
@@ -321,7 +321,7 @@ style="padding-right: 50px"
 </div>
 <div class="row p-2">
   
-  <div class="col-3 pb-3">
+  <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
     <iframe src="https://www.youtube.com/embed/BVY2fMzcBvo?si=8BNFODatn4jB2DPm" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -339,7 +339,7 @@ style="padding-right: 50px"
     <p class="m-1">"စုတုပြု" Video Series, Episode 3</p>
   </div>
 
-  <div class="col-3 pb-3">
+  <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
     <iframe src="https://www.youtube.com/embed/vbB0sdRjTQ4?si=8RONA5K3fRMd4ueu" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -357,7 +357,7 @@ style="padding-right: 50px"
     <p class="m-1">"စုတုပြု" Video Series, Episode 2</p>
   </div>
 
-  <div class="col-3 pb-3">
+  <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
     <iframe src="https://www.youtube.com/embed/DMwt8OBGQSM?si=hB4YU6UHSmIJIRNZ" 
           class="responsive-iframe" 
           title="YouTube video player" frameborder="0" 
@@ -379,8 +379,8 @@ style="padding-right: 50px"
 `;
 
 let allwebButton = document.querySelector(`#allweb-button`);
-//let newwebButton = document.querySelector(`#newweb-button`);
-//let pastwebButton = document.querySelector(`#pastweb-button`);
+////let newwebButton = document.querySelector(`#newweb-button`);
+////let pastwebButton = document.querySelector(`#pastweb-button`);
 
 let sutupyuButton = document.querySelector(`#sutupyu-button`);
 
@@ -396,7 +396,10 @@ if (window.location.href.indexOf("AllWebinars") > -1) {
   allwebButton.classList.add(`clicked`);
   //newwebButton.classList.remove(`clicked`);
   //pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.remove(`clicked`);
+  /*
   /*
 } else if (window.location.href.indexOf("UpcomingWebinars") > -1) {
   console.log(`new is true`);
@@ -423,6 +426,8 @@ if (window.location.href.indexOf("AllWebinars") > -1) {
   allwebButton.classList.remove(`clicked`);
   //newwebButton.classList.remove(`clicked`);
   //pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.add(`clicked`);
 }
 
@@ -435,12 +440,14 @@ function changeURLToAll(event) {
   allwebButton.classList.add(`clicked`);
   //newwebButton.classList.remove(`clicked`);
   //pastwebButton.classList.remove('clicked');
+  //newwebButton.classList.remove(`clicked`);
+  //pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.remove(`clicked`);
   
   //editing url
   window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Webinars', '/events.html#AllWebinars');
   eventsSection.innerHTML = newWebinars + pastWebinars;   
-} /*
+} /* /*
 function changeURLToNew(event) {
   event.preventDefault();
   
@@ -471,8 +478,8 @@ function changeURLToSuTuPyu(event) {
   event.preventDefault();
     
   allwebButton.classList.remove(`clicked`);
-  //newwebButton.classList.remove(`clicked`);
-  //pastwebButton.classList.remove('clicked');
+  ////newwebButton.classList.remove(`clicked`);
+  ////pastwebButton.classList.remove('clicked');
   sutupyuButton.classList.add(`clicked`);
 
   // editing url
@@ -482,8 +489,8 @@ function changeURLToSuTuPyu(event) {
 }
 
 allwebButton.addEventListener(`click`,changeURLToAll);
-//newwebButton.addEventListener(`click`,changeURLToNew);
-//pastwebButton.addEventListener(`click`,changeURLToPast);
+////newwebButton.addEventListener(`click`,changeURLToNew);
+////pastwebButton.addEventListener(`click`,changeURLToPast);
 
 sutupyuButton.addEventListener(`click`,changeURLToSuTuPyu);
 
