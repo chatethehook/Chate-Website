@@ -19,6 +19,22 @@ let pastWebinars = `
     <div class="row p-2">
       
         <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
+          <iframe src="https://www.youtube.com/embed/BxII9HokTxY?si=izXiYOxEobYlcf4R" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Applying to Russell Group UK Universities for Masters' Degree with Chevening Scholarship&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">13/10/2024</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Phyo Thiri</p>
+          <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 17</p>
+        </div>
+        <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
           <iframe src="https://www.youtube.com/embed/ujOhp7wzUF4?si=e9uIPtSWU_z5PVyl" 
             class="responsive-iframe" 
             title="YouTube video player" frameborder="0" 
@@ -310,72 +326,72 @@ style="padding-right: 50px"
 </div>
 `;
 let suTuPyuContent = `
-<div
-class="justify-content-center p-2 d-flex"
-style="padding-right: 50px"
->
-  <h1 class="">
-    စုတုပြု
-    <span class="textaccent text-center">Video Series</span>
-  </h1>
-</div>
-<div class="row p-2">
-  
-  <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
-    <iframe src="https://www.youtube.com/embed/BVY2fMzcBvo?si=8BNFODatn4jB2DPm" 
-          class="responsive-iframe" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-    <h2 class="m-0">
-      2024 Swarthmore Accepted Essay&nbsp;
-      <span class="textaccent"
-      ><p class="d-inline m-0 text-right">08/10/2024</p></span
-      >
-    </h2>
-    <p class="textorange m-0">Written by <span class="fw-bold">Sai Nyi Bhone Htut</span></p>
-    <p class="m-1">Read by Phyu Thant Kyi</p>
-    <p class="m-1">"စုတုပြု" Video Series, Episode 3</p>
+  <div
+  class="justify-content-center p-2 d-flex"
+  style="padding-right: 50px"
+  >
+    <h1 class="">
+      စုတုပြု
+      <span class="textaccent text-center">Video Series</span>
+    </h1>
   </div>
+  <div class="row p-2">
+    
+    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
+      <iframe src="https://www.youtube.com/embed/BVY2fMzcBvo?si=8BNFODatn4jB2DPm" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        2024 Swarthmore Accepted Essay&nbsp;
+        <span class="textaccent"
+        ><p class="d-inline m-0 text-right">08/10/2024</p></span
+        >
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">Sai Nyi Bhone Htut</span></p>
+      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 3</p>
+    </div>
 
-  <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
-    <iframe src="https://www.youtube.com/embed/vbB0sdRjTQ4?si=8RONA5K3fRMd4ueu" 
-          class="responsive-iframe" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-    <h2 class="m-0">
-      2024 Dartmouth Accepted Essay&nbsp;
-      <span class="textaccent"
-      ><p class="d-inline m-0 text-right">16/09/2024</p></span
-      >
-    </h2>
-    <p class="textorange m-0">Written by <span class="fw-bold">Wai Yan Win Aung</span></p>
-    <p class="m-1">Read by Myat Hmu Thwin</p>
-    <p class="m-1">"စုတုပြု" Video Series, Episode 2</p>
-  </div>
+    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
+      <iframe src="https://www.youtube.com/embed/vbB0sdRjTQ4?si=8RONA5K3fRMd4ueu" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        2024 Dartmouth Accepted Essay&nbsp;
+        <span class="textaccent"
+        ><p class="d-inline m-0 text-right">16/09/2024</p></span
+        >
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">Wai Yan Win Aung</span></p>
+      <p class="m-1">Read by Myat Hmu Thwin</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 2</p>
+    </div>
 
-  <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
-    <iframe src="https://www.youtube.com/embed/DMwt8OBGQSM?si=hB4YU6UHSmIJIRNZ" 
-          class="responsive-iframe" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-    <h2 class="m-0">
-      2024 MIT Accepted Essay&nbsp;
-      <span class="textaccent"
-      ><p class="d-inline m-0 text-right">13/08/2024</p></span
-      >
-    </h2>
-    <p class="textorange m-0">Written by <span class="fw-bold">Nyan Lin Htet @ Alex</span></p>
-    <p class="m-1">Read by Phyu Thant Kyi</p>
-    <p class="m-1">"စုတုပြု" Video Series, Episode 1</p>
+    <div class=" col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
+      <iframe src="https://www.youtube.com/embed/DMwt8OBGQSM?si=hB4YU6UHSmIJIRNZ" 
+            class="responsive-iframe" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        2024 MIT Accepted Essay&nbsp;
+        <span class="textaccent"
+        ><p class="d-inline m-0 text-right">13/08/2024</p></span
+        >
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">Nyan Lin Htet @ Alex</span></p>
+      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 1</p>
+    </div>
+    
   </div>
-  
-</div>
 `;
 
 let allwebButton = document.querySelector(`#allweb-button`);
