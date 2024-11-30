@@ -25,16 +25,38 @@
       <special-header></special-header>
     </div>
     <div class="container-fluid background-gray pb-3">
-      <div class="row align-items-center">
-        <div
-          class="justify-content-center p-2 d-flex"
-          style="padding-right: 50px"
-        >
-          <h1 class="">
-            All
-            <span class="textaccent text-center">Articles</span>
-          </h1>
-        </div>
+      <div class="locationbuttongrp p-3">
+        <button id="filterOne-button" class="selector clicked">
+          College Application (All)
+        </button>
+        <button id="filterTwo-button" class="selector">
+          Application Requirements
+        </button>
+        <button id="filterThree-button" class="selector">
+          Types of Colleges
+        </button>
+        <button id="filterFour-button" class="selector">
+          About
+          <span class="fw-bold"> ချိတ် </span>
+        </button>
+        <button id="filterFive-button" class="selector">
+          Webinar Announcements
+        </button>
+        <button id="allArticle-button" class="selector">All Articles</button>
+      </div>
+    </div>
+
+    <div class="container-fluid background-gray pb-3">
+      <div
+        class="justify-content-center p-2 d-flex"
+        style="padding-right: 50px"
+      >
+        <h1 class="">
+          All
+          <span class="textaccent text-center" id="header-text"
+            >Types of Colleges, Application Requirements</span
+          >
+        </h1>
       </div>
       <div class="row m-2" id="row"></div>
       <div class="text-center" id="moreSection">

@@ -1,7 +1,14 @@
 
 //html elements
 let row = document.querySelector(`#row`)
-//more
+let headerText = document.querySelector(`#header-text`);
+//filter buttons
+let allArticleButton = document.querySelector(`#allArticle-button`);
+let filterOneButton = document.querySelector(`#filterOne-button`);
+let filterTwoButton = document.querySelector(`#filterTwo-button`);
+let filterThreeButton = document.querySelector(`#filterThree-button`);
+let filterFourButton = document.querySelector(`#filterFour-button`);
+//more button
 let moreButton = document.querySelector(`#moreContent`);
 let moreSection = document.querySelector(`#moreSection`);
 moreButton.addEventListener(`click`,increaseContent);
@@ -19,13 +26,42 @@ let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=$
 let cards = ``;
 let data = [];
 let count = 0;
-function increaseContent (event) {
 
-  axios.get(blogUrl).then(populatePage);
-  
+//filters 
+let filterOne = [`Types of Colleges`, `Application Requirements`];
+let filterTwo = [`Application Requirements`];
+let filterThree = [`Types of Colleges`];
+let filterFour = [`About ချိတ် - The Hook`];
+let filterFive = [`Webinar Announcement`];
+let desiredContent = [filterOne, filterTwo, filterThree, filterFour, filterFive];
+let desiredFilter = -1; 
+
+// reset page
+function resetPage(event) {
+  // Header Text
+  if (desiredFilter != -1) {
+    headerText.innerHTML = ``;
+    for (let i = 0; i < desiredContent[desiredFilter].length; i++) {
+      if ((i+1) < desiredContent[desiredFilter].length) {
+        headerText.innerHTML += desiredContent[desiredFilter][i] + `, `;
+      } else {
+        headerText.innerHTML += desiredContent[desiredFilter][i];
+      }
+    }
+  } else {
+    headerText.innerHTML = `Articles`;
+  }
+  cards = ``;
+  data = [];
+  count = 0;
+  blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=40`;
+  nextPageToken = ``;
+  moreButton.disabled = false;
+
+  console.log(`reset`);
 }
 
-
+// populate posts
 function populatePage (response) {
   console.log(response.data.items);
 
@@ -41,7 +77,9 @@ function populatePage (response) {
   if (response.data.nextPageToken != null ){
     console.log(`next page token:` + response.data.nextPageToken);
     nextPageToken = response.data.nextPageToken;
-    blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=8&pageToken=${nextPageToken}`;
+    blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=30&pageToken=${nextPageToken}`;
+    
+  
   } else {
     nextPageToken = `end`;
     moreSection.innerHTML = ``;
@@ -188,8 +226,241 @@ function populatePage (response) {
 
   }
 
-  count += tempCount;
+  count += addFactor;
+  console.log(`new count:` + count);
+}
+
+// increase number of posts shown on page
+function increaseContent (event) {
+  axios.get(blogUrl).then(populatePage);
+}
+
+// changing content as webinar buttons are clicked
+function changeURLToAllArticles(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.add(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+   
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Articles', '/articles.html#AllArticles');
+  
+  //changing content to desired
+  desiredFilter = -1;
+}
+function changeURLToFilterOne(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.add(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+  
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterOne', '/articles.html#FilterOne');
+  
+  //changing content to desired
+  desiredFilter = 0;
+}
+function changeURLToFilterTwo(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.add('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+   
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterTwo', '/articles.html#FilterTwo');
+  
+  //changing content to desired
+  desiredFilter = 1;
+}
+function changeURLToFilterThree(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.add('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+   
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterThree', '/articles.html#FilterThree');
+  
+  //changing content to desired
+  desiredFilter = 2;
+}
+function changeURLToFilterFour(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.add('clicked');
+  filterFiveButton.classList.remove('clicked');
+   
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterFour', '/articles.html#FilterFour');
+  
+  //changing content to desired
+  desiredFilter = 3;
+}
+function changeURLToFilterFive(event) {
+  //event.preventDefault();
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.add('clicked');
+   
+  //editing url
+  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterFive', '/articles.html#FilterFive');
+  
+  //changing content to desired
+  desiredFilter = 4;
+}
+
+// changing content as page reloads
+if (window.location.href.indexOf("AllArticles") > -1) {
+  console.log(`all articles is true`);
+
+
+  allArticleButton.classList.add(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+
+  //changing content to desired
+  desiredFilter = -1;
+
+  resetPage();
+  
+} else if (window.location.href.indexOf("FilterOne") > -1) {
+  console.log(`filter one is true`);
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.add(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+
+  //changing content to desired
+  desiredFilter = 0;
+
+  resetPage();
+
+} else if (window.location.href.indexOf("FilterTwo") > -1) {
+  console.log(`filter Two is true`);
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.add('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+
+  //changing content to desired
+  desiredFilter = 1;
+
+  resetPage();
+
+} else if (window.location.href.indexOf("FilterThree") > -1) {
+  console.log(`filter Three is true`);
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.add('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.remove('clicked');
+
+  //changing content to desired
+  desiredFilter = 2;
+
+  resetPage();
+
+} else if (window.location.href.indexOf("FilterFour") > -1) {
+  console.log(`filter Four is true`);
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.add('clicked');
+  filterFiveButton.classList.remove('clicked');
+
+  //changing content to desired
+  desiredFilter = 3;
+
+  resetPage();
+} else if (window.location.href.indexOf("FilterFive") > -1) {
+  console.log(`filter Five is true`);
+  
+  allArticleButton.classList.remove(`clicked`);
+  filterOneButton.classList.remove(`clicked`);
+  filterTwoButton.classList.remove('clicked');
+  filterThreeButton.classList.remove('clicked');
+  filterFourButton.classList.remove('clicked');
+  filterFiveButton.classList.add('clicked');
+
+  //changing content to desired
+  desiredFilter = 4;
+
+  resetPage();
 }
 
 
 axios.get(blogUrl).then(populatePage);
+
+allArticleButton.addEventListener(`click`, () => {
+  changeURLToAllArticles();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
+filterOneButton.addEventListener(`click`, () => {
+  changeURLToFilterOne();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
+filterTwoButton.addEventListener(`click`, () => {
+  changeURLToFilterTwo();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
+filterThreeButton.addEventListener(`click`, () => {
+  changeURLToFilterThree();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
+filterFourButton.addEventListener(`click`, () => {
+  changeURLToFilterFour();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
+filterFiveButton.addEventListener(`click`, () => {
+  changeURLToFilterFive();
+  resetPage();
+  axios.get(blogUrl).then(populatePage);;
+});
+
