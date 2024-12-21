@@ -8,7 +8,6 @@ let filterOneButton = document.querySelector(`#filterOne-button`);
 let filterTwoButton = document.querySelector(`#filterTwo-button`);
 let filterThreeButton = document.querySelector(`#filterThree-button`);
 let filterFourButton = document.querySelector(`#filterFour-button`);
-let filterFiveButton = document.querySelector(`#filterFive-button`);
 //more button
 let moreButton = document.querySelector(`#moreContent`);
 let moreSection = document.querySelector(`#moreSection`);
@@ -18,9 +17,10 @@ moreButton.addEventListener(`click`,increaseContent);
 import BLOGGER_API_KEY from "./bloggerapikey.js";
 let key = BLOGGER_API_KEY;
 
+
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
-let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=40`;
+let blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=32`;
 
 //content on page
 let cards = ``;
@@ -65,55 +65,24 @@ function resetPage(event) {
 function populatePage (response) {
   console.log(response.data.items);
 
-  let postCount = response.data.items.length;
-  console.log(`postCount:` + postCount);
-  let addFactor = 0;
-  console.log(`desired filter: ` + desiredFilter);
+  let tempCount = response.data.items.length;
   // push to local data array
-  for (let i = 0; i< postCount ; i++){           // looping thru posts i
-    let added = false;
-    let labelsLength = response.data.items[i].labels.length;
-    if (desiredFilter != -1) {                   
-      
-      for (let j = 0; j < labelsLength; j++) {                            // looping thru post's labels j
-        
-        for (let k = 0; k < desiredContent[desiredFilter].length; k++) { // looping thru desired filter's labels k
-          let tempLabel = desiredContent[desiredFilter][k];
-          //console.log(`tempLabel: ` + tempLabel);
-          if (response.data.items[i].labels[j].indexOf(tempLabel) != -1) {
-            data.push(response.data.items[i]);
-            addFactor ++;
-            added = true;
-            break;
-          }
-        }
-        if (added) {
-          break;
-        }
-      }
-
-    } else {
-      data.push(response.data.items[i]);
-      addFactor ++;
-    }
+  for (let i = 0; i< tempCount ; i++){
+    data.push(response.data.items[i]);
   }
-  
-  console.log(`inicount:` + count);
-  console.log(`add factor: ` + addFactor);
-  
+  console.log(count);
+  console.log(tempCount);
+
   //prepping for "more" button
-  console.log(`next page token:` + response.data.nextPageToken);
-  if (response.data.nextPageToken){
+  if (response.data.nextPageToken != null ){
+    console.log(`next page token:` + response.data.nextPageToken);
     nextPageToken = response.data.nextPageToken;
     blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=30&pageToken=${nextPageToken}`;
     
   
   } else {
     nextPageToken = `end`;
-    console.log(`next page token: ` + nextPageToken);
-    //moreSection.innerHTML = ``;
-    moreButton.disabled = true;
-
+    moreSection.innerHTML = ``;
   }
   
     for (let i = count; i< data.length; i++) {
@@ -127,9 +96,8 @@ function populatePage (response) {
       let modalBody = `modalBody` + i;
       let modaldate = `modaldate`+i;
       let modallabels = `modallabels`+i;
-      
       let cardSkel = 
-        `<div class="card border-0 article m-0 mx-1 " style="width: 17rem">
+        `<div class="card border-light article m-0 mx-auto" style="width: 18rem">
           <img
             src="..."
             class="card-img-top rounded mt-2 mb-0"
@@ -139,8 +107,12 @@ function populatePage (response) {
         <div class="card-body">
           <h5 class="card-title" id="${title}"></h5>
 
-          <h6 class="card-subtitle mb-2 text-body-secondary" id="${date}"></h6>
-          <h6 class="card-subtitle mb-2 text-body-secondary" id="${labels}"></h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary" id="${date}">
+            
+          </h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary" id="${labels}">
+            
+          </h6>
 
           <!-- Button trigger modal -->
           <button
@@ -196,7 +168,6 @@ function populatePage (response) {
       </div>
         `
       ;
-      
       cards += cardSkel;
     }
     
@@ -231,7 +202,7 @@ function populatePage (response) {
     */
    
     imgLink= data[i].content.substring(data[i].content.indexOf(`https`), data[i].content.indexOf(`.jpg"`)+4);
-    //console.log(`image link:` + imgLink);
+    console.log(`image link:` + imgLink);
 
     cardImage.src = imgLink;
 
