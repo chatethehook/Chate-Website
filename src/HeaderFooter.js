@@ -1,8 +1,7 @@
 class SpecialHeader extends HTMLElement {
-    connectedCallback () {
-        
-        if (window.location.pathname === '/articles.html') {
-            this.innerHTML = `
+  connectedCallback() {
+    if (window.location.pathname === "/articles.html") {
+      this.innerHTML = `
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
@@ -20,15 +19,15 @@ class SpecialHeader extends HTMLElement {
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                <a class="social-media" href="https://www.instagram.com/chate_thehook"
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
                     target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://t.me/chatethehook" 
+                    <a class="social-media" href="https://t.me/chatethehook"
                                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
-                
+
                     <div
                         class="collapse navbar-collapse justify-content-center"
                         id="navbarNavAltMarkup">
@@ -37,19 +36,18 @@ class SpecialHeader extends HTMLElement {
 
                             <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
                             <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-                        
+
                         </div>
                     </div>
                     <div >
-                    <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSctyiEOsy1r3ef4RFfu5SZg48fl0PWcNasSrIIZJ7EZYF9dfQ/viewform?usp=sf_link" role="button">Apply</a>
+                    <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfJ-4jpUmqPUdaaPlRQbQKl8HTz_tmwtuWU2ulmOD5VkZ4hog/viewform?usp=header" role="button">Apply</a>
                     </div>
                 </div>
-                
+
             </nav>
-            `
-        }
-        else if (window.location.pathname === '/events.html') {
-            this.innerHTML = `
+            `;
+    } else if (window.location.pathname === "/events.html") {
+      this.innerHTML = `
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
@@ -67,15 +65,15 @@ class SpecialHeader extends HTMLElement {
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
                         target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                    <a class="social-media" href="https://www.instagram.com/chate_thehook"
                         target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
                         target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://t.me/chatethehook" 
+                    <a class="social-media" href="https://t.me/chatethehook"
                         target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
-                
+
                     <div
                         class="collapse navbar-collapse justify-content-center"
                         id="navbarNavAltMarkup"
@@ -85,20 +83,19 @@ class SpecialHeader extends HTMLElement {
 
                         <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
                         <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-                        
+
                         </div>
                     </div>
                     <div >
                         <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSctyiEOsy1r3ef4RFfu5SZg48fl0PWcNasSrIIZJ7EZYF9dfQ/viewform?usp=sf_link" role="button">Apply</a>
                     </div>
-                
+
                 </div>
             </nav>
-            `
-        }
-        else if (window.location.pathname === '/') {
-            this.innerHTML = `
-            
+            `;
+    } else if (window.location.pathname === "/") {
+      this.innerHTML = `
+
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
@@ -139,9 +136,9 @@ class SpecialHeader extends HTMLElement {
                     rel="noopener noreferrer"
                     ><i class="fa-brands fa-youtube" aria-hidden="true"></i
                 ></a>
-                <a class="social-media" 
-                href="https://t.me/chatethehook" 
-                target="_blank" 
+                <a class="social-media"
+                href="https://t.me/chatethehook"
+                target="_blank"
                 rel="noopener noreferrer"
                 ><i class="fa-brands fa-telegram" aria-hidden="true"></i
                 ></a>
@@ -158,7 +155,7 @@ class SpecialHeader extends HTMLElement {
                     <a class="nav-link" href="/events.html"
                         ><h3 class="header-links">Events</h3></a
                     >
-                    
+
                     <a class="nav-link" href="/articles.html"
                     ><h3 class= "header-links">Articles</h3></a
                     >
@@ -174,73 +171,71 @@ class SpecialHeader extends HTMLElement {
                 </div>
                 </div>
             </nav>
-                    
-        
-            `
-        }
-        
+
+
+            `;
     }
+  }
 }
 class SpecialFooter extends HTMLElement {
-    connectedCallback () {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <div class="footer">
                 <div class="row  pl-5">
                     <div class="col-3 py-5 m-2" >
                         <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
                         <h3 class="text-center"> <span class="textaccent fw-semibold"> Chate </span> Your Dreams </h3>
                         <div class="text-center">
-                            <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325" 
+                            <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
                                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                            <a class="social-media" href="https://www.instagram.com/chate_thehook" 
+                            <a class="social-media" href="https://www.instagram.com/chate_thehook"
                              target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                            <a class="social-media" href="https://www.youtube.com/@Chate_TheHook" 
+                            <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
                                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                            <a class="social-media" href="https://t.me/chatethehook" 
+                            <a class="social-media" href="https://t.me/chatethehook"
                                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
                         </div>
-                        
+
                     </div>
                     <div class="col-3 mt-5" >
-                        <br \> 
+                        <br \>
                         <h3 class="fw-medium"> Events </h3>
                         <a class="footer-link" target="_self" href="/chatenltinebin.html"><p class="m-0">ချိတ်နဲ့တိုင်ပင်</p></a>
-                        
+
                         <a class="footer-link" target="_self" href="/events.html#AllWebinars"><p class="m-0"> All Webinars </p></a>
                         <!--
                         <a class="footer-link" target="_self" href="/events.html#UpcomingWebinars"><p class="m-0"> Upcoming Webinars </p></a>
                         <a class="footer-link" target="_self" href="/events.html#PastWebinars"><p class="m-0"> Past Webinars </p></a>
                         -->
                         <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
-                        
+
                     </div>
                     <div class="col-3 mt-5" >
-                        <br \> 
+                        <br \>
                         <h3 class="fw-medium"> Articles </h3>
                         <a class="footer-link" target="_self" href="/articles.html#FilterOne"><p class="m-0"> College Application (All) </p></a>
                         <a class="footer-link" target="_self" href="/articles.html#FilterTwo"><p class="m-0"> Application Requirements </p></a>
                         <a class="footer-link" target="_self" href="/articles.html#FilterThree"><p class="m-0"> About ချိတ် </p></a>
                         <a class="footer-link" target="_self" href="/articles.html#FilterFour"><p class="m-0"> Webinar Announcements </p></a>
                         <a class="footer-link" target="_self" href="/articles.html#AllArticles"><p class="m-0"> All Articles </p></a>
-                        
-                        
+
+
                     </div>
                 </div>
                 <div class="mx-5">
                     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-                        <a property="dct:title" rel="cc:attributionURL" href="https://chatethehook.com/">ချိတ် - The Hook Official Website</a> by 
-                        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://chatethehook.com/">ချိတ် - The Hook</a> is licensed under 
+                        <a property="dct:title" rel="cc:attributionURL" href="https://chatethehook.com/">ချိတ် - The Hook Official Website</a> by
+                        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://chatethehook.com/">ချိတ် - The Hook</a> is licensed under
                         <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0
                             <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
                             <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
                             <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
                         </a>
-                    </p> 
+                    </p>
                 </div>
             </div>
-        `
-        
-    }
+        `;
+  }
 }
-customElements.define('special-header',SpecialHeader);
-customElements.define('special-footer',SpecialFooter);
+customElements.define("special-header", SpecialHeader);
+customElements.define("special-footer", SpecialFooter);
