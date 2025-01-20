@@ -87,7 +87,7 @@ class SpecialHeader extends HTMLElement {
                         </div>
                     </div>
                     <div >
-                        <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSctyiEOsy1r3ef4RFfu5SZg48fl0PWcNasSrIIZJ7EZYF9dfQ/viewform?usp=sf_link" role="button">Apply</a>
+                        <a class="btn btn-primary header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfJ-4jpUmqPUdaaPlRQbQKl8HTz_tmwtuWU2ulmOD5VkZ4hog/viewform?usp=sharing" role="button">Apply</a>
                     </div>
 
                 </div>
@@ -164,7 +164,7 @@ class SpecialHeader extends HTMLElement {
                 <div>
                     <a
                     class="btn btn-primary header-button"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSctyiEOsy1r3ef4RFfu5SZg48fl0PWcNasSrIIZJ7EZYF9dfQ/viewform?usp=sf_link"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfJ-4jpUmqPUdaaPlRQbQKl8HTz_tmwtuWU2ulmOD5VkZ4hog/viewform?usp=sharing"
                     role="button"
                     >Apply</a
                     >
