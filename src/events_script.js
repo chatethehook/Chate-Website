@@ -314,22 +314,7 @@ let pastWebinars = `
         <p class="m-1">Official Program Announcement</p>
         <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6</p>
 
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
-        <img
-          src="media/webinar resources/whatarecollegeslookingfor.webp"
-          alt="webinar thumbnail"
-          class="img-fluid rounded pb-2"
-        />
-        <h2 class="m-0">
-          What Are Top Colleges Looking For?&nbsp;
-          <span class="textaccent"
-          ><p class="d-inline m-0 text-right">02/06/2024</p></span
-          >
-        </h2>
-        <p class="textorange m-0">Min Thaik Aung Saw</p>
-        <p class="m-1">"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 5</p>
-      </div>
+
       <div class="col-12 col-sm-6 col-lg-3 col-xl-2 pb-3">
         <iframe src="https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA"
             class="responsive-iframe"
