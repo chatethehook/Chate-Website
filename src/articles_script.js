@@ -1,6 +1,5 @@
-
 //html elements
-let row = document.querySelector(`#row`)
+let row = document.querySelector(`#row`);
 let headerText = document.querySelector(`#header-text`);
 //filter buttons
 let allArticleButton = document.querySelector(`#allArticle-button`);
@@ -8,15 +7,15 @@ let filterOneButton = document.querySelector(`#filterOne-button`);
 let filterTwoButton = document.querySelector(`#filterTwo-button`);
 let filterThreeButton = document.querySelector(`#filterThree-button`);
 let filterFourButton = document.querySelector(`#filterFour-button`);
+let filterFiveButton = document.querySelector(`#filterFive-button`);
 //more button
 let moreButton = document.querySelector(`#moreContent`);
 let moreSection = document.querySelector(`#moreSection`);
-moreButton.addEventListener(`click`,increaseContent);
+moreButton.addEventListener(`click`, increaseContent);
 
 //api variables
 import BLOGGER_API_KEY from "./bloggerapikey.js";
 let key = BLOGGER_API_KEY;
-
 
 let blogID = `136726928350551179`;
 let nextPageToken = ``;
@@ -27,14 +26,20 @@ let cards = ``;
 let data = [];
 let count = 0;
 
-//filters 
+//filters
 let filterOne = [`Types of Colleges`, `Application Requirements`];
 let filterTwo = [`Application Requirements`];
 let filterThree = [`Types of Colleges`];
 let filterFour = [`About ချိတ် - The Hook`];
 let filterFive = [`Webinar Announcement`];
-let desiredContent = [filterOne, filterTwo, filterThree, filterFour, filterFive];
-let desiredFilter = -1; 
+let desiredContent = [
+  filterOne,
+  filterTwo,
+  filterThree,
+  filterFour,
+  filterFive,
+];
+let desiredFilter = -1;
 
 // reset page
 function resetPage(event) {
@@ -42,7 +47,7 @@ function resetPage(event) {
   if (desiredFilter != -1) {
     headerText.innerHTML = ``;
     for (let i = 0; i < desiredContent[desiredFilter].length; i++) {
-      if ((i+1) < desiredContent[desiredFilter].length) {
+      if (i + 1 < desiredContent[desiredFilter].length) {
         headerText.innerHTML += desiredContent[desiredFilter][i] + `, `;
       } else {
         headerText.innerHTML += desiredContent[desiredFilter][i];
@@ -62,42 +67,39 @@ function resetPage(event) {
 }
 
 // populate posts
-function populatePage (response) {
+function populatePage(response) {
   console.log(response.data.items);
 
   let tempCount = response.data.items.length;
   // push to local data array
-  for (let i = 0; i< tempCount ; i++){
+  for (let i = 0; i < tempCount; i++) {
     data.push(response.data.items[i]);
   }
   console.log(count);
   console.log(tempCount);
 
   //prepping for "more" button
-  if (response.data.nextPageToken != null ){
+  if (response.data.nextPageToken != null) {
     console.log(`next page token:` + response.data.nextPageToken);
     nextPageToken = response.data.nextPageToken;
     blogUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogID}/posts?key=${key}&maxResults=30&pageToken=${nextPageToken}`;
-    
-  
   } else {
     nextPageToken = `end`;
     moreSection.innerHTML = ``;
   }
-  
-    for (let i = count; i< data.length; i++) {
-      let title = `title`+i;
-      let date = `date`+i;
-      let labels = `labels`+i;
-      let link = `link`+i;
-      let image = `image`+i;
-      let modal = `modal`+i;
-      let modalTitle = `modalTitle`+i;
-      let modalBody = `modalBody` + i;
-      let modaldate = `modaldate`+i;
-      let modallabels = `modallabels`+i;
-      let cardSkel = 
-        `<div class="card border-light article m-0 mx-auto" style="width: 18rem">
+
+  for (let i = count; i < data.length; i++) {
+    let title = `title` + i;
+    let date = `date` + i;
+    let labels = `labels` + i;
+    let link = `link` + i;
+    let image = `image` + i;
+    let modal = `modal` + i;
+    let modalTitle = `modalTitle` + i;
+    let modalBody = `modalBody` + i;
+    let modaldate = `modaldate` + i;
+    let modallabels = `modallabels` + i;
+    let cardSkel = `<div class="card border-light article m-0 mx-auto" style="width: 18rem">
           <img
             src="..."
             class="card-img-top rounded mt-2 mb-0"
@@ -108,10 +110,10 @@ function populatePage (response) {
           <h5 class="card-title" id="${title}"></h5>
 
           <h6 class="card-subtitle mb-2 text-body-secondary" id="${date}">
-            
+
           </h6>
           <h6 class="card-subtitle mb-2 text-body-secondary" id="${labels}">
-            
+
           </h6>
 
           <!-- Button trigger modal -->
@@ -159,34 +161,31 @@ function populatePage (response) {
                   labels
                 </span>
                 <div id="${modalBody}" class="modal-body">
-                  ${modalBody} 
+                  ${modalBody}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-        `
-      ;
-      cards += cardSkel;
-    }
-    
-    row.innerHTML = cards;
-  
-  
-  
+        `;
+    cards += cardSkel;
+  }
+
+  row.innerHTML = cards;
+
   for (let i = 0; i < data.length; i++) {
     //doc queries
-    let cardTitle = document.querySelector(`#title${i}`)
+    let cardTitle = document.querySelector(`#title${i}`);
     let cardDate = document.querySelector(`#date${i}`);
     let cardLabels = document.querySelector(`#labels${i}`);
-    let cardImage = document.querySelector(`#image${i}`)
+    let cardImage = document.querySelector(`#image${i}`);
     cardTitle.innerHTML = data[i].title;
-    cardDate.innerHTML = data[i].published.substring(0,10);
+    cardDate.innerHTML = data[i].published.substring(0, 10);
     let labels = ``;
     for (let j = 0; j < data[i].labels.length; j++) {
       labels += data[i].labels[j];
-      if (j < data[i].labels.length -1) {
+      if (j < data[i].labels.length - 1) {
         labels += `, `;
       }
     }
@@ -198,10 +197,13 @@ function populatePage (response) {
       imgLink = data[i].content.substring(data[i].content.indexOf(`https`),data[i].content.indexOf(`.png"`)+4);
     } else if (data[i].content.indexOf(`.jpg"`) != -1) {
       imgLink = data[i].content.substring(data[i].content.indexOf(`<a href="https`)+9,data[i].content.indexOf(`.jpg"`)+4);
-    } 
+    }
     */
-   
-    imgLink= data[i].content.substring(data[i].content.indexOf(`https`), data[i].content.indexOf(`.jpg"`)+4);
+
+    imgLink = data[i].content.substring(
+      data[i].content.indexOf(`https`),
+      data[i].content.indexOf(`.jpg"`) + 4,
+    );
     console.log(`image link:` + imgLink);
 
     cardImage.src = imgLink;
@@ -214,16 +216,15 @@ function populatePage (response) {
 
     modalLabel.innerHTML = data[i].title;
     modalBody.innerHTML = data[i].content;
-    modalDate.innerHTML = data[i].published.substring(0,10);
+    modalDate.innerHTML = data[i].published.substring(0, 10);
     let modallabels = ``;
     for (let j = 0; j < data[i].labels.length; j++) {
       modallabels += data[i].labels[j];
-      if (j < data[i].labels.length -1) {
+      if (j < data[i].labels.length - 1) {
         modallabels += `, `;
       }
     }
     modalLabels.innerHTML = modallabels;
-
   }
 
   count += addFactor;
@@ -231,104 +232,128 @@ function populatePage (response) {
 }
 
 // increase number of posts shown on page
-function increaseContent (event) {
+function increaseContent(event) {
   axios.get(blogUrl).then(populatePage);
 }
 
 // changing content as webinar buttons are clicked
 function changeURLToAllArticles(event) {
   //event.preventDefault();
-  
+
   allArticleButton.classList.add(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
-   
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
+
   //editing url
-  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'All Articles', '/articles.html#AllArticles');
-  
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "All Articles",
+    "/articles.html#AllArticles",
+  );
+
   //changing content to desired
   desiredFilter = -1;
 }
 function changeURLToFilterOne(event) {
   //event.preventDefault();
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.add(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
-  
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
+
   //editing url
-  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterOne', '/articles.html#FilterOne');
-  
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "FilterOne",
+    "/articles.html#FilterOne",
+  );
+
   //changing content to desired
   desiredFilter = 0;
 }
 function changeURLToFilterTwo(event) {
   //event.preventDefault();
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.add('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
-   
+  filterTwoButton.classList.add("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
+
   //editing url
-  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterTwo', '/articles.html#FilterTwo');
-  
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "FilterTwo",
+    "/articles.html#FilterTwo",
+  );
+
   //changing content to desired
   desiredFilter = 1;
 }
 function changeURLToFilterThree(event) {
   //event.preventDefault();
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.add('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
-   
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.add("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
+
   //editing url
-  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterThree', '/articles.html#FilterThree');
-  
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "FilterThree",
+    "/articles.html#FilterThree",
+  );
+
   //changing content to desired
   desiredFilter = 2;
 }
 function changeURLToFilterFour(event) {
   //event.preventDefault();
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.add('clicked');
-  filterFiveButton.classList.remove('clicked');
-   
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.add("clicked");
+  filterFiveButton.classList.remove("clicked");
+
   //editing url
-  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterFour', '/articles.html#FilterFour');
-  
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "FilterFour",
+    "/articles.html#FilterFour",
+  );
+
   //changing content to desired
   desiredFilter = 3;
 }
 function changeURLToFilterFive(event) {
   //event.preventDefault();
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.add('clicked');
-   
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.add("clicked");
+
   //editing url
-  window.history.pushState({ additionalInformation: 'Updated the URL with JS' }, 'FilterFive', '/articles.html#FilterFive');
-  
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "FilterFive",
+    "/articles.html#FilterFive",
+  );
+
   //changing content to desired
   desiredFilter = 4;
 }
@@ -337,73 +362,68 @@ function changeURLToFilterFive(event) {
 if (window.location.href.indexOf("AllArticles") > -1) {
   console.log(`all articles is true`);
 
-
   allArticleButton.classList.add(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = -1;
 
   resetPage();
-  
 } else if (window.location.href.indexOf("FilterOne") > -1) {
   console.log(`filter one is true`);
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.add(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 0;
 
   resetPage();
-
 } else if (window.location.href.indexOf("FilterTwo") > -1) {
   console.log(`filter Two is true`);
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.add('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
+  filterTwoButton.classList.add("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 1;
 
   resetPage();
-
 } else if (window.location.href.indexOf("FilterThree") > -1) {
   console.log(`filter Three is true`);
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.add('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.remove('clicked');
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.add("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 2;
 
   resetPage();
-
 } else if (window.location.href.indexOf("FilterFour") > -1) {
   console.log(`filter Four is true`);
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.add('clicked');
-  filterFiveButton.classList.remove('clicked');
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.add("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 3;
@@ -411,13 +431,13 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   resetPage();
 } else if (window.location.href.indexOf("FilterFive") > -1) {
   console.log(`filter Five is true`);
-  
+
   allArticleButton.classList.remove(`clicked`);
   filterOneButton.classList.remove(`clicked`);
-  filterTwoButton.classList.remove('clicked');
-  filterThreeButton.classList.remove('clicked');
-  filterFourButton.classList.remove('clicked');
-  filterFiveButton.classList.add('clicked');
+  filterTwoButton.classList.remove("clicked");
+  filterThreeButton.classList.remove("clicked");
+  filterFourButton.classList.remove("clicked");
+  filterFiveButton.classList.add("clicked");
 
   //changing content to desired
   desiredFilter = 4;
@@ -425,42 +445,40 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   resetPage();
 }
 
-
 axios.get(blogUrl).then(populatePage);
 
 allArticleButton.addEventListener(`click`, () => {
   changeURLToAllArticles();
   resetPage();
-  axios.get(blogUrl).then(populatePage);;
+  axios.get(blogUrl).then(populatePage);
 });
 
 filterOneButton.addEventListener(`click`, () => {
   changeURLToFilterOne();
   resetPage();
-  axios.get(blogUrl).then(populatePage);;
+  axios.get(blogUrl).then(populatePage);
 });
 
 filterTwoButton.addEventListener(`click`, () => {
   changeURLToFilterTwo();
   resetPage();
-  axios.get(blogUrl).then(populatePage);;
+  axios.get(blogUrl).then(populatePage);
 });
 
 filterThreeButton.addEventListener(`click`, () => {
   changeURLToFilterThree();
   resetPage();
-  axios.get(blogUrl).then(populatePage);;
+  axios.get(blogUrl).then(populatePage);
 });
 
 filterFourButton.addEventListener(`click`, () => {
   changeURLToFilterFour();
   resetPage();
-  axios.get(blogUrl).then(populatePage);;
+  axios.get(blogUrl).then(populatePage);
 });
 
 filterFiveButton.addEventListener(`click`, () => {
   changeURLToFilterFive();
   resetPage();
-  axios.get(blogUrl).then(populatePage);;
+  axios.get(blogUrl).then(populatePage);
 });
-
