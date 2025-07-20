@@ -66,7 +66,7 @@ let desiredContent = [
   filterFive,
 ];
 
-let desiredFilter = -1;
+let desiredFilter = 0;
 
 // reset page
 
