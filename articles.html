@@ -1,84 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Articles - ချိတ်</title>
-    <link rel="icon" type="image/x-icon" href="/media/logo-transparent.webp" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Articles - ချိတ်</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/media/logo-transparent.webp"
+        />
 
-    <link rel="stylesheet" href="src/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container-fluid background-gray pb-3">
-      <special-header></special-header>
-    </div>
-    <div class="container-fluid background-gray pb-3">
-      <div class="locationbuttongrp p-3">
-        <button id="filterOne-button" class="selector clicked">
-          College Application (All)
-        </button>
-        <button id="filterTwo-button" class="selector">
-          Application Requirements
-        </button>
-        <button id="filterThree-button" class="selector">
-          Types of Colleges
-        </button>
-        <button id="filterFour-button" class="selector">
-          About
-          <span class="fw-bold"> ချိတ် </span>
-        </button>
+        <link rel="stylesheet" href="src/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container-fluid background-gray pb-3">
+            <special-header></special-header>
+        </div>
+        <div class="container-fluid background-gray pb-3">
+            <div class="locationbuttongrp p-3">
+                <button id="filterOne-button" class="selector clicked">
+                    College Application (All)
+                </button>
+                <button id="filterTwo-button" class="selector">
+                    Application Requirements
+                </button>
+                <button id="filterThree-button" class="selector">
+                    Types of Colleges
+                </button>
+                <button id="filterFour-button" class="selector">
+                    About
+                    <span class="fw-bold"> ချိတ် </span>
+                </button>
+                <!--
         <button id="filterFive-button" class="selector">
           Webinar Announcements
         </button>
-        <button id="allArticle-button" class="selector">All Articles</button>
-      </div>
-    </div>
+        -->
+                <button id="allArticle-button" class="selector">
+                    All Articles
+                </button>
+            </div>
+        </div>
 
-    <div class="container-fluid background-gray pb-3">
-      <div
-        class="justify-content-center p-2 d-flex"
-        style="padding-right: 50px"
-      >
-        <h1 class="">
-          All
-          <span class="textaccent text-center" id="header-text"
-            >Types of Colleges, Application Requirements</span
-          >
-        </h1>
-      </div>
-      <div class="row m-2" id="row"></div>
-      <div class="text-center" id="moreSection">
-        <button type="button" class="btn btn-primary selector" id="moreContent">
-          More
-        </button>
-      </div>
-    </div>
+        <div class="container-fluid background-gray pb-3">
+            <div
+                class="justify-content-center p-2 d-flex"
+                style="padding-right: 50px"
+            >
+                <h1 class="">
+                    All
+                    <span class="textaccent text-center" id="header-text"
+                        >Types of Colleges, Application Requirements</span
+                    >
+                </h1>
+            </div>
+            <div class="row m-2" id="row"></div>
+            <div class="text-center" id="moreSection">
+                <button
+                    type="button"
+                    class="btn btn-primary selector"
+                    id="moreContent"
+                >
+                    More
+                </button>
+            </div>
+        </div>
 
-    <special-footer></special-footer>
-    <script src="src/HeaderFooter.js"></script>
-    <script type="module" src="src\articles_script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/1c1ce0b05a.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <special-footer></special-footer>
+        <script src="src/HeaderFooter.js"></script>
+        <script type="module" src="src\articles_script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/1c1ce0b05a.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
