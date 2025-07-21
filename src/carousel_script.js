@@ -147,6 +147,146 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
+      src="media/members/Htoo Thant Naung.webp"
+      alt="Htoo Thant Naung"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Htoo Thant Naung</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      Brown '28
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Hpoo Pwint Yadi.webp"
+      alt="Hpoo Pwint Yadi"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Hpoo Pwint Yadi</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      Hamilton '28
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Htut Aung Hlaing.webp"
+      alt="Htut Aung Hlaing"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Htut Aung Hlaing</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      DePaul '25
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Theint Theint Thu.webp"
+      alt="Theint Theint Thu"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Theint Theint Thu</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      Amherst College'26
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Pan Hay Marn.webp"
+      alt="Pan Hay Marn"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Pan Hay Marn</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      Tufts '27
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/May Kyi Phyu Thinn.webp"
+      alt="May Kyi Phyu Thinn"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">May Kyi Phyu Thinn</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      USC '26
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Thet Mon Kyaw.webp"
+      alt="Thet Mon Kyaw"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Thet Mon Kyaw</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      USC '26
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Thet Htoo Naung.webp"
+      alt="Thet Htoo Naung"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Thet Htoo Naung</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      SCHOOL NEEDED '00
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Swan Tayza Aung.webp"
+      alt="Swan Tayza Aung"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Swan Tayza Aung</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      Brown '29
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Min Khat Zaw.webp"
+      alt="Min Khat Zaw"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Min Khat Zaw</h2>
+    <p class="text-center">
+      <span class="textaccent">Admissions Advisor</span>
+      <br />
+      SCHOOL NEEDED '00
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
       src="media/members/Agga Kyaw.webp"
       alt="Agga Kyaw"
       class="rounded img-fluid"
@@ -154,7 +294,7 @@ const members = [
     />
     <h2 class="text-center">Agga Kyaw</h2>
     <p class="text-center">
-      <span class="textaccent">Secretary General</span>
+      <span class="textaccent">Chief Operating Officer</span>
       <br />
       MYLP '24 Youth Participant
     </p>
@@ -187,24 +327,48 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Min Khant Zaw.webp"
-      alt="Min Khant Zaw"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Min Khant Zaw</h2>
-    <p class="text-center">
-      <span class="textaccent">Head of Video Production</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
       src="media/members/Aung Htoo Han.webp"
       alt="Aung Htoo Han"
       class="rounded img-fluid"
       style="width: 100%"
     />
     <h2 class="text-center">Aung Htoo Han</h2>
+    <p class="text-center">
+      <span class="textaccent">Global Head</span>
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/oattrakyaw.webp"
+      alt="Oattra Kyaw"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Oattra Kyaw</h2>
+    <p class="text-center">
+      <span class="textaccent">Head of Technology</span>
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Shwe Eain Lin.webp"
+      alt="Shwe Eain Lin"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Shwe Eain Lin</h2>
+    <p class="text-center">
+      <span class="textaccent">Public Relations Officer</span>
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Kyaw Myo Naing.webp"
+      alt="Kyaw Myo Naing"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Kyaw Myo Naing</h2>
     <p class="text-center">
       <span class="textaccent">Public Relations Officer</span>
     </p>
@@ -235,60 +399,12 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Thiha Swe.webp"
-      alt="Thiha Swe"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Thiha Swe</h2>
-    <p class="text-center">
-      <span class="textaccent">Social Media Administrator</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/oattrakyaw.webp"
-      alt="Oattra Kyaw"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Oattra Kyaw</h2>
-    <p class="text-center">
-      <span class="textaccent">Website Developer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
       src="media/members/kyawzinhtun.webp"
       alt="Kyaw Zin Htun"
       class="rounded img-fluid"
       style="width: 100%"
     />
     <h2 class="text-center">Kyaw Zin Tun</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Writer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Wai Hnin Paing.webp"
-      alt="Wai Hnin Paing"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Wai Hnin Paing</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Writer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Kyaw Myo Naing.webp"
-      alt="Kyaw Myo Naing"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Kyaw Myo Naing</h2>
     <p class="text-center">
       <span class="textaccent">Content Writer</span>
     </p>
@@ -307,18 +423,6 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Khine Zin Thwe.webp"
-      alt="Khine Zin Thwe"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Khine Zin Thwe</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Writer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
       src="media/members/Shoon Lai Paing.webp"
       alt="Shoon Lai Paing"
       class="rounded img-fluid"
@@ -327,6 +431,18 @@ const members = [
     <h2 class="text-center">Shoon Lai Paing</h2>
     <p class="text-center">
       <span class="textaccent">Content Writer</span>
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Thiha Swe.webp"
+      alt="Thiha Swe"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Thiha Swe</h2>
+    <p class="text-center">
+      <span class="textaccent">Social Media Administrator</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -343,6 +459,18 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
+      src="media/members/Aye Zin Phyo.webp"
+      alt="Aye Zin Phyo"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Aye Zin Phyo</h2>
+    <p class="text-center">
+      <span class="textaccent">Graphic Designer</span>
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
       src="media/members/Cho Thar Nwe.webp"
       alt="Cho Thar Nwe"
       class="rounded img-fluid"
@@ -351,20 +479,6 @@ const members = [
     <h2 class="text-center">Cho Thar Nwe</h2>
     <p class="text-center">
       <span class="textaccent">Graphic Designer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/thusanhtet.webp"
-      alt="Thu San Htet"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Thu San Htet</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Graphic Designer</span
-      >
     </p>
   </div>`,
   `<div class="col p-3">
@@ -411,24 +525,108 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Myat Hmu Thwin.webp"
-      alt="Myat Hmu Thwin"
+      src="media/members/Yon Yati Win.webp"
+      alt="Yon Yati Win"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Myat Hmu Thwin</h2>
+    <h2 class="text-center">Yon Yati Win</h2>
     <p class="text-center">
       <span class="textaccent"
         >Video Content Creator</span
       >
     </p>
   </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Saw Shar Nyin Thar.webp"
+      alt="Saw Shar Nyin Thar"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Saw Shar Nyin Thar</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Content Creator</span
+      >
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Swe Swe Naing.webp"
+      alt="Swe Swe Naing"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Swe Swe Naing</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Script Writer</span
+      >
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Soe Myint Tun.webp"
+      alt="Soe Myint Tun"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Soe Myint Tun</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Script Writer</span
+      >
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Sic Paing Hmu.webp"
+      alt="Sic Paing Hmu"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Sic Paing Hmu</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Editor</span
+      >
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Min Thu Kha.webp"
+      alt="Min Thu Kha"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Min Thu Kha</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Global Officer</span
+      >
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/members/Win Htut Aung.webp"
+      alt="Win Htut Aung @ Nolan"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Win Htut Aung @ Nolan</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Global Officer</span
+      >
+    </p>
+  </div>`,
 ];
-console.log(members.length)
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselContainer = document.getElementById('carousel-container');
+console.log(members.length);
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselContainer = document.getElementById("carousel-container");
 
-    const mobileCarousel = `
+  const mobileCarousel = `
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -591,7 +789,76 @@ document.addEventListener('DOMContentLoaded', function() {
               ${members[31]}
             </div>
           </div>
-          
+          <div class="carousel-item">
+            <div class="row">
+              ${members[32]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[33]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[34]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[35]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[36]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[37]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[38]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[39]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[40]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[41]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[42]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[43]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[44]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[45]}
+            </div>
+          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -612,9 +879,9 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     `;
 
-    const desktopCarousel = `
+  const desktopCarousel = `
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
@@ -660,7 +927,7 @@ document.addEventListener('DOMContentLoaded', function() {
               ${members[19]}
             </div>
           </div>
-          
+
           <div class="carousel-item">
             <div class="row">
               ${members[20]}
@@ -688,8 +955,42 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           </div>
 
+          <div class="carousel-item">
+            <div class="row">
+              ${members[32]}
+              ${members[33]}
+              ${members[34]}
+              ${members[35]}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              ${members[36]}
+              ${members[37]}
+              ${members[38]}
+              ${members[39]}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              ${members[40]}
+              ${members[41]}
+              ${members[42]}
+              ${members[43]}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              ${members[44]}
+              ${members[45]}
+            </div>
+          </div>
+
         </div>
-        
+
         <a
           class="carousel-control-prev"
           href="#carousel"
@@ -709,17 +1010,16 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     `;
 
-    function updateCarousel() {
-        const mobile = window.matchMedia('(max-width: 576px)').matches;
-        if (mobile) {
-            carouselContainer.innerHTML = mobileCarousel;
-        } else {
-            carouselContainer.innerHTML = desktopCarousel;
-        }
+  function updateCarousel() {
+    const mobile = window.matchMedia("(max-width: 576px)").matches;
+    if (mobile) {
+      carouselContainer.innerHTML = mobileCarousel;
+    } else {
+      carouselContainer.innerHTML = desktopCarousel;
     }
+  }
 
-    updateCarousel();
+  updateCarousel();
 
-    window.addEventListener('resize', updateCarousel);
-
+  window.addEventListener("resize", updateCarousel);
 });
