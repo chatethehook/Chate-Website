@@ -427,24 +427,6 @@ let suTuPyuContent = `
   <div class="row p-2">
 
     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
-      <iframe src="https://www.youtube.com/embed/dWnR9Bos4jU?si=yAE0ymj_POivO9HW"
-            class="responsive-iframe"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
-      <h2 class="m-0">
-        Occidental College Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">26/01/2025</p></span
-        >
-      </h2>
-      <p class="textorange m-0">Written by <span class="fw-bold">Aung Myat Htet</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
-      <p class="m-1">"စုတုပြု" Video Series, Episode 7</p>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
       <iframe src="https://www.youtube.com/embed/T-snQV67LdQ?si=_AE1UEO-BaFclAY5"
             class="responsive-iframe"
             title="YouTube video player" frameborder="0"
