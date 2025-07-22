@@ -536,91 +536,6 @@ document.addEventListener("DOMContentLoaded", function () {
               ${members[28]}
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[29]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[30]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[31]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[32]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[33]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[34]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[35]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[36]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[37]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[38]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[39]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[40]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[41]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[42]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[43]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[44]}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[45]}
-            </div>
-          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -711,43 +626,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="carousel-item">
             <div class="row">
               ${members[28]}
-              ${members[29]}
-              ${members[30]}
-              ${members[31]}
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              ${members[32]}
-              ${members[33]}
-              ${members[34]}
-              ${members[35]}
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              ${members[36]}
-              ${members[37]}
-              ${members[38]}
-              ${members[39]}
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              ${members[40]}
-              ${members[41]}
-              ${members[42]}
-              ${members[43]}
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              ${members[44]}
-              ${members[45]}
             </div>
           </div>
 
