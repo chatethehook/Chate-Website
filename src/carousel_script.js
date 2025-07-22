@@ -525,12 +525,12 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Yon Yati Win.webp"
-      alt="Yon Yati Win"
+      src="media/members/Yonn Yati Win.webp"
+      alt="Yonn Yati Win"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Yon Yati Win</h2>
+    <h2 class="text-center">Yonn Yati Win</h2>
     <p class="text-center">
       <span class="textaccent"
         >Video Content Creator</span
