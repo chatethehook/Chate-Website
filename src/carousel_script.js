@@ -9,7 +9,7 @@ const members = [
     <h2 class="text-center">Nyan Lin Htet</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Co-Founder & Admissions Advisor</span
+        >Co-Founder & Board of Directors</span
       >
       <br />
       MIT & Stanford '28
@@ -25,7 +25,7 @@ const members = [
     <h2 class="text-center">Aung Khant Paing</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Co-Founder & Admissions Advisor</span
+        >CEO, Co-Founder, Board of Directors</span
       >
       <br />
       Tufts Univerisity '28
@@ -41,7 +41,7 @@ const members = [
     <h2 class="text-center">Wai Yan Win Aung</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Co-Founder & Admissions Advisor</span
+        >Co-Founder & Board of Directors</span
       >
       <br />
       Dartmouth College '28
