@@ -19,6 +19,295 @@ let pastWebinars = `
     <div class="row p-2">
 
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/z_YtGp17-0I?si=m_y9ku3AMOGqxV2U"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in France (Schiller International University)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">22/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thazin Oo</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 21</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/VWOEg_zwxtQ?si=G-b6GsmNfy5V8SCX"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Belgium (Vrije Universiteit Brussels)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">19/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Kate @ Khin Nandar Su</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 19</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/Dv_J2Vcys-M?si=juAYEtx2H9XHUeZL"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Spain (IE Business School)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">17/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Khaing Zin Lin</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 17</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/Vkncx-PdNpg?si=pwJPB8QB9qFyGTDO"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in New Zealand (University of Auckland)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">16/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Wunna Aung</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 16</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/_Mug8J-VbwQ?si=DIxSqfCK4cDpXFml"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Canada (University of Toronto)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">09/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Soe Nyi Nyi Aung</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 14</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/wuO8ICQ12fg?si=kQ7_FZAE7sH0ujhz"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Hungary (Eötvös Loránd University)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">08/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thet Naing Soe</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 13</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/6AcKNIQO4Po?si=y-rpiLw9av3GTTff"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in the Czech Republic (Masaryk University)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">06/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thant Hmue Tii</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 12</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/OzWM44DzHlk?si=Tv8om048NoQZzMqm"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Germany (Technische Hochschule Nürnberg Georg Simon Ohm)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">05/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thar Lon Lin Htet</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 11</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/NGlLFPYE6Xs?si=XYfwBxdgiPBkANX6"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Thailand (Chulalongkorn University)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">11/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Win Htut Aung</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 10</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/yyZ_fwzek6c?si=zOIcAzLohJ_f0d8_"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Japan (Okayama University)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">10/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Pyae Phyo Aung</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 9</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/mymhiff7DUQ?si=efphxDH6rjUiGK60"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Indonesia (Universitas Pelita Harapan)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">09/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Nilar Aye</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 8</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/o2GQU86bjQQ?si=EbtRAvG6ZoOtjnhF"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Australia (University of New South Wales)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">08/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thoon Set Paing</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 7</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/iJfnMv-unGI?si=QnLvpP1d9f0oncrX"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in China (Zhejiang University)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">07/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thet No Htwe</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 6</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/c9Jju6BJkMU?si=8pDJSy4le96k2Qoz"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Italy (University of Parma)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">06/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Thiha Swe</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 5</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/TJpuk50nJBg?si=sY6QUbLGs9J0mkhZ"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Hong Kong (University of Hong Kong)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">02/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Shint Thant Eain</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 3</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/ZiYrvpB8ERE?si=RiMmc36_DFiYFI1Y"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Singapore (National University of Singapore)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">01/06/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Yoon Su Lin</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 2</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/0Ly0gA8MJjU?si=EN3q--oEon0BLFBL"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Korea (Korea Advanced Institute of Science and Technology)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">31/05/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Naing Zaw Lu, Hein Lin Thant, Kyaw Ye Thu, Zwe Myint Mo</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 1</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
           <iframe src="https://www.youtube.com/embed/SwAWNbovm9U?si=N6cNQrh8zSR0ZT4j"
             class="responsive-iframe"
             title="YouTube video player" frameborder="0"
