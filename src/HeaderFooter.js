@@ -203,11 +203,9 @@ class SpecialFooter extends HTMLElement {
                         <!--
                         <a class="footer-link" target="_self" href="/chatenltinebin.html"><p class="m-0">ချိတ်နဲ့တိုင်ပင်</p></a>
                         --->
-                        <a class="footer-link" target="_self" href="/events.html#AllWebinars"><p class="m-0"> All Webinars </p></a>
-                        <!--
-                        <a class="footer-link" target="_self" href="/events.html#UpcomingWebinars"><p class="m-0"> Upcoming Webinars </p></a>
-                        <a class="footer-link" target="_self" href="/events.html#PastWebinars"><p class="m-0"> Past Webinars </p></a>
-                        -->
+                        <a class="footer-link" target="_self" href="/events.html#AboveBeyond"><p class="m-0"> Above & Beyond </p></a>
+                        <a class="footer-link" target="_self" href="/events.html#SteppingStone"><p class="m-0"> Stepping Stone </p></a>
+                        <a class="footer-link" target="_self" href="/events.html#KyaungShaut"><p class="m-0"> ကျောင်းလျှောက်ကြမယ် </p></a>
                         <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
 
                     </div>
