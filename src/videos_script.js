@@ -169,14 +169,14 @@ let sutupyuButton = document.querySelector(`#sutupyu-button`);
 let videosSection = document.querySelector(`videos-panel`);
 
 // first content that is initialized
-eventsSection.innerHTML = suTuPyuContent;
+videosSection.innerHTML = suTuPyuContent;
 
 // changing content as page reloads
 
 /*
 if (window.location.href.indexOf("AboveBeyond") > -1) {
   console.log(`ab is true`);
-  eventsSection.innerHTML = aboveBeyondContent;
+  videosSection.innerHTML = aboveBeyondContent;
 
   // clicking and unclicking buttons
   aboveBeyondButton.classList.add(`clicked`);
@@ -185,7 +185,7 @@ if (window.location.href.indexOf("AboveBeyond") > -1) {
   sutupyuButton.classList.remove(`clicked`);
 } else if (window.location.href.indexOf("SteppingStone") > -1) {
   console.log(`ss is true`);
-  eventsSection.innerHTML = steppingStoneContent;
+  videosSection.innerHTML = steppingStoneContent;
 
   // clicking and unclicking buttons
   aboveBeyondButton.classList.remove(`clicked`);
@@ -194,7 +194,7 @@ if (window.location.href.indexOf("AboveBeyond") > -1) {
   sutupyuButton.classList.remove(`clicked`);
 } else if (window.location.href.indexOf("KyaungShaut") > -1) {
   console.log(`ks is true`);
-  eventsSection.innerHTML = kyaungShautContent;
+  videosSection.innerHTML = kyaungShautContent;
 
   // clicking and unclicking buttons
   aboveBeyondButton.classList.remove(`clicked`);
@@ -205,7 +205,7 @@ if (window.location.href.indexOf("AboveBeyond") > -1) {
 else */
 if (window.location.href.indexOf("SuTuPyu") > -1) {
   console.log(`stp is true`);
-  eventsSection.innerHTML = suTuPyuContent;
+  videosSection.innerHTML = suTuPyuContent;
 
   // clicking and unclicking buttons
   //aboveBeyondButton.classList.remove(`clicked`);
@@ -233,7 +233,7 @@ function changeURLToAboveBeyond(event) {
     "AboveBeyond",
     "/events.html#AboveBeyond",
   );
-  eventsSection.innerHTML = aboveBeyondContent;
+  videosSection.innerHTML = aboveBeyondContent;
 }
 
 // SteppingStone button changes
@@ -252,7 +252,7 @@ function changeURLToSteppingStone(event) {
     "SteppingStone",
     "/events.html#SteppingStone",
   );
-  eventsSection.innerHTML = steppingStoneContent;
+  videosSection.innerHTML = steppingStoneContent;
 }
 
 // KyaungShaut button changes
@@ -271,7 +271,7 @@ function changeURLToKyaungShaut(event) {
     "KyaungShaut",
     "/events.html#KyaungShaut",
   );
-  eventsSection.innerHTML = kyaungShautContent;
+  videosSection.innerHTML = kyaungShautContent;
 }
 */
 // sutupyu button changes
@@ -290,7 +290,7 @@ function changeURLToSuTuPyu(event) {
     "SuTuPyu",
     "/events.html#SuTuPyu",
   );
-  eventsSection.innerHTML = suTuPyuContent;
+  videosSection.innerHTML = suTuPyuContent;
 }
 
 // for clicking on the labels on the events page
