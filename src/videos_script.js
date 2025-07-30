@@ -166,7 +166,7 @@ let suTuPyuContent = `
 let sutupyuButton = document.querySelector(`#sutupyu-button`);
 
 //section identifier
-let videosSection = document.querySelector(`videos-panel`);
+let videosSection = document.querySelector(`#videos-panel`);
 
 // first content that is initialized
 videosSection.innerHTML = suTuPyuContent;
