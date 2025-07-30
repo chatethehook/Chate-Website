@@ -247,7 +247,7 @@ class SpecialFooter extends HTMLElement {
                         </div>
 
                     </div>
-                    <div class="col-3 mt-5" >
+                    <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Events </h3>
                         <!--
@@ -258,7 +258,7 @@ class SpecialFooter extends HTMLElement {
                         <a class="footer-link" target="_self" href="/events.html#KyaungShaut"><p class="m-0"> ကျောင်းလျှောက်ကြမယ် </p></a>
 
                     </div>
-                    <div class="col-3 mt-5" >
+                    <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Articles </h3>
                         <a class="footer-link" target="_self" href="/articles.html#FilterOne"><p class="m-0"> College Application (All) </p></a>
@@ -269,7 +269,7 @@ class SpecialFooter extends HTMLElement {
                         <a class="footer-link" target="_self" href="/articles.html#AllArticles"><p class="m-0"> All Articles </p></a>
                     </div>
 
-                    <div class="col-3 mt-5" >
+                    <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Videos </h3>
                         <a class="footer-link" target="_self" href="/videos.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
