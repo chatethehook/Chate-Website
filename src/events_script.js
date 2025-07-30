@@ -264,7 +264,7 @@ let aboveBeyondContent = `
             ><p class="d-inline m-0 text-right">02/06/2025</p></span
             >
           </h2>
-          <p class="textorange m-0">Shint Thant Eain</p>
+          <p class="textorange m-0">Shinn Thant Eain</p>
           <p class="m-1">"Above & Beyond" Webinar Series, Episode 3</p>
         </div>
 
