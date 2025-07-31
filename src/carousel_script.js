@@ -372,11 +372,11 @@ const members = [
   `<div class="col p-3">
     <img
       src="media/members/Win Htut Aung.webp"
-      alt="Win Htut Aung @ Nolan"
+      alt="Nolan"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Win Htut Aung @ Nolan</h2>
+    <h2 class="text-center">Nolan</h2>
     <p class="text-center">
       <span class="textaccent"
         >Global Officer</span
