@@ -256,7 +256,7 @@ function populatePage(response) {
 
     imgLink = data[i].content.substring(
       data[i].content.indexOf(`https`),
-      data[i].content.indexOf(`"`) + 1,
+      data[i].content.indexOf(`.jpg"`) + 4,
     );
 
     //console.log(`image link:` + imgLink);
