@@ -152,9 +152,9 @@ function populatePage(response) {
         <div class="card-body">
           <h5 class="card-title" id="${title}"></h5>
 
-          <h6 class="card-subtitle mb-2 text-body-secondary" id="${date}"></h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary textorange" id="${date}"></h6>
 
-          <h6 class="card-subtitle mb-2 text-body-secondary" id="${labels}"></h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary textyellow" id="${labels}"></h6>
 
           <!-- Button trigger modal -->
 
