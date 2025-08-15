@@ -223,7 +223,7 @@ iframe {
 }
 
 details {
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 15px;
     padding: 0.5em 0.5em 0;
     margin: 0.5em 0.5em;
@@ -234,6 +234,7 @@ summary {
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
     cursor: pointer;
+    display: block !important;
 }
 
 details[open] {
