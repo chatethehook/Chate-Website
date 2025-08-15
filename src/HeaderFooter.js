@@ -1,6 +1,18 @@
 let applyLink =
   "https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform?usp=dialog";
 
+let socialLinks = `
+  <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
+      target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+  <a class="social-media" href="https://www.instagram.com/chate_thehook"
+      target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+  <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
+      target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+  <a class="social-media" href="https://t.me/chatethehook"
+      target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+  <a class="social-media" href="https://www.linkedin.com/company/%E1%80%81%E1%80%BB%E1%80%AD%E1%80%90%E1%80%BA-the-hook/"
+      target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+`;
 class SpecialHeader extends HTMLElement {
   connectedCallback() {
     if (window.location.pathname === "/videos.html") {
@@ -22,14 +34,7 @@ class SpecialHeader extends HTMLElement {
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                <a class="social-media" href="https://www.instagram.com/chate_thehook"
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://t.me/chatethehook"
-                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+                    ${socialLinks}
 
                     <div
                         class="collapse navbar-collapse justify-content-center"
@@ -74,14 +79,7 @@ class SpecialHeader extends HTMLElement {
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                <a class="social-media" href="https://www.instagram.com/chate_thehook"
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
-                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://t.me/chatethehook"
-                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+                    ${socialLinks}
 
                     <div
                         class="collapse navbar-collapse justify-content-center"
@@ -125,14 +123,7 @@ class SpecialHeader extends HTMLElement {
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.instagram.com/chate_thehook"
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a class="social-media" href="https://t.me/chatethehook"
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+                    ${socialLinks}
 
                     <div
                         class="collapse navbar-collapse justify-content-center"
@@ -170,45 +161,18 @@ class SpecialHeader extends HTMLElement {
 
             <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
                 <div class="container-fluid m-2">
-                  <button
-                      class="navbar-toggler"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#navbarNavAltMarkup"
-                      aria-controls="navbarNavAltMarkup"
-                      aria-expanded="false"
-                      aria-label="Toggle navigation"
-                  >
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                <a
-                    class="social-media"
-                    href="https://www.facebook.com/profile.php?id=61557409119325"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fa-brands fa-facebook" aria-hidden="true"></i
-                    ></a>
-                <a
-                    class="social-media"
-                    href="https://www.instagram.com/chate_thehook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-                    ></a>
-                <a
-                    class="social-media"
-                    href="https://www.youtube.com/@Chate_TheHook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fa-brands fa-youtube" aria-hidden="true"></i
-                    ></a>
-                <a
-                    class="social-media"
-                    href="https://t.me/chatethehook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><i class="fa-brands fa-telegram" aria-hidden="true"></i
-                    ></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                ${socialLinks}
 
                 <div
                     class="collapse navbar-collapse justify-content-center"
@@ -247,14 +211,7 @@ class SpecialFooter extends HTMLElement {
                         <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
                         <h3 class="text-center"> <span class="textaccent fw-semibold"> Chate </span> Your Dreams </h3>
                         <div class="text-center">
-                            <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
-                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                            <a class="social-media" href="https://www.instagram.com/chate_thehook"
-                             target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                            <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
-                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                            <a class="social-media" href="https://t.me/chatethehook"
-                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+                        ${socialLinks}
                         </div>
 
                     </div>
