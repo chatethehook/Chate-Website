@@ -1,6 +1,7 @@
 let applyLink =
     "https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform?usp=dialog";
 
+
 let socialLinks = `
   <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
       target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
@@ -15,8 +16,8 @@ let socialLinks = `
 `;
 class SpecialHeader extends HTMLElement {
     connectedCallback() {
-        if (window.location.pathname === "/articles.html") {
-            this.innerHTML = `
+      if (window.location.pathname === "/articles.html") {
+      this.innerHTML = `
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
@@ -41,20 +42,18 @@ class SpecialHeader extends HTMLElement {
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-
                             <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
                             <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-
                         </div>
                     </div>
                     <div >
-                    <a
-                    class="btn btn-primary header-button"
-                    target="_blank"
-                    href="${applyLink}"
-                    role="button"
-                    >Apply</a
-                    >
+                      <a
+                      class="btn btn-primary header-button"
+                      target="_blank"
+                      href="${applyLink}"
+                      role="button"
+                      >Apply</a
+                      >
                     </div>
                 </div>
 
@@ -87,7 +86,6 @@ class SpecialHeader extends HTMLElement {
                         >
                         <div class="navbar-nav">
                         <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-
                         <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
                         <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
 
@@ -133,29 +131,21 @@ class SpecialHeader extends HTMLElement {
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
-                >
-                    <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/"
-                        ><h3 class="header-links">Home</h3></a
                     >
-
-                    <a class="nav-link" href="/events.html"
-                        ><h3 class="header-links">Events</h3></a
-                    >
-
-                    <a class="nav-link" href="/articles.html"
-                    ><h3 class= "header-links">Articles</h3></a
-                    >
-                    </div>
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/"><h3 class= "header-links">Home</h3></a>
+                    <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                  </div>
                 </div>
                 <div>
-                  <a
-                  class="btn btn-primary header-button"
-                  target="_blank"
-                  href="${applyLink}"
-                  role="button"
-                  >Apply</a
-                  >
+                    <a
+                    class="btn btn-primary header-button"
+                    target="_blank"
+                    href="${applyLink}"
+                    role="button"
+                    >Apply</a
+                    >
                 </div>
               </div>
             </nav>
@@ -199,9 +189,9 @@ class SpecialFooter extends HTMLElement {
                         <a class="footer-link" target="_self" href="/articles.html#FilterFour"><p class="m-0"> About ချိတ် </p></a>
                         <!-- <a class="footer-link" target="_self" href="/articles.html#FilterFive"><p class="m-0"> Webinar Announcements </p></a> --->
                         <a class="footer-link" target="_self" href="/articles.html#AllArticles"><p class="m-0"> All Articles </p></a>
-
-
                     </div>
+
+                    
                 </div>
                
                 <div class="mx-5 copyright">
