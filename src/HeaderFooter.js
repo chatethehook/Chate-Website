@@ -15,7 +15,7 @@ let socialLinks = `
 `;
 class SpecialHeader extends HTMLElement {
   connectedCallback() {
-    if (window.location.pathname === "/articles.html") {
+    if (window.location.pathname === "/videos.html") {
       this.innerHTML = `
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
@@ -41,20 +41,64 @@ class SpecialHeader extends HTMLElement {
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-
                             <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
-                            <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                            <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                            <a class="nav-link active" aria-current="page" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
 
                         </div>
                     </div>
                     <div >
-                    <a
-                    class="btn btn-primary header-button"
-                    target="_blank"
-                    href="${applyLink}"
-                    role="button"
-                    >Apply</a
+                      <a
+                      class="btn btn-primary header-button"
+                      target="_blank"
+                      href="${applyLink}"
+                      role="button"
+                      >Apply</a
+                      >
+                    </div>
+                </div>
+
+            </nav>
+            `;
+    } else if (window.location.pathname === "/articles.html") {
+      this.innerHTML = `
+            <a href="/">
+                <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
+            </a>
+            <hr \>
+            <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
+                <div class="container-fluid m-2">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
                     >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    ${socialLinks}
+
+                    <div
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                            <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                            <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                            <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                        </div>
+                    </div>
+                    <div >
+                      <a
+                      class="btn btn-primary header-button"
+                      target="_blank"
+                      href="${applyLink}"
+                      role="button"
+                      >Apply</a
+                      >
                     </div>
                 </div>
 
@@ -87,9 +131,9 @@ class SpecialHeader extends HTMLElement {
                         >
                         <div class="navbar-nav">
                         <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-
                         <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
                         <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                        <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
 
                         </div>
                     </div>
@@ -133,29 +177,22 @@ class SpecialHeader extends HTMLElement {
                 <div
                     class="collapse navbar-collapse justify-content-center"
                     id="navbarNavAltMarkup"
-                >
-                    <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/"
-                        ><h3 class="header-links">Home</h3></a
                     >
-
-                    <a class="nav-link" href="/events.html"
-                        ><h3 class="header-links">Events</h3></a
-                    >
-
-                    <a class="nav-link" href="/articles.html"
-                    ><h3 class= "header-links">Articles</h3></a
-                    >
-                    </div>
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/"><h3 class= "header-links">Home</h3></a>
+                    <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                    <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                  </div>
                 </div>
                 <div>
-                  <a
-                  class="btn btn-primary header-button"
-                  target="_blank"
-                  href="${applyLink}"
-                  role="button"
-                  >Apply</a
-                  >
+                    <a
+                    class="btn btn-primary header-button"
+                    target="_blank"
+                    href="${applyLink}"
+                    role="button"
+                    >Apply</a
+                    >
                 </div>
               </div>
             </nav>
@@ -178,7 +215,7 @@ class SpecialFooter extends HTMLElement {
                         </div>
 
                     </div>
-                    <div class="col-3 mt-5" >
+                    <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Events </h3>
                         <!--
@@ -187,10 +224,9 @@ class SpecialFooter extends HTMLElement {
                         <a class="footer-link" target="_self" href="/events.html#AboveBeyond"><p class="m-0"> Above & Beyond </p></a>
                         <a class="footer-link" target="_self" href="/events.html#SteppingStone"><p class="m-0"> Stepping Stone </p></a>
                         <a class="footer-link" target="_self" href="/events.html#KyaungShaut"><p class="m-0"> ကျောင်းလျှောက်ကြမယ် </p></a>
-                        <a class="footer-link" target="_self" href="/events.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
 
                     </div>
-                    <div class="col-3 mt-5" >
+                    <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Articles </h3>
                         <a class="footer-link" target="_self" href="/articles.html#FilterOne"><p class="m-0"> College Application (All) </p></a>
@@ -199,8 +235,12 @@ class SpecialFooter extends HTMLElement {
                         <a class="footer-link" target="_self" href="/articles.html#FilterFour"><p class="m-0"> About ချိတ် </p></a>
                         <!-- <a class="footer-link" target="_self" href="/articles.html#FilterFive"><p class="m-0"> Webinar Announcements </p></a> --->
                         <a class="footer-link" target="_self" href="/articles.html#AllArticles"><p class="m-0"> All Articles </p></a>
+                    </div>
 
-
+                    <div class="col-2 mt-5" >
+                        <br \>
+                        <h3 class="fw-medium"> Videos </h3>
+                        <a class="footer-link" target="_self" href="/videos.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
                     </div>
                 </div>
 
