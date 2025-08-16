@@ -51,7 +51,11 @@ body {
 }
 
 .blue-gradient {
-    background: linear-gradient( 181.62deg, rgba(200, 240, 242, 0.05) -0.45%, rgba(196, 253, 255, 0.65) 82.51%);
+    background: linear-gradient(
+        181.62deg,
+        rgba(200, 240, 242, 0.05) -0.45%,
+        rgba(196, 253, 255, 0.65) 82.51%
+    );
     width: 100%;
 }
 
@@ -216,7 +220,7 @@ iframe {
     padding-right: 10%;
 }
 
-.carousel-item>.row>div {
+.carousel-item > .row > div {
     height: max-content;
 }
 
@@ -234,3 +238,28 @@ iframe {
     color: var(--text-accent);
     text-decoration: underline;
 }
+
+details {
+    border: 0px solid #ccc;
+    border-radius: 15px;
+    padding: 0.5em 0.5em 0;
+    margin: 0.5em 0.5em;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    cursor: pointer;
+    display: block !important;
+}
+
+details[open] {
+    padding: 1em;
+}
+
+details[open] summary {
+    border-bottom: 0px solid #ccc;
+    margin-bottom: 0.5em;
+}
+
