@@ -31,6 +31,23 @@ let aboveBeyondContent = `
         </div>
 
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/elXtWhFaDbE?rel=0"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Malaysia (INTI International University, Malaysia)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">18/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0"> Hein Pyae Sone & Thant Thant Myo Oo</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 20</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
           <iframe src="https://www.youtube.com/embed/VWOEg_zwxtQ?si=G-b6GsmNfy5V8SCX"
             class="responsive-iframe"
             title="YouTube video player" frameborder="0"
@@ -45,6 +62,23 @@ let aboveBeyondContent = `
           </h2>
           <p class="textorange m-0">Kate @ Khin Nandar Su</p>
           <p class="m-1">"Above & Beyond" Webinar Series, Episode 19</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+          <iframe src="https://www.youtube.com/embed/xu14htv1jFw?rel=0"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <h2 class="m-0">
+            Study in Switzerland (Swiss Hotel Management School)&nbsp;
+            <span class="textaccent"
+            ><p class="d-inline m-0 text-right">20/07/2025</p></span
+            >
+          </h2>
+          <p class="textorange m-0">Myat Eaindray Hmoo</p>
+          <p class="m-1">"Above & Beyond" Webinar Series, Episode 18</p>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
@@ -883,119 +917,115 @@ eventsSection.innerHTML = aboveBeyondContent;
 
 // changing content as page reloads
 if (window.location.href.indexOf("AboveBeyond") > -1) {
-  console.log(`ab is true`);
-  eventsSection.innerHTML = aboveBeyondContent;
+    console.log(`ab is true`);
+    eventsSection.innerHTML = aboveBeyondContent;
 
-  // clicking and unclicking buttons
-  aboveBeyondButton.classList.add(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.remove(`clicked`);
+    // clicking and unclicking buttons
+    aboveBeyondButton.classList.add(`clicked`);
+    steppingStoneButton.classList.remove(`clicked`);
+    kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.remove(`clicked`);
 } else if (window.location.href.indexOf("SteppingStone") > -1) {
-  console.log(`ss is true`);
-  eventsSection.innerHTML = steppingStoneContent;
+    console.log(`ss is true`);
+    eventsSection.innerHTML = steppingStoneContent;
 
-  // clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.add(`clicked`);
-  kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.remove(`clicked`);
+    // clicking and unclicking buttons
+    aboveBeyondButton.classList.remove(`clicked`);
+    steppingStoneButton.classList.add(`clicked`);
+    kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.remove(`clicked`);
 } else if (window.location.href.indexOf("KyaungShaut") > -1) {
-  console.log(`ks is true`);
-  eventsSection.innerHTML = kyaungShautContent;
+    console.log(`ks is true`);
+    eventsSection.innerHTML = kyaungShautContent;
 
-  // clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.add(`clicked`);
-  sutupyuButton.classList.remove(`clicked`);
+    // clicking and unclicking buttons
+    aboveBeyondButton.classList.remove(`clicked`);
+    steppingStoneButton.classList.remove(`clicked`);
+    kyaungshautButton.classList.add(`clicked`);
+    sutupyuButton.classList.remove(`clicked`);
 } else if (window.location.href.indexOf("SuTuPyu") > -1) {
-  console.log(`stp is true`);
-  eventsSection.innerHTML = suTuPyuContent;
+    console.log(`stp is true`);
+    eventsSection.innerHTML = suTuPyuContent;
 
-  // clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.add(`clicked`);
+    // clicking and unclicking buttons
+    aboveBeyondButton.classList.remove(`clicked`);
+    steppingStoneButton.classList.remove(`clicked`);
+    kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.add(`clicked`);
 }
 
 // changes when labels are changed on events paged
 
 // AboveBeyond button changes
 function changeURLToAboveBeyond(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  // clicking and unclicking buttons
-  aboveBeyondButton.classList.add(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.remove(`clicked`);
+    // clicking and unclicking buttons
+    aboveBeyondButton.classList.add(`clicked`);
+    steppingStoneButton.classList.remove(`clicked`);
+    kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.remove(`clicked`);
 
-  //editing url
-  window.history.pushState(
-    { additionalInformation: "Updated the URL with JS" },
-    "AboveBeyond",
-    "/events.html#AboveBeyond",
-  );
-  eventsSection.innerHTML = aboveBeyondContent;
+    //editing url
+    window.history.pushState({ additionalInformation: "Updated the URL with JS" },
+        "AboveBeyond",
+        "/events.html#AboveBeyond",
+    );
+    eventsSection.innerHTML = aboveBeyondContent;
 }
 
 // SteppingStone button changes
 function changeURLToSteppingStone(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  // clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.add(`clicked`);
-  kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.remove(`clicked`);
+    // clicking and unclicking buttons
+    aboveBeyondButton.classList.remove(`clicked`);
+    steppingStoneButton.classList.add(`clicked`);
+    kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.remove(`clicked`);
 
-  //editing url
-  window.history.pushState(
-    { additionalInformation: "Updated the URL with JS" },
-    "SteppingStone",
-    "/events.html#SteppingStone",
-  );
-  eventsSection.innerHTML = steppingStoneContent;
+    //editing url
+    window.history.pushState({ additionalInformation: "Updated the URL with JS" },
+        "SteppingStone",
+        "/events.html#SteppingStone",
+    );
+    eventsSection.innerHTML = steppingStoneContent;
 }
 
 // KyaungShaut button changes
 function changeURLToKyaungShaut(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  //clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.add(`clicked`);
-  sutupyuButton.classList.remove(`clicked`);
+    //clicking and unclicking buttons
+    aboveBeyondButton.classList.remove(`clicked`);
+    steppingStoneButton.classList.remove(`clicked`);
+    kyaungshautButton.classList.add(`clicked`);
+    sutupyuButton.classList.remove(`clicked`);
 
-  //editing url
-  window.history.pushState(
-    { additionalInformation: "Updated the URL with JS" },
-    "KyaungShaut",
-    "/events.html#KyaungShaut",
-  );
-  eventsSection.innerHTML = kyaungShautContent;
+    //editing url
+    window.history.pushState({ additionalInformation: "Updated the URL with JS" },
+        "KyaungShaut",
+        "/events.html#KyaungShaut",
+    );
+    eventsSection.innerHTML = kyaungShautContent;
 }
 
 // sutupyu button changes
 function changeURLToSuTuPyu(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  //clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.add(`clicked`);
+    //clicking and unclicking buttons
+    aboveBeyondButton.classList.remove(`clicked`);
+    steppingStoneButton.classList.remove(`clicked`);
+    kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.add(`clicked`);
 
-  // editing url
-  window.history.pushState(
-    { additionalInformation: "Updated the URL with JS" },
-    "SuTuPyu",
-    "/events.html#SuTuPyu",
-  );
-  eventsSection.innerHTML = suTuPyuContent;
+    // editing url
+    window.history.pushState({ additionalInformation: "Updated the URL with JS" },
+        "SuTuPyu",
+        "/events.html#SuTuPyu",
+    );
+    eventsSection.innerHTML = suTuPyuContent;
 }
 
 // for clicking on the labels on the events page
