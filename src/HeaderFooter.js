@@ -1,5 +1,5 @@
 let applyLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform?usp=dialog";
+    "https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform?usp=dialog";
 
 let socialLinks = `
   <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
@@ -14,9 +14,9 @@ let socialLinks = `
       target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
 `;
 class SpecialHeader extends HTMLElement {
-  connectedCallback() {
-    if (window.location.pathname === "/articles.html") {
-      this.innerHTML = `
+    connectedCallback() {
+        if (window.location.pathname === "/articles.html") {
+            this.innerHTML = `
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
@@ -60,8 +60,8 @@ class SpecialHeader extends HTMLElement {
 
             </nav>
             `;
-    } else if (window.location.pathname === "/events.html") {
-      this.innerHTML = `
+        } else if (window.location.pathname === "/events.html") {
+            this.innerHTML = `
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
@@ -106,8 +106,8 @@ class SpecialHeader extends HTMLElement {
                 </div>
             </nav>
             `;
-    } else if (window.location.pathname === "/") {
-      this.innerHTML = `
+        } else if (window.location.pathname === "/") {
+            this.innerHTML = `
 
             <a href="/">
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
@@ -162,12 +162,12 @@ class SpecialHeader extends HTMLElement {
 
 
             `;
+        }
     }
-  }
 }
 class SpecialFooter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
             <div class="footer">
                 <div class="row  pl-5">
                     <div class="col-3 py-5 m-2" >
@@ -203,20 +203,25 @@ class SpecialFooter extends HTMLElement {
 
                     </div>
                 </div>
-                <div class="mx-5">
-                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-                        <a property="dct:title" rel="cc:attributionURL" href="https://chatethehook.com/">ချိတ် - The Hook Official Website</a> by
-                        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://chatethehook.com/">ချိတ် - The Hook</a> is licensed under
-                        <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
-                        </a>
+               
+                <div class="mx-5 copyright">
+                    <p>
+                       © 2024 
+                       <a href="https://chatethehook.com/" title="The Hook Official Website">ချိတ် - The Hook Official Website</a> 
+                       by 
+                       <a href="https://chatethehook.com/" title="The Hook">ချိတ် - The Hook</a> 
+                       is licensed under 
+                       <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+                         CC BY-NC 4.0
+                         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="height:18px;margin-left:4px;vertical-align:text-bottom;">
+                         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="height:18px;margin-left:2px;vertical-align:text-bottom;">
+                         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" style="height:18px;margin-left:2px;vertical-align:text-bottom;">
+                       </a>
                     </p>
-                </div>
+                 </div>
             </div>
         `;
-  }
+    }
 }
 customElements.define("special-header", SpecialHeader);
 customElements.define("special-footer", SpecialFooter);
