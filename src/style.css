@@ -25,9 +25,11 @@ body {
 .primary {
     color: var(--primary-color);
 }
+
 .textaccent {
     color: var(--text-accent) !important;
 }
+
 .textwhite {
     color: var(--bg-color);
 }
@@ -43,16 +45,13 @@ body {
 .background-gray {
     background-color: var(--bg-color);
 }
+
 .background-blue {
     background: linear-gradient(90deg, #5ce1e6 0%, #0fc4cb 101.04%);
 }
 
 .blue-gradient {
-    background: linear-gradient(
-        181.62deg,
-        rgba(200, 240, 242, 0.05) -0.45%,
-        rgba(196, 253, 255, 0.65) 82.51%
-    );
+    background: linear-gradient( 181.62deg, rgba(200, 240, 242, 0.05) -0.45%, rgba(196, 253, 255, 0.65) 82.51%);
     width: 100%;
 }
 .gray-blue-gradient {
@@ -69,6 +68,7 @@ body {
     height: auto;
     gap: 0px;
 }
+
 .header-links {
     font-weight: 500 !important;
     text-align: center !important;
@@ -85,6 +85,7 @@ body {
     opacity: 0px;
     margin: 0 auto;
 }
+
 .header-button {
     color: #233142 !important;
     font-weight: 500 !important;
@@ -118,6 +119,7 @@ body {
     color: #233142;
     text-decoration: none;
 }
+
 .footer-link:hover {
     color: #304b6d;
     text-decoration: none;
@@ -126,6 +128,7 @@ body {
 hr {
     margin: 2px !important;
 }
+
 p,
 h1,
 h2,
@@ -203,6 +206,7 @@ iframe {
     width: 100%;
     height: auto;
 }
+
 .icon {
     display: block;
     margin: 0 auto;
@@ -214,34 +218,28 @@ iframe {
     transform: translateY(-50%);
     filter: invert(100%);
 }
+
 .carousel {
     padding-left: 10%;
     padding-right: 10%;
 }
-.carousel-item > .row > div {
+
+.carousel-item>.row>div {
     height: max-content;
 }
 
-details {
-    border: 0px solid #ccc;
-    border-radius: 15px;
-    padding: 0.5em 0.5em 0;
-    margin: 0.5em 0.5em;
+.copyright p {
+    text-align: center;
+    padding: 30px 0;
 }
 
-summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-    cursor: pointer;
-    display: block !important;
+.copyright a {
+    color: #233142;
+    /* font-size: clamp(10px, 1.2vw, 12px); */
 }
 
-details[open] {
-    padding: 1em;
+.copyright a:hover {
+    color: var(--text-accent);
+    text-decoration: underline;
 }
 
-details[open] summary {
-    border-bottom: 0px solid #ccc;
-    margin-bottom: 0.5em;
-}
