@@ -8,6 +8,8 @@ let socialLinks = `
       target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
   <a class="social-media" href="https://www.youtube.com/@Chate_TheHook"
       target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+  <a class="social-media" href="https://www.tiktok.com/@chate_thehook"
+      target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
   <a class="social-media" href="https://t.me/chatethehook"
       target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
   <a class="social-media" href="https://www.linkedin.com/company/%E1%80%81%E1%80%BB%E1%80%AD%E1%80%90%E1%80%BA-the-hook/"
