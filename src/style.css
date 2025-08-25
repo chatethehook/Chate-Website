@@ -51,7 +51,11 @@ body {
 }
 
 .blue-gradient {
-    background: linear-gradient( 181.62deg, rgba(200, 240, 242, 0.05) -0.45%, rgba(196, 253, 255, 0.65) 82.51%);
+    background: linear-gradient(
+        181.62deg,
+        rgba(200, 240, 242, 0.05) -0.45%,
+        rgba(196, 253, 255, 0.65) 82.51%
+    );
     width: 100%;
 }
 
@@ -216,7 +220,7 @@ iframe {
     padding-right: 10%;
 }
 
-.carousel-item>.row>div {
+.carousel-item > .row > div {
     height: max-content;
 }
 

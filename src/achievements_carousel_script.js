@@ -142,16 +142,33 @@ document.addEventListener("DOMContentLoaded", function () {
               ${members[0]}
               ${members[1]}
               ${members[2]}
-              ${members[3]}
+
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="row">
+              ${members[3]}
               ${members[4]}
               ${members[5]}
+
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
               ${members[6]}
               ${members[7]}
+              <div class="col p-3">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+            ${members[8]}
+            ${members[9]}
+
             </div>
           </div>
 
