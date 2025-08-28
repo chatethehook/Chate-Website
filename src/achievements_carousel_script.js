@@ -164,14 +164,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           </div>
 
-          <div class="carousel-item">
-            <div class="row">
-            ${members[8]}
-            ${members[9]}
-
-            </div>
-          </div>
-
         </div>
 
         <a
