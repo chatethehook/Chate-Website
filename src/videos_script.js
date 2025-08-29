@@ -12,6 +12,60 @@ let suTuPyuContent = `
 
   <div class="row p-2">
 
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/MiaqKwu8cm0"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        MIT Accepted Essay&nbsp;
+        <span class="textaccent"
+        ><p class="d-inline m-0 text-right">28/08/2025</p></span
+        >
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">Soe Lin Htet</span></p>
+      <p class="m-1">Read by Saw Shar Nyin Thar</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 11</p>
+    </div>
+
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/2u0sUV8Wzdk"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        UCLA Chancellor's Scholarship Winning Essay&nbsp;
+        <span class="textaccent"
+        ><p class="d-inline m-0 text-right">26/08/2025</p></span
+        >
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">May Kyi Phyu Thin</span></p>
+      <p class="m-1">Read by Saw Shar Nyin Thar</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 10</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/yreDDP0Jp9c"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        Tufts University Accepted Essay&nbsp;
+        <span class="textaccent"
+        ><p class="d-inline m-0 text-right">18/08/2025</p></span
+        >
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">Thang Dopmul</span></p>
+      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 9</p>
+    </div>
+
     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
       <iframe src="https://www.youtube.com/embed/DQo_3gRPBu0?si=P7JHwilIKUcd6M3D"
             class="responsive-iframe"
@@ -204,14 +258,14 @@ if (window.location.href.indexOf("AboveBeyond") > -1) {
 }
 else */
 if (window.location.href.indexOf("SuTuPyu") > -1) {
-  console.log(`stp is true`);
-  videosSection.innerHTML = suTuPyuContent;
+    console.log(`stp is true`);
+    videosSection.innerHTML = suTuPyuContent;
 
-  // clicking and unclicking buttons
-  //aboveBeyondButton.classList.remove(`clicked`);
-  //steppingStoneButton.classList.remove(`clicked`);
-  //kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.add(`clicked`);
+    // clicking and unclicking buttons
+    //aboveBeyondButton.classList.remove(`clicked`);
+    //steppingStoneButton.classList.remove(`clicked`);
+    //kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.add(`clicked`);
 }
 
 // changes when labels are changed on events paged
@@ -276,21 +330,20 @@ function changeURLToKyaungShaut(event) {
 */
 // sutupyu button changes
 function changeURLToSuTuPyu(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  //clicking and unclicking buttons
-  // aboveBeyondButton.classList.remove(`clicked`);
-  // steppingStoneButton.classList.remove(`clicked`);
-  // kyaungshautButton.classList.remove(`clicked`);
-  sutupyuButton.classList.add(`clicked`);
+    //clicking and unclicking buttons
+    // aboveBeyondButton.classList.remove(`clicked`);
+    // steppingStoneButton.classList.remove(`clicked`);
+    // kyaungshautButton.classList.remove(`clicked`);
+    sutupyuButton.classList.add(`clicked`);
 
-  // editing url
-  window.history.pushState(
-    { additionalInformation: "Updated the URL with JS" },
-    "SuTuPyu",
-    "/events.html#SuTuPyu",
-  );
-  videosSection.innerHTML = suTuPyuContent;
+    // editing url
+    window.history.pushState({ additionalInformation: "Updated the URL with JS" },
+        "SuTuPyu",
+        "/events.html#SuTuPyu",
+    );
+    videosSection.innerHTML = suTuPyuContent;
 }
 
 // for clicking on the labels on the events page
