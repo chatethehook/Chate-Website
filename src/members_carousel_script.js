@@ -9,7 +9,7 @@ const members = [
     <h2 class="text-center">Nyan Lin Htet</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Board of Directors</span
+        >Co-Founder & Board of Directors</span
       >
       <br />
       MIT & Stanford '28
@@ -25,7 +25,7 @@ const members = [
     <h2 class="text-center">Aung Khant Paing</h2>
     <p class="text-center">
       <span class="textaccent"
-        >CEO & Board of Directors</span
+        >CEO, Co-Founder, Board of Directors</span
       >
       <br />
       Tufts Univerisity '28
@@ -41,7 +41,7 @@ const members = [
     <h2 class="text-center">Wai Yan Win Aung</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Board of Directors</span
+        >Co-Founder & Board of Directors</span
       >
       <br />
       Dartmouth College '28
@@ -96,7 +96,7 @@ const members = [
     />
     <h2 class="text-center">Aung Htoo Han</h2>
     <p class="text-center">
-      <span class="textaccent">Head of Globalized ချိတ်</span>
+      <span class="textaccent">Global Head</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -120,7 +120,7 @@ const members = [
     />
     <h2 class="text-center">Shwe Eain Lin</h2>
     <p class="text-center">
-      <span class="textaccent">Head of Public Relations</span>
+      <span class="textaccent">Public Relations Officer</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -180,7 +180,7 @@ const members = [
     />
     <h2 class="text-center">Phuu Pwint Thura</h2>
     <p class="text-center">
-      <span class="textaccent">Content Editor</span>
+      <span class="textaccent">Content Writer</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -228,7 +228,7 @@ const members = [
     />
     <h2 class="text-center">Aye Zin Phyo</h2>
     <p class="text-center">
-      <span class="textaccent">Graphic Consultant</span>
+      <span class="textaccent">Graphic Designer</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -309,7 +309,7 @@ const members = [
     <h2 class="text-center">Saw Shar Nyin Thar</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Head of Video Content Team</span
+        >Video Content Creator</span
       >
     </p>
   </div>`,
@@ -365,7 +365,7 @@ const members = [
     <h2 class="text-center">Min Thu Kha</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Secretary of Globalized ချိတ်</span
+        >Global Officer</span
       >
     </p>
   </div>`,
@@ -379,7 +379,7 @@ const members = [
     <h2 class="text-center">Nolan</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Chief Asia Officer @ Globalized ချိတ်</span
+        >Global Officer</span
       >
     </p>
   </div>`,

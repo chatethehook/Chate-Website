@@ -59,15 +59,6 @@ body {
     width: 100%;
 }
 
-.gray-blue-gradient {
-    background: linear-gradient(
-        181.62deg,
-        var(--bg-color) -0.45%,
-        rgba(196, 253, 255, 0.65) 82.51%
-    );
-    width: 100%;
-}
-
 .row {
     width: 100%;
     height: auto;
@@ -246,28 +237,4 @@ iframe {
 .copyright a:hover {
     color: var(--text-accent);
     text-decoration: underline;
-}
-
-details {
-    border: 0px solid #ccc;
-    border-radius: 15px;
-    padding: 0.5em 0.5em 0;
-    margin: 0.5em 0.5em;
-}
-
-summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-    cursor: pointer;
-    display: block !important;
-}
-
-details[open] {
-    padding: 1em;
-}
-
-details[open] summary {
-    border-bottom: 0px solid #ccc;
-    margin-bottom: 0.5em;
 }
