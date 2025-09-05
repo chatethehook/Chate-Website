@@ -248,8 +248,8 @@ class SpecialFooter extends HTMLElement {
 
                 <div class="mx-5 copyright">
                     <p>
-                       © 2024
-                       <a href="https://chatethehook.com/" title="The Hook Official Website">ချိတ် - The Hook Official Website</a>
+                       © 2025
+                       <a href="https://github.com/chatethehook/Chate-Website" title="The Hook Official Website">ချိတ် - The Hook Official Website</a>
                        by
                        <a href="https://chatethehook.com/" title="The Hook">ချိတ် - The Hook</a>
                     </p>
