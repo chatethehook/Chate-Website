@@ -143,6 +143,7 @@ function populatePage(response) {
     let modaldate = `modaldate` + i;
     let modallabels = `modallabels` + i;
     let cardSkel = `<div class="card border-0 article m-0 mx-0 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" >
+
           <img
             src="..."
             class="card-img-top rounded mt-2 mb-0"
