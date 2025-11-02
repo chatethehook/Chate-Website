@@ -29,18 +29,18 @@ let data = [];
 let count = 0;
 
 //filters
-let filterOne = [`Types of Colleges`, `Application Requirements`];
-let filterTwo = [`Application Requirements`];
-let filterThree = [`Types of Colleges`];
-let filterFour = [`About ချိတ် - The Hook`];
-//let filterFive = [`Webinar Announcement`];
+let filterOne = [`Scholarships`];
+let filterTwo = [`Testing & Curriculum`];
+let filterThree = [`UK`];
+let filterFour = [`US`];
+let filterFive = [`About ချိတ် - The Hook`];
 
 let desiredContent = [
   filterOne,
   filterTwo,
   filterThree,
   filterFour,
-  //filterFive,
+  filterFive,
 ];
 
 let desiredFilter = 0;
@@ -307,8 +307,7 @@ function changeURLToAllArticles(event) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //editing url
 
@@ -329,8 +328,7 @@ function changeURLToFilterOne(event) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //editing url
 
@@ -351,8 +349,7 @@ function changeURLToFilterTwo(event) {
   filterTwoButton.classList.add("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //editing url
 
@@ -373,8 +370,7 @@ function changeURLToFilterThree(event) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.add("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //editing url
 
@@ -395,8 +391,7 @@ function changeURLToFilterFour(event) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.add("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //editing url
 
@@ -410,20 +405,13 @@ function changeURLToFilterFour(event) {
   desiredFilter = 3;
 }
 
-/*
 function changeURLToFilterFive(event) {
   //event.preventDefault();
-
   allArticleButton.classList.remove(`clicked`);
-
   filterOneButton.classList.remove(`clicked`);
-
   filterTwoButton.classList.remove("clicked");
-
   filterThreeButton.classList.remove("clicked");
-
   filterFourButton.classList.remove("clicked");
-
   filterFiveButton.classList.add("clicked");
 
   //editing url
@@ -435,10 +423,8 @@ function changeURLToFilterFive(event) {
   );
 
   //changing content to desired
-
   desiredFilter = 4;
 }
- */
 
 // changing content as page reloads
 
@@ -449,8 +435,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
 
@@ -465,8 +450,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 0;
@@ -480,8 +464,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.add("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 1;
@@ -495,8 +478,7 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.add("clicked");
   filterFourButton.classList.remove("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 2;
@@ -510,37 +492,26 @@ if (window.location.href.indexOf("AllArticles") > -1) {
   filterTwoButton.classList.remove("clicked");
   filterThreeButton.classList.remove("clicked");
   filterFourButton.classList.add("clicked");
-
-  //filterFiveButton.classList.remove("clicked");
+  filterFiveButton.classList.remove("clicked");
 
   //changing content to desired
   desiredFilter = 3;
 
   resetPage();
-}
-/*
-else if (window.location.href.indexOf("FilterFive") > -1) {
+} else if (window.location.href.indexOf("FilterFive") > -1) {
   console.log(`filter Five is true`);
-
   allArticleButton.classList.remove(`clicked`);
-
   filterOneButton.classList.remove(`clicked`);
-
   filterTwoButton.classList.remove("clicked");
-
   filterThreeButton.classList.remove("clicked");
-
   filterFourButton.classList.remove("clicked");
-
   filterFiveButton.classList.add("clicked");
 
   //changing content to desired
-
   desiredFilter = 4;
 
   resetPage();
 }
-*/
 
 axios.get(blogUrl).then(populatePage);
 
@@ -574,12 +545,8 @@ filterFourButton.addEventListener(`click`, () => {
   axios.get(blogUrl).then(populatePage);
 });
 
-/*
 filterFiveButton.addEventListener(`click`, () => {
   changeURLToFilterFive();
-
   resetPage();
-
   axios.get(blogUrl).then(populatePage);
 });
- */
