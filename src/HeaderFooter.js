@@ -231,11 +231,11 @@ class SpecialFooter extends HTMLElement {
                     <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Articles </h3>
-                        <a class="footer-link" target="_self" href="/articles.html#FilterOne"><p class="m-0"> College Application (All) </p></a>
-                        <a class="footer-link" target="_self" href="/articles.html#FilterTwo"><p class="m-0"> Application Requirements </p></a>
-                        <a class="footer-link" target="_self" href="/articles.html#FilterThree"><p class="m-0"> Types of Colleges </p></a
-                        <a class="footer-link" target="_self" href="/articles.html#FilterFour"><p class="m-0"> About ချိတ် </p></a>
-                        <!-- <a class="footer-link" target="_self" href="/articles.html#FilterFive"><p class="m-0"> Webinar Announcements </p></a> --->
+                        <a class="footer-link" target="_self" href="/articles.html#FilterOne"><p class="m-0"> Scholarships </p></a>
+                        <a class="footer-link" target="_self" href="/articles.html#FilterTwo"><p class="m-0"> Testing and Curriculum </p></a>
+                        <a class="footer-link" target="_self" href="/articles.html#FilterThree"><p class="m-0"> UK </p></a
+                        <a class="footer-link" target="_self" href="/articles.html#FilterFour"><p class="m-0"> US </p></a>
+                        <!-- <a class="footer-link" target="_self" href="/articles.html#FilterFive"><p class="m-0"> About ချိတ် </p></a> --->
                         <a class="footer-link" target="_self" href="/articles.html#AllArticles"><p class="m-0"> All Articles </p></a>
                     </div>
 
