@@ -1,5 +1,26 @@
-let applyLink =
+let uwcLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLSd8WKvfu84FiuBiL_gFvqC8dsp0lxWudqkr_9KRFNHPTK4TwA/viewform?usp=dialog";
+
+let globalLink =
   "https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform?usp=dialog";
+
+let applyButtons = `
+  <div >
+    <a
+    class="btn btn-primary accent-button"
+    target="_blank"
+    href="${uwcLink}"
+    role="button"
+    >UWC</a
+    >
+    <a
+    class="btn btn-primary header-button"
+    target="_blank"
+    href="${globalLink}"
+    role="button"
+    >Global</a
+    >
+  </div>`;
 
 let socialLinks = `
   <a class="social-media" href="https://www.facebook.com/profile.php?id=61557409119325"
@@ -49,15 +70,7 @@ class SpecialHeader extends HTMLElement {
 
                         </div>
                     </div>
-                    <div >
-                      <a
-                      class="btn btn-primary header-button"
-                      target="_blank"
-                      href="${applyLink}"
-                      role="button"
-                      >Apply</a
-                      >
-                    </div>
+                    ${applyButtons}
                 </div>
 
             </nav>
@@ -93,15 +106,7 @@ class SpecialHeader extends HTMLElement {
                             <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
                         </div>
                     </div>
-                    <div >
-                      <a
-                      class="btn btn-primary header-button"
-                      target="_blank"
-                      href="${applyLink}"
-                      role="button"
-                      >Apply</a
-                      >
-                    </div>
+                    ${applyButtons}
                 </div>
 
             </nav>
@@ -139,15 +144,7 @@ class SpecialHeader extends HTMLElement {
 
                         </div>
                     </div>
-                    <div >
-                      <a
-                      class="btn btn-primary header-button"
-                      target="_blank"
-                      href="${applyLink}"
-                      role="button"
-                      >Apply</a
-                      >
-                    </div>
+                    ${applyButtons}
 
                 </div>
             </nav>
@@ -187,15 +184,7 @@ class SpecialHeader extends HTMLElement {
                     <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
                   </div>
                 </div>
-                <div>
-                    <a
-                    class="btn btn-primary header-button"
-                    target="_blank"
-                    href="${applyLink}"
-                    role="button"
-                    >Apply</a
-                    >
-                </div>
+                ${applyButtons}
               </div>
             </nav>
 
