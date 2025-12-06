@@ -46,7 +46,7 @@ class SpecialHeader extends HTMLElement {
 
                         </div>
                     </div>
-                    ${applyButtons}
+
                 </div>
 
             </nav>
@@ -82,7 +82,7 @@ class SpecialHeader extends HTMLElement {
                             <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
                         </div>
                     </div>
-                    ${applyButtons}
+
                 </div>
 
             </nav>
@@ -120,7 +120,7 @@ class SpecialHeader extends HTMLElement {
 
                         </div>
                     </div>
-                    ${applyButtons}
+
 
                 </div>
             </nav>
@@ -160,7 +160,7 @@ class SpecialHeader extends HTMLElement {
                     <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
                   </div>
                 </div>
-                ${applyButtons}
+
               </div>
             </nav>
 
