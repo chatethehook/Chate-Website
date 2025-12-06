@@ -20,36 +20,40 @@ class SpecialHeader extends HTMLElement {
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
             <hr \>
-            <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
-                <div class="container-fluid m-2">
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    ${socialLinks}
-
-                    <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-                            <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
-                            <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-                            <a class="nav-link active" aria-current="page" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
-
-                        </div>
-                    </div>
-
+            <div class="row justify-content-start">
+                <div class="col-4 m-2 mt-3">
+                  ${socialLinks}
                 </div>
+                <div class="col-4">
+                  <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
+                      <div class="container-fluid m-2">
+                      <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNavAltMarkup"
+                          aria-controls="navbarNavAltMarkup"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                      >
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
 
-            </nav>
+                      <div
+                          class="collapse navbar-collapse justify-content-center"
+                          id="navbarNavAltMarkup"
+                          >
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                          <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                          <a class="nav-link"  href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                          <a class="nav-link active" aria-current="page" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
             `;
     } else if (window.location.pathname === "/articles.html") {
       this.innerHTML = `
@@ -57,35 +61,40 @@ class SpecialHeader extends HTMLElement {
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
             <hr \>
-            <nav class="navbar navbar-expand-sm   sticky-top w-100 navbar-transparent p-0">
-                <div class="container-fluid m-2">
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    ${socialLinks}
-
-                    <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-                            <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
-                            <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-                            <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
-                        </div>
-                    </div>
-
+            <div class="row justify-content-start">
+                <div class="col-4 m-2 mt-3">
+                  ${socialLinks}
                 </div>
+                <div class="col-4">
+                  <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
+                      <div class="container-fluid m-2">
+                      <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNavAltMarkup"
+                          aria-controls="navbarNavAltMarkup"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                      >
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
 
-            </nav>
+                      <div
+                          class="collapse navbar-collapse justify-content-center"
+                          id="navbarNavAltMarkup"
+                          >
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                          <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                          <a class="nav-link active" aria-current="page" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                          <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
             `;
     } else if (window.location.pathname === "/events.html") {
       this.innerHTML = `
@@ -93,37 +102,40 @@ class SpecialHeader extends HTMLElement {
                 <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
             </a>
             <hr \>
-            <nav class="navbar navbar-expand-sm  sticky-top w-100 navbar-transparent p-0">
-                <div class="container-fluid m-2">
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    ${socialLinks}
-
-                    <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNavAltMarkup"
-                        >
-                        <div class="navbar-nav">
-                        <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
-                        <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
-                        <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-                        <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
-
-                        </div>
-                    </div>
-
-
+            <div class="row justify-content-start">
+                <div class="col-4 m-2 mt-3">
+                  ${socialLinks}
                 </div>
-            </nav>
+                <div class="col-4">
+                  <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
+                      <div class="container-fluid m-2">
+                      <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNavAltMarkup"
+                          aria-controls="navbarNavAltMarkup"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                      >
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div
+                          class="collapse navbar-collapse justify-content-center"
+                          id="navbarNavAltMarkup"
+                          >
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                          <a class="nav-link active" aria-current="page" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                          <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                          <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
             `;
     } else if (window.location.pathname === "/") {
       this.innerHTML = `
@@ -133,36 +145,41 @@ class SpecialHeader extends HTMLElement {
             </a>
 
             <hr \ />
-
-            <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
-                <div class="container-fluid m-2">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                ${socialLinks}
-
-                <div
-                    class="collapse navbar-collapse justify-content-center"
-                    id="navbarNavAltMarkup"
-                    >
-                  <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/"><h3 class= "header-links">Home</h3></a>
-                    <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
-                    <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
-                    <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
-                  </div>
+            <div class="row justify-content-start">
+                <div class="col-4 m-2 mt-3">
+                  ${socialLinks}
                 </div>
+                <div class="col-4">
+                  <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
+                      <div class="container-fluid m-2">
+                      <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNavAltMarkup"
+                          aria-controls="navbarNavAltMarkup"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                      >
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
 
-              </div>
-            </nav>
+                      <div
+                          class="collapse navbar-collapse justify-content-center"
+                          id="navbarNavAltMarkup"
+                          >
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="/"><h3 class= "header-links">Home</h3></a>
+                          <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                          <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                          <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
+
 
 
             `;
