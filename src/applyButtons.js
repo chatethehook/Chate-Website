@@ -8,6 +8,8 @@ let globalLink =
 
 let lannSaLink = "https://forms.gle/MH4RNX73NZwHBK1j7";
 
+let transferLink = "https://forms.gle/NNVfb9xEXTZdBWei6";
+
 let applyButtons = `
   <div >
     <a
@@ -30,6 +32,13 @@ let applyButtons = `
     href="${lannSaLink}"
     role="button"
     >Lann Sa</a
+    >
+    <a
+    class="btn btn-primary header-button m-1"
+    target="_blank"
+    href="${transferLink}"
+    role="button"
+    >Transfer</a
     >
   </div>`;
 
