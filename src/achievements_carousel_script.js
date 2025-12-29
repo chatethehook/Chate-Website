@@ -64,11 +64,14 @@ const achievements = [
     />
   </div>`,
 ];
-console.log(achievements.length);
-document.addEventListener("DOMContentLoaded", function () {
+
+export function initAchievementsCarousel() {
+  console.log(achievements.length);
   const achievements_carouselContainer = document.getElementById(
     "achievements-carousel-container",
   );
+
+  if (!achievements_carouselContainer) return;
 
   const achievements_mobileCarousel = `
     <div id="achievements_carousel" class="carousel slide" data-bs-ride="carousel">
@@ -197,4 +200,4 @@ document.addEventListener("DOMContentLoaded", function () {
   update_achievements_Carousel();
 
   window.addEventListener("resize", update_achievements_Carousel);
-});
+}
