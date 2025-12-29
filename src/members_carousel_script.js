@@ -9,7 +9,7 @@ const members = [
     <h2 class="text-center">Aung Khant Paing</h2>
     <p class="text-center">
       <span class="textaccent"
-        >CEO & Board of Directors, Head of Graphics</span
+        >Board of Directors & Head of Graphics</span
       >
       <br />
       Tufts Univerisity '28
@@ -40,7 +40,7 @@ const members = [
     />
     <h2 class="text-center">Agga Kyaw</h2>
     <p class="text-center">
-      <span class="textaccent">Chief Operating Officer</span>
+      <span class="textaccent">CEO & Board of Directors</span>
       <br />
       MYLP '24 Youth Participant
     </p>
@@ -56,7 +56,7 @@ const members = [
     <h2 class="text-center">Saw Shar Nyin Thar</h2>
     <p class="text-center">
       <span class="textaccent"
-        >COO</span
+        >Chief Operating Officer</span
       >
     </p>
   </div>`,
@@ -514,12 +514,15 @@ const members = [
 
 
 ];
-console.log(members.length);
-document.addEventListener("DOMContentLoaded", function() {
-    const carouselContainer = document.getElementById("member-carousel-container");
 
-    const mobileCarousel = `
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+export function initMembersCarousel() {
+  console.log(members.length);
+  const members_carouselContainer = document.getElementById("member-carousel-container");
+
+  if (!members_carouselContainer) return;
+
+  const members_mobileCarousel = `
+  <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
@@ -712,16 +715,12 @@ document.addEventListener("DOMContentLoaded", function() {
               ${members[36]}
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[37]}
-            </div>
-          </div>
+          
           
         </div>
         <a
           class="carousel-control-prev"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="prev"
         >
@@ -729,7 +728,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="next"
         >
@@ -738,8 +737,8 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     `;
 
-    const desktopCarousel = `
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    const members_desktopCarousel = `
+    <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -825,7 +824,8 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="carousel-item">
             <div class="row">
                ${members[36]}
-               ${members[37]}
+              <div class="col p-3">
+              </div>
               <div class="col p-3">
               </div>
                <div class="col p-3">
@@ -836,7 +836,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
         <a
           class="carousel-control-prev"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="prev"
         >
@@ -844,7 +844,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="next"
         >
@@ -853,16 +853,16 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     `;
 
-    function updateCarousel() {
-        const mobile = window.matchMedia("(max-width: 576px)").matches;
-        if (mobile) {
-            carouselContainer.innerHTML = mobileCarousel;
-        } else {
-            carouselContainer.innerHTML = desktopCarousel;
-        }
+    function updateMembersCarousel() {
+      const mobile = window.matchMedia("(max-width: 576px)").matches;
+      if (mobile) {
+        members_carouselContainer.innerHTML = members_mobileCarousel;
+      } else {
+        members_carouselContainer.innerHTML = members_desktopCarousel;
+      }
     }
 
-    updateCarousel();
+    updateMembersCarousel();
 
-    window.addEventListener("resize", updateCarousel);
-});
+    window.addEventListener("resize", updateMembersCarousel);
+  }
