@@ -1,21 +1,5 @@
 const members = [
-  `<div class="col p-3">
-    <img
-      src="media/members/nyanlinhtet.webp"
-      alt="Nyan Lin Htet"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Nyan Lin Htet</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Co-Founder & Board of Directors</span
-      >
-      <br />
-      MIT & Stanford '28
-    </p>
-  </div>`,
-  `<div class="col p-3">
+    `<div class="col p-3">
     <img
       src="media/members/Aung Khant Paing.webp"
       alt="Aung Khant Paing"
@@ -25,13 +9,13 @@ const members = [
     <h2 class="text-center">Aung Khant Paing</h2>
     <p class="text-center">
       <span class="textaccent"
-        >CEO, Co-Founder, Board of Directors</span
+        >Board of Directors & Head of Graphics</span
       >
       <br />
       Tufts Univerisity '28
     </p>
   </div>`,
-  `<div class="col p-3">
+    `<div class="col p-3">
     <img
       src="media/members/Wai Yan.webp"
       alt="Wai Yan Win Aung"
@@ -41,13 +25,13 @@ const members = [
     <h2 class="text-center">Wai Yan Win Aung</h2>
     <p class="text-center">
       <span class="textaccent"
-        >Co-Founder & Board of Directors</span
+        >Board of Directors</span
       >
       <br />
       Dartmouth College '28
     </p>
   </div>`,
-  `<div class="col p-3">
+    `<div class="col p-3">
     <img
       src="media/members/Agga Kyaw.webp"
       alt="Agga Kyaw"
@@ -56,35 +40,36 @@ const members = [
     />
     <h2 class="text-center">Agga Kyaw</h2>
     <p class="text-center">
-      <span class="textaccent">Chief Operating Officer</span>
+      <span class="textaccent">CEO & Board of Directors</span>
       <br />
       MYLP '24 Youth Participant
     </p>
   </div>`,
-  `<div class="col p-3">
+    //HR & Operations
+    `<div class="col p-3">
     <img
-      src="media/members/Yoon Ei Ko Ko.webp"
-      alt="Yoon Ei Ko Ko"
+      src="media/members/Saw Shar Nyin Thar.webp"
+      alt="Saw Shar Nyin Thar"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Yoon Ei Ko Ko</h2>
+    <h2 class="text-center">Saw Shar Nyin Thar</h2>
     <p class="text-center">
-      <span class="textaccent">Head of Content</span>
-      <br />
-      UWC Mahindra College
+      <span class="textaccent"
+        >Chief Operating Officer</span
+      >
     </p>
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/members/Kyail Nay La.webp"
-      alt="Kyail Nay La"
+      src="media/members/Phuu Pwint Thura.webp"
+      alt="Phuu Pwint Thura"
       class="rounded img-fluid"
       style="width: 100%"
     />
-    <h2 class="text-center">Kyail Nay La</h2>
+    <h2 class="text-center">Phuu Pwint Thura</h2>
     <p class="text-center">
-      <span class="textaccent">Head of Graphics</span>
+      <span class="textaccent">Head of Content</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -96,7 +81,7 @@ const members = [
     />
     <h2 class="text-center">Aung Htoo Han</h2>
     <p class="text-center">
-      <span class="textaccent">Global Head</span>
+      <span class="textaccent">Head of Globalized ချိတ်</span>
     </p>
   </div>`,
   `<div class="col p-3">
@@ -120,9 +105,10 @@ const members = [
     />
     <h2 class="text-center">Shwe Eain Lin</h2>
     <p class="text-center">
-      <span class="textaccent">Public Relations Officer</span>
+      <span class="textaccent">Head of Public Relations</span>
     </p>
   </div>`,
+  //Public relations
   `<div class="col p-3">
     <img
       src="media/members/Kyaw Myo Naing.webp"
@@ -135,6 +121,21 @@ const members = [
       <span class="textaccent">Public Relations Officer</span>
     </p>
   </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/logo-transparent.webp"
+      alt="Myat Thaddar Kyi"
+      class="rounded img-fluid"
+      style="width: 100%"
+    />
+    <h2 class="text-center">Myat Thaddar Kyi</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Public Relation Officer</span
+      >
+    </p>
+  </div>`,
+  //HR & Operations
   `<div class="col p-3">
     <img
       src="media/members/Thun Yati San.webp"
@@ -159,189 +160,225 @@ const members = [
       <span class="textaccent">Human Resources Officer</span>
     </p>
   </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/kyawzinhtun.webp"
-      alt="Kyaw Zin Htun"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Kyaw Zin Tun</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Writer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Phuu Pwint Thura.webp"
-      alt="Phuu Pwint Thura"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Phuu Pwint Thura</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Writer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Shoon Lai Paing.webp"
-      alt="Shoon Lai Paing"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Shoon Lai Paing</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Writer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Thiha Swe.webp"
-      alt="Thiha Swe"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Thiha Swe</h2>
-    <p class="text-center">
-      <span class="textaccent">Social Media Administrator</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/zwekhantaung.webp"
-      alt="Zwe Khant Aung"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Zwe Khant Aung</h2>
-    <p class="text-center">
-      <span class="textaccent">Content Translator</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Aye Zin Phyo.webp"
-      alt="Aye Zin Phyo"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Aye Zin Phyo</h2>
-    <p class="text-center">
-      <span class="textaccent">Graphic Designer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Cho Thar Nwe.webp"
-      alt="Cho Thar Nwe"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Cho Thar Nwe</h2>
-    <p class="text-center">
-      <span class="textaccent">Graphic Designer</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Wine Zin Moe.webp"
-      alt="Wine Zin Moe"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Wine Zin Moe</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Graphic Designer</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Chue Ei Thazin.webp"
-      alt="Chue Ei Thazin"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Chue Ei Thazin</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Graphic Designer</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Phyu Thant Kyi.webp"
-      alt="Phyu Thant Kyi"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Phyu Thant Kyi</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Video Content Creator</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Yonn Yati Win.webp"
-      alt="Yonn Yati Win"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Yonn Yati Win</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Video Content Creator</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Saw Shar Nyin Thar.webp"
-      alt="Saw Shar Nyin Thar"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Saw Shar Nyin Thar</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Video Content Creator</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Swe Swe Naing.webp"
-      alt="Swe Swe Naing"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Swe Swe Naing</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Video Script Writer</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Soe Myint Tun.webp"
-      alt="Soe Myint Tun"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Soe Myint Tun</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Video Script Writer</span
-      >
-    </p>
-  </div>`,
-  `<div class="col p-3">
+//Social Media
+//content
+`<div class="col p-3">
+  <img
+    src="media/members/Yoon Ei Ko Ko.webp"
+    alt="Yoon Ei Ko Ko"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Yoon Ei Ko Ko</h2>
+  <p class="text-center">
+    <span class="textaccent">Editor</span>
+    <br />
+    UWC Mahindra College
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/Shoon Lai Paing.webp"
+    alt="Shoon Lai Paing"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Shoon Lai Paing</h2>
+  <p class="text-center">
+    <span class="textaccent">Content Writer</span>
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Shun Lae Naychi"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Shun Lae Naychi</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Content Writer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Thinn Thiri Thwe"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Thinn Thiri Thwe</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Content Writer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Chan Mya Mya Toe"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Chan Mya Mya Toe</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Content Writer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Sai Aung Pyae"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Sai Aung Pyae</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Content Writer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/Thiha Swe.webp"
+    alt="Thiha Swe"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Thiha Swe</h2>
+  <p class="text-center">
+    <span class="textaccent">Social Media Administrator</span>
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/zwekhantaung.webp"
+    alt="Zwe Khant Aung"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Zwe Khant Aung</h2>
+  <p class="text-center">
+    <span class="textaccent">Translator</span>
+  </p>
+</div>`,
+//Web Developmemt 
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Sai Nyi Nyi Lwin"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Sai Nyi Nyi Lwin</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Website Devloper</span
+    >
+  </p>
+</div>`,
+//Social media graphics
+`<div class="col p-3">
+  <img
+    src="media/members/Aye Zin Phyo.webp"
+    alt="Aye Zin Phyo"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Aye Zin Phyo</h2>
+  <p class="text-center">
+    <span class="textaccent">Graphic Consultant</span>
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/Cho Thar Nwe.webp"
+    alt="Cho Thar Nwe"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Cho Thar Nwe</h2>
+  <p class="text-center">
+    <span class="textaccent">Graphic Designer</span>
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/Wine Zin Moe.webp"
+    alt="Wine Zin Moe"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Wine Zin Moe</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Graphic Designer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/Chue Ei Thazin.webp"
+    alt="Chue Ei Thazin"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Chue Ei Thazin</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Graphic Designer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/kyawzinhtun.webp"
+    alt="Kyaw Zin Htun"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Kyaw Zin Tun</h2>
+  <p class="text-center">
+    <span class="textaccent">Graphic Designer</span>
+  </p>
+</div>`,
+
+//social media video
+`<div class="col p-3">
+  <img
+    src="media/members/Yonn Yati Win.webp"
+    alt="Yonn Yati Win"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Yonn Yati Win</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Video Content Creator</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/members/Swe Swe Naing.webp"
+    alt="Swe Swe Naing"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Swe Swe Naing</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Video Script Writer</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
     <img
       src="media/members/Sic Paing Hmu.webp"
       alt="Sic Paing Hmu"
@@ -354,44 +391,138 @@ const members = [
         >Video Editor</span
       >
     </p>
-  </div>`,
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Ingyin Phyu"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Ingyin Phyu</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Video Editor</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Nan Thingyan Oo"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Nan Thingyan Oo</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Video Editor</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Mya Thet Hmue"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Mya Thet Hmue</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Video Content Creator</span
+    >
+  </p>
+</div>`,
+
+  //Globalized ချိတ်
+  
   `<div class="col p-3">
-    <img
-      src="media/members/Min Thu Kha.webp"
-      alt="Min Thu Kha"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Min Thu Kha</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Global Officer</span
-      >
-    </p>
-  </div>`,
+  <img
+    src="media/members/Min Thu Kha.webp"
+    alt="Min Thu Kha"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Min Thu Kha</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Secretary of Globalized ချိတ်</span
+    >
+  </p>
+</div>`,
   `<div class="col p-3">
-    <img
-      src="media/members/Win Htut Aung.webp"
-      alt="Nolan"
-      class="rounded img-fluid"
-      style="width: 100%"
-    />
-    <h2 class="text-center">Nolan</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >Global Officer</span
-      >
-    </p>
-  </div>`,
+  <img
+    src="media/members/Win Htut Aung.webp"
+    alt="Nolan"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Nolan</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Chief Asia Officer @ Globalized ချိတ်</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+      src="media/logo-transparent.webp"
+    alt="Hnin Htet Htet Khine"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Hnin Htet Htet Khine</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Global Officer</span
+    >
+  </p>
+</div>`,
+
+  // PR Research
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Htet Shwe Sin"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Htet Shwe Sin</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Researcher</span
+    >
+  </p>
+</div>`,
+`<div class="col p-3">
+  <img
+    src="media/logo-transparent.webp"
+    alt="Seng Han Min"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Seng Han Min</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >Researcher</span
+    >
+  </p>
+</div>`,
+    
+    
+
+
 ];
-console.log(members.length);
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselContainer = document.getElementById(
-    "member-carousel-container",
-  );
 
-  const mobileCarousel = `
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+export function initMembersCarousel() {
+  console.log(members.length);
+  const members_carouselContainer = document.getElementById("member-carousel-container");
+
+  if (!members_carouselContainer) return;
+
+  const members_mobileCarousel = `
+  <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
@@ -538,10 +669,58 @@ document.addEventListener("DOMContentLoaded", function () {
               ${members[28]}
             </div>
           </div>
+        
+          <div class="carousel-item">
+            <div class="row">
+              ${members[29]}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              ${members[30]}
+            </div>
+          </div>
+
+           <div class="carousel-item">
+            <div class="row">
+              ${members[31]}
+            </div>
+          </div>
+
+           <div class="carousel-item">
+            <div class="row">
+              ${members[32]}
+            </div>
+          </div>
+             <div class="carousel-item">
+            <div class="row">
+              ${members[33]}
+            </div>
+          </div>
+
+            <div class="carousel-item">
+            <div class="row">
+              ${members[34]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${members[35]}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              ${members[36]}
+            </div>
+          </div>
+          
+          
         </div>
         <a
           class="carousel-control-prev"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="prev"
         >
@@ -549,7 +728,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="next"
         >
@@ -558,8 +737,8 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
-  const desktopCarousel = `
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    const members_desktopCarousel = `
+    <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -628,21 +807,36 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="carousel-item">
             <div class="row">
               ${members[28]}
-              <div class="col p-3">
-              </div>
-              <div class="col p-3">
-              </div>
-              <div class="col p-3">
-              </div>
-
+              ${members[29]}
+              ${members[30]}
+              ${members[31]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+               ${members[32]}
+               ${members[33]}
+               ${members[34]}
+               ${members[35]}
             </div>
           </div>
 
+          <div class="carousel-item">
+            <div class="row">
+               ${members[36]}
+              <div class="col p-3">
+              </div>
+              <div class="col p-3">
+              </div>
+               <div class="col p-3">
+              </div>
+            </div>
+          </div>
+          
         </div>
-
         <a
           class="carousel-control-prev"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="prev"
         >
@@ -650,7 +844,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel"
+          href="#members_carousel"
           role="button"
           data-bs-slide="next"
         >
@@ -659,16 +853,16 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
-  function updateCarousel() {
-    const mobile = window.matchMedia("(max-width: 576px)").matches;
-    if (mobile) {
-      carouselContainer.innerHTML = mobileCarousel;
-    } else {
-      carouselContainer.innerHTML = desktopCarousel;
+    function updateMembersCarousel() {
+      const mobile = window.matchMedia("(max-width: 576px)").matches;
+      if (mobile) {
+        members_carouselContainer.innerHTML = members_mobileCarousel;
+      } else {
+        members_carouselContainer.innerHTML = members_desktopCarousel;
+      }
     }
+
+    updateMembersCarousel();
+
+    window.addEventListener("resize", updateMembersCarousel);
   }
-
-  updateCarousel();
-
-  window.addEventListener("resize", updateCarousel);
-});

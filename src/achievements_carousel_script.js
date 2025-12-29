@@ -1,4 +1,4 @@
-const members = [
+const achievements = [
   `<div class="col p-3">
     <img
       src="media/achievements/Swan Tayza Aung.webp"
@@ -64,59 +64,62 @@ const members = [
     />
   </div>`,
 ];
-console.log(members.length);
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselContainer = document.getElementById(
+
+export function initAchievementsCarousel() {
+  console.log(achievements.length);
+  const achievements_carouselContainer = document.getElementById(
     "achievements-carousel-container",
   );
 
-  const mobileCarousel = `
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  if (!achievements_carouselContainer) return;
+
+  const achievements_mobileCarousel = `
+    <div id="achievements_carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-              ${members[0]}
+              ${achievements[0]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[1]}
+              ${achievements[1]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[2]}
+              ${achievements[2]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[3]}
+              ${achievements[3]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[4]}
+              ${achievements[4]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[5]}
+              ${achievements[5]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[6]}
+              ${achievements[6]}
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              ${members[7]}
+              ${achievements[7]}
             </div>
           </div>
         </div>
         <a
           class="carousel-control-prev"
-          href="#carousel"
+          href="#achievements_carousel"
           role="button"
           data-bs-slide="prev"
         >
@@ -124,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel"
+          href="#achievements_carousel"
           role="button"
           data-bs-slide="next"
         >
@@ -133,32 +136,32 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
-  const desktopCarousel = `
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  const achievements_desktopCarousel = `
+    <div id="achievements_carousel" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-              ${members[0]}
-              ${members[1]}
-              ${members[2]}
+              ${achievements[0]}
+              ${achievements[1]}
+              ${achievements[2]}
 
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="row">
-              ${members[3]}
-              ${members[4]}
-              ${members[5]}
+              ${achievements[3]}
+              ${achievements[4]}
+              ${achievements[5]}
 
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="row">
-              ${members[6]}
-              ${members[7]}
+              ${achievements[6]}
+              ${achievements[7]}
               <div class="col p-3">
               </div>
             </div>
@@ -168,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <a
           class="carousel-control-prev"
-          href="#carousel"
+          href="#achievements_carousel"
           role="button"
           data-bs-slide="prev"
         >
@@ -176,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel"
+          href="#achievements_carousel"
           role="button"
           data-bs-slide="next"
         >
@@ -185,16 +188,16 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     `;
 
-  function updateCarousel() {
+  function update_achievements_Carousel() {
     const mobile = window.matchMedia("(max-width: 576px)").matches;
     if (mobile) {
-      carouselContainer.innerHTML = mobileCarousel;
+      achievements_carouselContainer.innerHTML = achievements_mobileCarousel;
     } else {
-      carouselContainer.innerHTML = desktopCarousel;
+      achievements_carouselContainer.innerHTML = achievements_desktopCarousel;
     }
   }
 
-  updateCarousel();
+  update_achievements_Carousel();
 
-  window.addEventListener("resize", updateCarousel);
-});
+  window.addEventListener("resize", update_achievements_Carousel);
+}
