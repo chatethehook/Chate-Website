@@ -1,5 +1,5 @@
 const members = [
-    `<div class="col p-3">
+  `<div class="col p-3">
     <img
       src="media/members/Aung Khant Paing.webp"
       alt="Aung Khant Paing"
@@ -15,7 +15,7 @@ const members = [
       Tufts Univerisity '28
     </p>
   </div>`,
-    `<div class="col p-3">
+  `<div class="col p-3">
     <img
       src="media/members/Wai Yan.webp"
       alt="Wai Yan Win Aung"
@@ -31,7 +31,7 @@ const members = [
       Dartmouth College '28
     </p>
   </div>`,
-    `<div class="col p-3">
+  `<div class="col p-3">
     <img
       src="media/members/Agga Kyaw.webp"
       alt="Agga Kyaw"
@@ -45,8 +45,8 @@ const members = [
       MYLP '24 Youth Participant
     </p>
   </div>`,
-    //HR & Operations
-    `<div class="col p-3">
+  //HR & Operations
+  `<div class="col p-3">
     <img
       src="media/members/Saw Shar Nyin Thar.webp"
       alt="Saw Shar Nyin Thar"
@@ -123,7 +123,7 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
-      src="media/logo-transparent.webp"
+      src="media/members/Myat Thaddar Kyi.webp"
       alt="Myat Thaddar Kyi"
       class="rounded img-fluid"
       style="width: 100%"
@@ -160,9 +160,9 @@ const members = [
       <span class="textaccent">Human Resources Officer</span>
     </p>
   </div>`,
-//Social Media
-//content
-`<div class="col p-3">
+  //Social Media
+  //content
+  `<div class="col p-3">
   <img
     src="media/members/Yoon Ei Ko Ko.webp"
     alt="Yoon Ei Ko Ko"
@@ -176,7 +176,7 @@ const members = [
     UWC Mahindra College
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/Shoon Lai Paing.webp"
     alt="Shoon Lai Paing"
@@ -188,9 +188,9 @@ const members = [
     <span class="textaccent">Content Writer</span>
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Shun Lae Naychi.webp"
     alt="Shun Lae Naychi"
     class="rounded img-fluid"
     style="width: 100%"
@@ -202,9 +202,9 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Thinn Thiri Thwe.webp"
     alt="Thinn Thiri Thwe"
     class="rounded img-fluid"
     style="width: 100%"
@@ -216,9 +216,9 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Chan Mya Mya Toe.webp"
     alt="Chan Mya Mya Toe"
     class="rounded img-fluid"
     style="width: 100%"
@@ -230,9 +230,9 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Sai Aung Pyae.webp"
     alt="Sai Aung Pyae"
     class="rounded img-fluid"
     style="width: 100%"
@@ -244,7 +244,7 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/Thiha Swe.webp"
     alt="Thiha Swe"
@@ -256,7 +256,7 @@ const members = [
     <span class="textaccent">Social Media Administrator</span>
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/zwekhantaung.webp"
     alt="Zwe Khant Aung"
@@ -268,23 +268,21 @@ const members = [
     <span class="textaccent">Translator</span>
   </p>
 </div>`,
-//Web Developmemt 
-`<div class="col p-3">
+  //Web Developmemt
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Sai Nyi Nyi Lwin.webp"
     alt="Sai Nyi Nyi Lwin"
     class="rounded img-fluid"
     style="width: 100%"
   />
   <h2 class="text-center">Sai Nyi Nyi Lwin</h2>
   <p class="text-center">
-    <span class="textaccent"
-      >Website Devloper</span
-    >
+    <span class="textaccent">Website Developer</span>
   </p>
 </div>`,
-//Social media graphics
-`<div class="col p-3">
+  //Social media graphics
+  `<div class="col p-3">
   <img
     src="media/members/Aye Zin Phyo.webp"
     alt="Aye Zin Phyo"
@@ -296,7 +294,7 @@ const members = [
     <span class="textaccent">Graphic Consultant</span>
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/Cho Thar Nwe.webp"
     alt="Cho Thar Nwe"
@@ -308,7 +306,7 @@ const members = [
     <span class="textaccent">Graphic Designer</span>
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/Wine Zin Moe.webp"
     alt="Wine Zin Moe"
@@ -322,7 +320,7 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/Chue Ei Thazin.webp"
     alt="Chue Ei Thazin"
@@ -336,7 +334,7 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/kyawzinhtun.webp"
     alt="Kyaw Zin Htun"
@@ -349,8 +347,8 @@ const members = [
   </p>
 </div>`,
 
-//social media video
-`<div class="col p-3">
+  //social media video
+  `<div class="col p-3">
   <img
     src="media/members/Yonn Yati Win.webp"
     alt="Yonn Yati Win"
@@ -364,7 +362,7 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
     src="media/members/Swe Swe Naing.webp"
     alt="Swe Swe Naing"
@@ -378,7 +376,7 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
     <img
       src="media/members/Sic Paing Hmu.webp"
       alt="Sic Paing Hmu"
@@ -392,9 +390,9 @@ const members = [
       >
     </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Ingyin Phyu.webp"
     alt="Ingyin Phyu"
     class="rounded img-fluid"
     style="width: 100%"
@@ -406,9 +404,9 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Nan Thingyan Oo.webp"
     alt="Nan Thingyan Oo"
     class="rounded img-fluid"
     style="width: 100%"
@@ -420,9 +418,9 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Mya Thet Hmue.webp"
     alt="Mya Thet Hmue"
     class="rounded img-fluid"
     style="width: 100%"
@@ -436,7 +434,7 @@ const members = [
 </div>`,
 
   //Globalized ချိတ်
-  
+
   `<div class="col p-3">
   <img
     src="media/members/Min Thu Kha.webp"
@@ -465,9 +463,9 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-      src="media/logo-transparent.webp"
+      src="media/members/Hnin Htet Htet Khine.webp"
     alt="Hnin Htet Htet Khine"
     class="rounded img-fluid"
     style="width: 100%"
@@ -481,9 +479,9 @@ const members = [
 </div>`,
 
   // PR Research
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
+    src="media/members/Htet Shwe Sin.webp"
     alt="Htet Shwe Sin"
     class="rounded img-fluid"
     style="width: 100%"
@@ -495,29 +493,41 @@ const members = [
     >
   </p>
 </div>`,
-`<div class="col p-3">
+  `<div class="col p-3">
   <img
-    src="media/logo-transparent.webp"
-    alt="Seng Han Min"
+    src="media/members/Seng Han Main.webp"
+    alt="Seng Han Main"
     class="rounded img-fluid"
     style="width: 100%"
   />
-  <h2 class="text-center">Seng Han Min</h2>
+  <h2 class="text-center">Seng Han Main</h2>
   <p class="text-center">
     <span class="textaccent"
       >Researcher</span
     >
   </p>
 </div>`,
-    
-    
-
-
+  `<div class="col p-3">
+  <img
+    src="media/members/Tin Win Oo.webp"
+    alt="Tin Win Oo"
+    class="rounded img-fluid"
+    style="width: 100%"
+  />
+  <h2 class="text-center">Tin Win Oo</h2>
+  <p class="text-center">
+    <span class="textaccent"
+      >LinkedIn Coordinator</span
+    >
+  </p>
+</div>`,
 ];
 
 export function initMembersCarousel() {
   console.log(members.length);
-  const members_carouselContainer = document.getElementById("member-carousel-container");
+  const members_carouselContainer = document.getElementById(
+    "member-carousel-container",
+  );
 
   if (!members_carouselContainer) return;
 
@@ -669,7 +679,7 @@ export function initMembersCarousel() {
               ${members[28]}
             </div>
           </div>
-        
+
           <div class="carousel-item">
             <div class="row">
               ${members[29]}
@@ -715,8 +725,14 @@ export function initMembersCarousel() {
               ${members[36]}
             </div>
           </div>
-          
-          
+
+          <div class="carousel-item">
+            <div class="row">
+              ${members[37]}
+            </div>
+          </div>
+
+
         </div>
         <a
           class="carousel-control-prev"
@@ -737,7 +753,7 @@ export function initMembersCarousel() {
     </div>
     `;
 
-    const members_desktopCarousel = `
+  const members_desktopCarousel = `
     <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
@@ -824,15 +840,14 @@ export function initMembersCarousel() {
           <div class="carousel-item">
             <div class="row">
                ${members[36]}
-              <div class="col p-3">
-              </div>
+               ${members[37]}
               <div class="col p-3">
               </div>
                <div class="col p-3">
               </div>
             </div>
           </div>
-          
+
         </div>
         <a
           class="carousel-control-prev"
@@ -853,16 +868,16 @@ export function initMembersCarousel() {
     </div>
     `;
 
-    function updateMembersCarousel() {
-      const mobile = window.matchMedia("(max-width: 576px)").matches;
-      if (mobile) {
-        members_carouselContainer.innerHTML = members_mobileCarousel;
-      } else {
-        members_carouselContainer.innerHTML = members_desktopCarousel;
-      }
+  function updateMembersCarousel() {
+    const mobile = window.matchMedia("(max-width: 576px)").matches;
+    if (mobile) {
+      members_carouselContainer.innerHTML = members_mobileCarousel;
+    } else {
+      members_carouselContainer.innerHTML = members_desktopCarousel;
     }
-
-    updateMembersCarousel();
-
-    window.addEventListener("resize", updateMembersCarousel);
   }
+
+  updateMembersCarousel();
+
+  window.addEventListener("resize", updateMembersCarousel);
+}
