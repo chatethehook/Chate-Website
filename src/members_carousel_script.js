@@ -118,7 +118,7 @@ const members = [
     />
     <h2 class="text-center">Kyaw Myo Naing</h2>
     <p class="text-center">
-      <span class="textaccent">Public Relations Officer</span>
+      <span class="textaccent">Research Team Coordinator</span>
     </p>
   </div>`,
   `<div class="col p-3">
