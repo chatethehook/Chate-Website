@@ -5,6 +5,8 @@ const members = [
       alt="Aung Khant Paing"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Aung Khant Paing</h2>
     <p class="text-center">
@@ -21,6 +23,8 @@ const members = [
       alt="Wai Yan Win Aung"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Wai Yan Win Aung</h2>
     <p class="text-center">
@@ -37,6 +41,8 @@ const members = [
       alt="Agga Kyaw"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Agga Kyaw</h2>
     <p class="text-center">
@@ -52,6 +58,8 @@ const members = [
       alt="Saw Shar Nyin Thar"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Saw Shar Nyin Thar</h2>
     <p class="text-center">
@@ -66,6 +74,8 @@ const members = [
       alt="Phuu Pwint Thura"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Phuu Pwint Thura</h2>
     <p class="text-center">
@@ -78,6 +88,8 @@ const members = [
       alt="Aung Htoo Han"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Aung Htoo Han</h2>
     <p class="text-center">
@@ -90,6 +102,8 @@ const members = [
       alt="Oattra Kyaw"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Oattra Kyaw</h2>
     <p class="text-center">
@@ -102,6 +116,8 @@ const members = [
       alt="Shwe Eain Lin"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Shwe Eain Lin</h2>
     <p class="text-center">
@@ -115,6 +131,8 @@ const members = [
       alt="Kyaw Myo Naing"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Kyaw Myo Naing</h2>
     <p class="text-center">
@@ -127,6 +145,8 @@ const members = [
       alt="Myat Thaddar Kyi"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Myat Thaddar Kyi</h2>
     <p class="text-center">
@@ -142,6 +162,8 @@ const members = [
       alt="Thun Yati San"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Thun Yati San</h2>
     <p class="text-center">
@@ -154,6 +176,8 @@ const members = [
       alt="Hay Thi Win Aung"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Hay Thi Win Aung</h2>
     <p class="text-center">
@@ -168,6 +192,8 @@ const members = [
     alt="Yoon Ei Ko Ko"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Yoon Ei Ko Ko</h2>
   <p class="text-center">
@@ -182,6 +208,8 @@ const members = [
     alt="Shoon Lai Paing"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Shoon Lai Paing</h2>
   <p class="text-center">
@@ -194,6 +222,8 @@ const members = [
     alt="Shun Lae Naychi"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Shun Lae Naychi</h2>
   <p class="text-center">
@@ -208,6 +238,8 @@ const members = [
     alt="Thinn Thiri Thwe"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Thinn Thiri Thwe</h2>
   <p class="text-center">
@@ -222,22 +254,10 @@ const members = [
     alt="Chan Mya Mya Toe"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Chan Mya Mya Toe</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Content Writer</span
-    >
-  </p>
-</div>`,
-  `<div class="col p-3">
-  <img
-    src="media/members/Sai Aung Pyae.webp"
-    alt="Sai Aung Pyae"
-    class="rounded img-fluid"
-    style="width: 100%"
-  />
-  <h2 class="text-center">Sai Aung Pyae</h2>
   <p class="text-center">
     <span class="textaccent"
       >Content Writer</span
@@ -250,6 +270,8 @@ const members = [
     alt="Thiha Swe"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Thiha Swe</h2>
   <p class="text-center">
@@ -262,6 +284,8 @@ const members = [
     alt="Zwe Khant Aung"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Zwe Khant Aung</h2>
   <p class="text-center">
@@ -275,6 +299,8 @@ const members = [
     alt="Sai Nyi Nyi Lwin"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Sai Nyi Nyi Lwin</h2>
   <p class="text-center">
@@ -288,6 +314,8 @@ const members = [
     alt="Aye Zin Phyo"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Aye Zin Phyo</h2>
   <p class="text-center">
@@ -300,6 +328,8 @@ const members = [
     alt="Cho Thar Nwe"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Cho Thar Nwe</h2>
   <p class="text-center">
@@ -312,6 +342,8 @@ const members = [
     alt="Wine Zin Moe"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Wine Zin Moe</h2>
   <p class="text-center">
@@ -326,6 +358,8 @@ const members = [
     alt="Chue Ei Thazin"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Chue Ei Thazin</h2>
   <p class="text-center">
@@ -340,11 +374,29 @@ const members = [
     alt="Kyaw Zin Htun"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Kyaw Zin Tun</h2>
   <p class="text-center">
     <span class="textaccent">Graphic Designer</span>
   </p>
+</div>`,
+  `<div class="col p-3">
+<img
+  src="media/members/Sai Aung Pyae.webp"
+  alt="Sai Aung Pyae"
+  class="rounded img-fluid"
+  style="width: 100%"
+  loading="lazy"
+  decoding="async"
+/>
+<h2 class="text-center">Sai Aung Pyae</h2>
+<p class="text-center">
+  <span class="textaccent"
+    >Graphic Designer</span
+  >
+</p>
 </div>`,
 
   //social media video
@@ -354,6 +406,8 @@ const members = [
     alt="Yonn Yati Win"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Yonn Yati Win</h2>
   <p class="text-center">
@@ -368,6 +422,8 @@ const members = [
     alt="Swe Swe Naing"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Swe Swe Naing</h2>
   <p class="text-center">
@@ -382,6 +438,8 @@ const members = [
       alt="Sic Paing Hmu"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
     <h2 class="text-center">Sic Paing Hmu</h2>
     <p class="text-center">
@@ -396,6 +454,8 @@ const members = [
     alt="Ingyin Phyu"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Ingyin Phyu</h2>
   <p class="text-center">
@@ -410,6 +470,8 @@ const members = [
     alt="Nan Thingyan Oo"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Nan Thingyan Oo</h2>
   <p class="text-center">
@@ -424,6 +486,8 @@ const members = [
     alt="Mya Thet Hmue"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Mya Thet Hmue</h2>
   <p class="text-center">
@@ -441,6 +505,8 @@ const members = [
     alt="Min Thu Kha"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Min Thu Kha</h2>
   <p class="text-center">
@@ -455,6 +521,8 @@ const members = [
     alt="Nolan"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Nolan</h2>
   <p class="text-center">
@@ -469,6 +537,8 @@ const members = [
     alt="Hnin Htet Htet Khine"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Hnin Htet Htet Khine</h2>
   <p class="text-center">
@@ -485,6 +555,8 @@ const members = [
     alt="Htet Shwe Sin"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Htet Shwe Sin</h2>
   <p class="text-center">
@@ -499,6 +571,8 @@ const members = [
     alt="Seng Han Main"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Seng Han Main</h2>
   <p class="text-center">
@@ -513,6 +587,8 @@ const members = [
     alt="Tin Win Oo"
     class="rounded img-fluid"
     style="width: 100%"
+    loading="lazy"
+    decoding="async"
   />
   <h2 class="text-center">Tin Win Oo</h2>
   <p class="text-center">

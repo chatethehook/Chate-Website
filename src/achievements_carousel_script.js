@@ -5,6 +5,8 @@ const achievements = [
       alt="Swan Tayza Aung"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -13,6 +15,8 @@ const achievements = [
       alt="Soe Thway Ko"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -21,6 +25,8 @@ const achievements = [
       alt="Soe Lin Htet"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -29,6 +35,8 @@ const achievements = [
       alt="Lin Htet Aung"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -37,6 +45,8 @@ const achievements = [
       alt="Aung Htoo Han"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -45,6 +55,8 @@ const achievements = [
       alt="Linn Lett May"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -53,6 +65,8 @@ const achievements = [
       alt="Thaw Ye Zay"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
   `<div class="col p-3">
@@ -61,6 +75,8 @@ const achievements = [
       alt="Kyaw Myo Naing"
       class="rounded img-fluid"
       style="width: 100%"
+      loading="lazy"
+      decoding="async"
     />
   </div>`,
 ];
