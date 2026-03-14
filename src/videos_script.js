@@ -1,4 +1,51 @@
 // actual content html
+let scholarsDiariesContent = `
+  <div
+  class="justify-content-center p-2 d-flex"
+  style="padding-right: 50px"
+  >
+    <h1 class="">
+    Scholars' Diaries
+      <span class="textaccent text-center">Video Series</span>
+    </h1>
+  </div>
+
+  <div class="row p-2">
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/T2Wu9_0DPU0?si=28f9hm3nNzKufiZT"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        Extracurricular Activities&nbsp;
+
+      </h2>
+      <p class="textorange m-0">Interviewing <span class="fw-bold">Swan Yee Htun Wah</span></p>
+      <p class="textaccent m-1">Interviewed by Phyu Thant Kyi</p>
+      <p class="m-1">"Scholars' Diaries" Video Series, Episode 2</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/qDaJNip0cyc?si=qDCrudBmdvSE5Isk"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        The United World College (UWC) Experience&nbsp;
+
+      </h2>
+      <p class="textorange m-0">Interviewing <span class="fw-bold">Yoon Ei Ko Ko</span></p>
+      <p class="textaccent m-1">Interviewed by Saw Shar Nyin Thar</p>
+      <p class="m-1">"Scholars' Diaries" Video Series, Episode 1</p>
+    </div>
+
+  </div>
+  `;
 let suTuPyuContent = `
   <div
   class="justify-content-center p-2 d-flex"
@@ -12,23 +59,53 @@ let suTuPyuContent = `
 
   <div class="row p-2">
 
-  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
-  <iframe src="https://www.youtube.com/embed/v0szovCc0bA"
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/pYs7wKK-G3g?si=0E_42spWZ1Wta6vC"
             class="responsive-iframe"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
       <h2 class="m-0">
-        Duke Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">31/08/2025</p></span
-        >
+        Child Dream Scholarship Essay&nbsp;
+
       </h2>
-      <p class="textorange m-0">Written by <span class="fw-bold">Myat Theingi</span></p>
-      <p class="m-1">Read by Yonn Yati Win</p>
-      <p class="m-1">"စုတုပြု" Video Series, Episode 12</p>
+      <p class="textorange m-0">Written by <span class="fw-bold">Saw Chit Thu</span></p>
+      <p class="textaccent m-1">Read by Mya Thet Hmue</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 14</p>
     </div>
+
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+  <iframe src="https://www.youtube.com/embed/2NMzGdZLfQ0?si=88qnE68LP3TLRX3j"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        UNSW Accepted Essay&nbsp;
+
+      </h2>
+      <p class="textorange m-0">Written by <span class="fw-bold">Thoon Net Saing</span></p>
+      <p class="textaccent m-1">Read by Yonn Yati Win</p>
+      <p class="m-1">"စုတုပြု" Video Series, Episode 13</p>
+    </div>
+
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+    <iframe src="https://www.youtube.com/embed/v0szovCc0bA"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <h2 class="m-0">
+        Duke Accepted Essay&nbsp;
+
+    </h2>
+    <p class="textorange m-0">Written by <span class="fw-bold">Myat Theingi</span></p>
+    <p class="textaccent m-1">Read by Yonn Yati Win</p>
+    <p class="m-1">"စုတုပြု" Video Series, Episode 12</p>
+  </div>
 
   <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
       <iframe src="https://www.youtube.com/embed/MiaqKwu8cm0"
@@ -39,12 +116,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         MIT Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">28/08/2025</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Soe Lin Htet</span></p>
-      <p class="m-1">Read by Saw Shar Nyin Thar</p>
+      <p class="textaccent m-1">Read by Saw Shar Nyin Thar</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 11</p>
     </div>
 
@@ -57,12 +132,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         UCLA Chancellor's Scholarship Winning Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">26/08/2025</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">May Kyi Phyu Thin</span></p>
-      <p class="m-1">Read by Saw Shar Nyin Thar</p>
+      <p class="textaccent m-1">Read by Saw Shar Nyin Thar</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 10</p>
     </div>
 
@@ -75,12 +148,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         Tufts University Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">18/08/2025</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Thang Dopmul</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccent m-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 9</p>
     </div>
 
@@ -93,12 +164,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         Brown University Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">06/03/2025</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Swan Tayza Aung</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccent m-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 8</p>
     </div>
 
@@ -111,12 +180,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         Occidental College Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">26/01/2025</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Aung Myat Htet</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccent m-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 7</p>
     </div>
 
@@ -129,12 +196,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         Vanderbilt University Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">06/01/2025</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Sai Nyi Bhone Htut</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccentm-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 6</p>
     </div>
 
@@ -147,12 +212,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         Rice University Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">03/11/2024</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Yin Min Thant</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccent m-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 5</p>
     </div>
 
@@ -165,12 +228,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         Brown University Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">02/11/2024</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Yone Waddy Aung</span></p>
-      <p class="m-1">Read by Myat Hmu Thwin</p>
+      <p class="textaccent m-1">Read by Myat Hmu Thwin</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 4</p>
     </div>
 
@@ -183,12 +244,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         2024 Swarthmore Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">08/10/2024</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Sai Nyi Bhone Htut</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccent m-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 3</p>
     </div>
 
@@ -201,12 +260,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         2024 Dartmouth Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">16/09/2024</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Wai Yan Win Aung</span></p>
-      <p class="m-1">Read by Myat Hmu Thwin</p>
+      <p class="textaccent m-1">Read by Myat Hmu Thwin</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 2</p>
     </div>
 
@@ -219,12 +276,10 @@ let suTuPyuContent = `
       </iframe>
       <h2 class="m-0">
         2024 MIT Accepted Essay&nbsp;
-        <span class="textaccent"
-        ><p class="d-inline m-0 text-right">13/08/2024</p></span
-        >
+
       </h2>
       <p class="textorange m-0">Written by <span class="fw-bold">Nyan Lin Htet @ Alex</span></p>
-      <p class="m-1">Read by Phyu Thant Kyi</p>
+      <p class="textaccent m-1">Read by Phyu Thant Kyi</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 1</p>
     </div>
 
@@ -234,7 +289,7 @@ let suTuPyuContent = `
 // button identifiers
 //let aboveBeyondButton = document.querySelector(`#abovebeyond-button`);
 //let steppingStoneButton = document.querySelector(`#steppingstone-button`);
-//let kyaungshautButton = document.querySelector(`#kyaungshaut-button`);
+let scholarsDiariesButton = document.querySelector(`#scholarsdiaries-button`);
 let sutupyuButton = document.querySelector(`#sutupyu-button`);
 
 //section identifier
@@ -264,26 +319,26 @@ if (window.location.href.indexOf("AboveBeyond") > -1) {
   steppingStoneButton.classList.add(`clicked`);
   kyaungshautButton.classList.remove(`clicked`);
   sutupyuButton.classList.remove(`clicked`);
-} else if (window.location.href.indexOf("KyaungShaut") > -1) {
+} else */
+
+if (window.location.href.indexOf("ScholarsDiaries") > -1) {
   console.log(`ks is true`);
-  videosSection.innerHTML = kyaungShautContent;
+  videosSection.innerHTML = scholarsDiariesContent;
 
   // clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.add(`clicked`);
+  //aboveBeyondButton.classList.remove(`clicked`);
+  //steppingStoneButton.classList.remove(`clicked`);
+  scholarsDiariesButton.classList.add(`clicked`);
   sutupyuButton.classList.remove(`clicked`);
-}
-else */
-if (window.location.href.indexOf("SuTuPyu") > -1) {
-    console.log(`stp is true`);
-    videosSection.innerHTML = suTuPyuContent;
+} else if (window.location.href.indexOf("SuTuPyu") > -1) {
+  console.log(`stp is true`);
+  videosSection.innerHTML = scholarsDiariesContent;
 
-    // clicking and unclicking buttons
-    //aboveBeyondButton.classList.remove(`clicked`);
-    //steppingStoneButton.classList.remove(`clicked`);
-    //kyaungshautButton.classList.remove(`clicked`);
-    sutupyuButton.classList.add(`clicked`);
+  // clicking and unclicking buttons
+  //aboveBeyondButton.classList.remove(`clicked`);
+  //steppingStoneButton.classList.remove(`clicked`);
+  scholarsDiariesButton.classList.remove(`clicked`);
+  sutupyuButton.classList.add(`clicked`);
 }
 
 // changes when labels are changed on events paged
@@ -326,46 +381,47 @@ function changeURLToSteppingStone(event) {
   );
   videosSection.innerHTML = steppingStoneContent;
 }
-
-// KyaungShaut button changes
-function changeURLToKyaungShaut(event) {
+*/
+// ScholarsDiaries button changes
+function changeURLToScholarsDiaries(event) {
   event.preventDefault();
 
   //clicking and unclicking buttons
-  aboveBeyondButton.classList.remove(`clicked`);
-  steppingStoneButton.classList.remove(`clicked`);
-  kyaungshautButton.classList.add(`clicked`);
+  //aboveBeyondButton.classList.remove(`clicked`);
+  //steppingStoneButton.classList.remove(`clicked`);
+  scholarsDiariesButton.classList.add(`clicked`);
   sutupyuButton.classList.remove(`clicked`);
 
   //editing url
   window.history.pushState(
     { additionalInformation: "Updated the URL with JS" },
-    "KyaungShaut",
-    "/events.html#KyaungShaut",
+    "ScholarsDiaries",
+    "/events.html#ScholarsDiaries",
   );
-  videosSection.innerHTML = kyaungShautContent;
+  videosSection.innerHTML = scholarsDiariesContent;
 }
-*/
+
 // sutupyu button changes
 function changeURLToSuTuPyu(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    //clicking and unclicking buttons
-    // aboveBeyondButton.classList.remove(`clicked`);
-    // steppingStoneButton.classList.remove(`clicked`);
-    // kyaungshautButton.classList.remove(`clicked`);
-    sutupyuButton.classList.add(`clicked`);
+  //clicking and unclicking buttons
+  // aboveBeyondButton.classList.remove(`clicked`);
+  // steppingStoneButton.classList.remove(`clicked`);
+  scholarsDiariesButton.classList.remove(`clicked`);
+  sutupyuButton.classList.add(`clicked`);
 
-    // editing url
-    window.history.pushState({ additionalInformation: "Updated the URL with JS" },
-        "SuTuPyu",
-        "/events.html#SuTuPyu",
-    );
-    videosSection.innerHTML = suTuPyuContent;
+  // editing url
+  window.history.pushState(
+    { additionalInformation: "Updated the URL with JS" },
+    "SuTuPyu",
+    "/events.html#SuTuPyu",
+  );
+  videosSection.innerHTML = suTuPyuContent;
 }
 
 // for clicking on the labels on the events page
 // aboveBeyondButton.addEventListener(`click`, changeURLToAboveBeyond);
 // steppingStoneButton.addEventListener(`click`, changeURLToSteppingStone);
-// kyaungshautButton.addEventListener(`click`, changeURLToKyaungShaut);
+scholarsDiariesButton.addEventListener(`click`, changeURLToScholarsDiaries);
 sutupyuButton.addEventListener(`click`, changeURLToSuTuPyu);

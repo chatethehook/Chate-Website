@@ -19,6 +19,24 @@ const members = [
   </div>`,
   `<div class="col p-3">
     <img
+      src="media/members/nyanlinhtet.webp"
+      alt="Nyan Lin Htet"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Nyan Lin Htet</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Board of Directors</span
+      >
+      <br />
+      MIT '28
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
       src="media/members/Wai Yan.webp"
       alt="Wai Yan Win Aung"
       class="rounded img-fluid"
@@ -201,21 +219,21 @@ const members = [
     <br />
     UWC Mahindra College
   </p>
-</div>`,
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Shoon Lai Paing.webp"
-    alt="Shoon Lai Paing"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Shoon Lai Paing</h2>
-  <p class="text-center">
-    <span class="textaccent">Content Writer</span>
-  </p>
-</div>`,
+    <img
+      src="media/members/Shoon Lai Paing.webp"
+      alt="Shoon Lai Paing"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Shoon Lai Paing</h2>
+    <p class="text-center">
+      <span class="textaccent">Content Writer</span>
+    </p>
+  </div>`,
   `<div class="col p-3">
   <img
     src="media/members/Shun Lae Naychi.webp"
@@ -231,23 +249,23 @@ const members = [
       >Content Writer</span
     >
   </p>
-</div>`,
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Thinn Thiri Thwe.webp"
-    alt="Thinn Thiri Thwe"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Thinn Thiri Thwe</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Content Writer</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Thinn Thiri Thwe.webp"
+      alt="Thinn Thiri Thwe"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Thinn Thiri Thwe</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Content Writer</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
   <img
     src="media/members/Chan Mya Mya Toe.webp"
@@ -263,35 +281,21 @@ const members = [
       >Content Writer</span
     >
   </p>
-</div>`,
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Thiha Swe.webp"
-    alt="Thiha Swe"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Thiha Swe</h2>
-  <p class="text-center">
-    <span class="textaccent">Social Media Administrator</span>
-  </p>
-</div>`,
-  `<div class="col p-3">
-  <img
-    src="media/members/zwekhantaung.webp"
-    alt="Zwe Khant Aung"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Zwe Khant Aung</h2>
-  <p class="text-center">
-    <span class="textaccent">Translator</span>
-  </p>
-</div>`,
+    <img
+      src="media/members/Thiha Swe.webp"
+      alt="Thiha Swe"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Thiha Swe</h2>
+    <p class="text-center">
+      <span class="textaccent">Social Media Administrator</span>
+    </p>
+  </div>`,
   //Web Developmemt
   `<div class="col p-3">
   <img
@@ -306,132 +310,131 @@ const members = [
   <p class="text-center">
     <span class="textaccent">Website Developer</span>
   </p>
-</div>`,
+  </div>`,
   //Social media graphics
   `<div class="col p-3">
-  <img
-    src="media/members/Aye Zin Phyo.webp"
-    alt="Aye Zin Phyo"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Aye Zin Phyo</h2>
-  <p class="text-center">
-    <span class="textaccent">Graphic Consultant</span>
-  </p>
-</div>`,
+    <img
+      src="media/members/Aye Zin Phyo.webp"
+      alt="Aye Zin Phyo"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Aye Zin Phyo</h2>
+    <p class="text-center">
+      <span class="textaccent">Graphic Consultant</span>
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Cho Thar Nwe.webp"
-    alt="Cho Thar Nwe"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Cho Thar Nwe</h2>
-  <p class="text-center">
-    <span class="textaccent">Graphic Designer</span>
-  </p>
-</div>`,
+    <img
+      src="media/members/Cho Thar Nwe.webp"
+      alt="Cho Thar Nwe"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Cho Thar Nwe</h2>
+    <p class="text-center">
+      <span class="textaccent">Graphic Designer</span>
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Wine Zin Moe.webp"
-    alt="Wine Zin Moe"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Wine Zin Moe</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Graphic Designer</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Wine Zin Moe.webp"
+      alt="Wine Zin Moe"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Wine Zin Moe</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Graphic Designer</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Chue Ei Thazin.webp"
-    alt="Chue Ei Thazin"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Chue Ei Thazin</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Graphic Designer</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Chue Ei Thazin.webp"
+      alt="Chue Ei Thazin"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Chue Ei Thazin</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Graphic Designer</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/kyawzinhtun.webp"
-    alt="Kyaw Zin Htun"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Kyaw Zin Tun</h2>
-  <p class="text-center">
-    <span class="textaccent">Graphic Designer</span>
-  </p>
-</div>`,
+    <img
+      src="media/members/kyawzinhtun.webp"
+      alt="Kyaw Zin Htun"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Kyaw Zin Tun</h2>
+    <p class="text-center">
+      <span class="textaccent">Graphic Designer</span>
+    </p>
+  </div>`,
   `<div class="col p-3">
-<img
-  src="media/members/Sai Aung Pyae.webp"
-  alt="Sai Aung Pyae"
-  class="rounded img-fluid"
-  style="width: 100%"
-  loading="lazy"
-  decoding="async"
-/>
-<h2 class="text-center">Sai Aung Pyae</h2>
-<p class="text-center">
-  <span class="textaccent"
-    >Graphic Designer</span
-  >
-</p>
-</div>`,
-
+    <img
+      src="media/members/Sai Aung Pyae.webp"
+      alt="Sai Aung Pyae"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Sai Aung Pyae</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Graphic Designer</span
+      >
+    </p>
+  </div>`,
   //social media video
   `<div class="col p-3">
-  <img
-    src="media/members/Yonn Yati Win.webp"
-    alt="Yonn Yati Win"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Yonn Yati Win</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Video Content Creator</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Yonn Yati Win.webp"
+      alt="Yonn Yati Win"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Yonn Yati Win</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Content Creator</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Swe Swe Naing.webp"
-    alt="Swe Swe Naing"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Swe Swe Naing</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Video Script Writer</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Swe Swe Naing.webp"
+      alt="Swe Swe Naing"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Swe Swe Naing</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Script Writer</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
     <img
       src="media/members/Sic Paing Hmu.webp"
@@ -447,156 +450,172 @@ const members = [
         >Video Editor</span
       >
     </p>
-</div>`,
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Ingyin Phyu.webp"
-    alt="Ingyin Phyu"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Ingyin Phyu</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Video Editor</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Ingyin Phyu.webp"
+      alt="Ingyin Phyu"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Ingyin Phyu</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Editor</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Nan Thingyan Oo.webp"
-    alt="Nan Thingyan Oo"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Nan Thingyan Oo</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Video Editor</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Nan Thingyan Oo.webp"
+      alt="Nan Thingyan Oo"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Nan Thingyan Oo</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Editor</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Mya Thet Hmue.webp"
-    alt="Mya Thet Hmue"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Mya Thet Hmue</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Video Content Creator</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Mya Thet Hmue.webp"
+      alt="Mya Thet Hmue"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Mya Thet Hmue</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Video Content Creator</span
+      >
+    </p>
+  </div>`,
 
   //Globalized ချိတ်
 
   `<div class="col p-3">
-  <img
-    src="media/members/Min Thu Kha.webp"
-    alt="Min Thu Kha"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Min Thu Kha</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Secretary of Globalized ချိတ်</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Min Thu Kha.webp"
+      alt="Min Thu Kha"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Min Thu Kha</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Secretary of Globalized ချိတ်</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Win Htut Aung.webp"
-    alt="Nolan"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Nolan</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Chief Asia Officer @ Globalized ချိတ်</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Win Htut Aung.webp"
+      alt="Nolan"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Nolan</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Chief Asia Officer @ Globalized ချိတ်</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-      src="media/members/Hnin Htet Htet Khine.webp"
-    alt="Hnin Htet Htet Khine"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Hnin Htet Htet Khine</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Global Officer</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Swan Tayza Aung.webp"
+      alt="Swan Tayza Aung"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Swan Tayza Aung</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >General Advisor</span
+      >
+    </p>
+  </div>`,
+  `<div class="col p-3">
+    <img
+        src="media/members/Hnin Htet Htet Khine.webp"
+      alt="Hnin Htet Htet Khine"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Hnin Htet Htet Khine</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Global Officer</span
+      >
+    </p>
+  </div>`,
 
   // PR Research
   `<div class="col p-3">
-  <img
-    src="media/members/Htet Shwe Sin.webp"
-    alt="Htet Shwe Sin"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Htet Shwe Sin</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Researcher</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Htet Shwe Sin.webp"
+      alt="Htet Shwe Sin"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Htet Shwe Sin</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Researcher</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Seng Han Main.webp"
-    alt="Seng Han Main"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Seng Han Main</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >Researcher</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Seng Han Main.webp"
+      alt="Seng Han Main"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Seng Han Main</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Researcher</span
+      >
+    </p>
+  </div>`,
   `<div class="col p-3">
-  <img
-    src="media/members/Tin Win Oo.webp"
-    alt="Tin Win Oo"
-    class="rounded img-fluid"
-    style="width: 100%"
-    loading="lazy"
-    decoding="async"
-  />
-  <h2 class="text-center">Tin Win Oo</h2>
-  <p class="text-center">
-    <span class="textaccent"
-      >LinkedIn Coordinator</span
-    >
-  </p>
-</div>`,
+    <img
+      src="media/members/Tin Win Oo.webp"
+      alt="Tin Win Oo"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+    <h2 class="text-center">Tin Win Oo</h2>
+    <p class="text-center">
+      <span class="textaccent"
+        >Social Media Assistant</span
+      >
+    </p>
+  </div>`,
 ];
 
 export function initMembersCarousel() {
@@ -808,6 +827,12 @@ export function initMembersCarousel() {
             </div>
           </div>
 
+          <div class="carousel-item">
+            <div class="row">
+              ${members[38]}
+            </div>
+          </div>
+
 
         </div>
         <a
@@ -917,8 +942,7 @@ export function initMembersCarousel() {
             <div class="row">
                ${members[36]}
                ${members[37]}
-              <div class="col p-3">
-              </div>
+               ${members[38]}
                <div class="col p-3">
               </div>
             </div>

@@ -225,12 +225,13 @@ class SpecialFooter extends HTMLElement {
                         <br \>
                         <h3 class="fw-medium"> Videos </h3>
                         <a class="footer-link" target="_self" href="/videos.html#SuTuPyu"><p class="m-0"> စုတုပြု Series</p></a>
+                        <a class="footer-link" target="_self" href="/videos.html#ScholarsDiaries"><p class="m-0"> Scholars' Diaries</p></a>
                     </div>
                 </div>
 
                 <div class="mx-5 copyright">
                     <p>
-                       © 2025
+                       © 2026
                        <a href="https://github.com/chatethehook/Chate-Website" title="The Hook Official Website">ချိတ် - The Hook Official Website</a>
                        by
                        <a href="https://chatethehook.com/" title="The Hook">ချိတ် - The Hook</a>
