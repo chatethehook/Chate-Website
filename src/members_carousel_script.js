@@ -314,20 +314,6 @@ const members = [
   //Social media graphics
   `<div class="col p-3">
     <img
-      src="media/members/Aye Zin Phyo.webp"
-      alt="Aye Zin Phyo"
-      class="rounded img-fluid"
-      style="width: 100%"
-      loading="lazy"
-      decoding="async"
-    />
-    <h2 class="text-center">Aye Zin Phyo</h2>
-    <p class="text-center">
-      <span class="textaccent">Graphic Consultant</span>
-    </p>
-  </div>`,
-  `<div class="col p-3">
-    <img
       src="media/members/Cho Thar Nwe.webp"
       alt="Cho Thar Nwe"
       class="rounded img-fluid"
@@ -827,11 +813,6 @@ export function initMembersCarousel() {
             </div>
           </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              ${members[38]}
-            </div>
-          </div>
 
 
         </div>
@@ -942,7 +923,8 @@ export function initMembersCarousel() {
             <div class="row">
                ${members[36]}
                ${members[37]}
-               ${members[38]}
+               <div class="col p-3">
+              </div>
                <div class="col p-3">
               </div>
             </div>
