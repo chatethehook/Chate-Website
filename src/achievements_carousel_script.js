@@ -1,6 +1,16 @@
 const achievements = [
   `<div class="col p-3">
     <img
+      src="media/achievements/swan htet nay khaing.webp"
+      alt="Swan Htet Nay Khaing"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>`,
+  `<div class="col p-3">
+    <img
       src="media/achievements/Swan Tayza Aung.webp"
       alt="Swan Tayza Aung"
       class="rounded img-fluid"
@@ -132,6 +142,11 @@ export function initAchievementsCarousel() {
               ${achievements[7]}
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${achievements[8]}
+            </div>
+          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -178,8 +193,7 @@ export function initAchievementsCarousel() {
             <div class="row">
               ${achievements[6]}
               ${achievements[7]}
-              <div class="col p-3">
-              </div>
+              ${achievements[8]}
             </div>
           </div>
 
