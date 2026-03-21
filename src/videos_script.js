@@ -70,7 +70,7 @@ let suTuPyuContent = `
         Child Dream Scholarship Essay&nbsp;
 
       </h2>
-      <p class="textorange m-0">Written by <span class="fw-bold">Saw Chit Thu</span></p>
+      <p class="textorange m-0">Written by <span class="fw-bold">Saw Chit Tun</span></p>
       <p class="textaccent m-1">Read by Mya Thet Hmue</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 14</p>
     </div>
@@ -86,7 +86,7 @@ let suTuPyuContent = `
         UNSW Accepted Essay&nbsp;
 
       </h2>
-      <p class="textorange m-0">Written by <span class="fw-bold">Thoon Net Saing</span></p>
+      <p class="textorange m-0">Written by <span class="fw-bold">Thoon Set Naing</span></p>
       <p class="textaccent m-1">Read by Yonn Yati Win</p>
       <p class="m-1">"စုတုပြု" Video Series, Episode 13</p>
     </div>
