@@ -613,227 +613,227 @@ export function initMembersCarousel() {
   if (!members_carouselContainer) return;
 
   const members_mobileCarousel = `
-  <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              ${members[0]}
+    <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                ${members[0]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[1]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[1]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[2]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[2]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[3]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[3]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[4]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[4]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[5]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[5]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[6]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[6]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[7]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[7]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[8]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[8]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[9]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[9]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[10]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[10]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[11]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[11]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[12]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[12]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[13]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[13]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[14]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[14]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[15]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[15]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[16]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[16]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[17]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[17]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[18]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[18]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[19]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[19]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[20]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[20]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[21]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[21]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[22]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[22]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[23]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[23]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[24]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[24]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[25]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[25]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[26]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[26]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[27]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[27]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[28]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[28]}
+              </div>
             </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              ${members[29]}
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              ${members[30]}
-            </div>
-          </div>
-
-           <div class="carousel-item">
-            <div class="row">
-              ${members[31]}
-            </div>
-          </div>
-
-           <div class="carousel-item">
-            <div class="row">
-              ${members[32]}
-            </div>
-          </div>
-             <div class="carousel-item">
-            <div class="row">
-              ${members[33]}
-            </div>
-          </div>
 
             <div class="carousel-item">
-            <div class="row">
-              ${members[34]}
+              <div class="row">
+                ${members[29]}
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              ${members[35]}
+
+            <div class="carousel-item">
+              <div class="row">
+                ${members[30]}
+              </div>
             </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              ${members[36]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[31]}
+              </div>
             </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              ${members[37]}
+            <div class="carousel-item">
+              <div class="row">
+                ${members[32]}
+              </div>
             </div>
+              <div class="carousel-item">
+              <div class="row">
+                ${members[33]}
+              </div>
+            </div>
+
+              <div class="carousel-item">
+              <div class="row">
+                ${members[34]}
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                ${members[35]}
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                ${members[36]}
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                ${members[37]}
+              </div>
+            </div>
+
+
+
           </div>
-
-
-
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#members_carousel"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#members_carousel"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    `;
+          <a
+            class="carousel-control-prev"
+            href="#members_carousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#members_carousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+      `;
 
   const members_desktopCarousel = `
     <div id="members_carousel" class="carousel slide" data-bs-ride="carousel">
