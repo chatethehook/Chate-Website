@@ -1,6 +1,46 @@
 const achievements = [
   `<div class="col p-3">
     <img
+      src="media/achievements/Mya Thet Hmue.webp"
+      alt="Mya Thet Hmue"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/achievements/Kaung Pyae Htet.webp"
+      alt="Kaung Pyae Htet"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/achievements/Thae Nandar Su.webp"
+      alt="Thae Nandar Su"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>`,
+  `<div class="col p-3">
+    <img
+      src="media/achievements/Aung Khant Paing.webp"
+      alt="Aung Khant Paing"
+      class="rounded img-fluid"
+      style="width: 100%"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>`,
+  `<div class="col p-3">
+    <img
       src="media/achievements/shoon lai paing.webp"
       alt="Shoon Lai Paing"
       class="rounded img-fluid"
@@ -162,6 +202,26 @@ export function initAchievementsCarousel() {
               ${achievements[9]}
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${achievements[10]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${achievements[11]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${achievements[12]}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              ${achievements[13]}
+            </div>
+          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -215,8 +275,15 @@ export function initAchievementsCarousel() {
           <div class="carousel-item">
             <div class="row">
               ${achievements[9]}
-              <div class="col p-3">
-              </div>
+              ${achievements[10]}
+              ${achievements[11]}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              ${achievements[12]}
+              ${achievements[13]}
               <div class="col p-3">
               </div>
             </div>
