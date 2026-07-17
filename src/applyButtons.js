@@ -3,7 +3,7 @@ let buttons = document.querySelector(`#apply-buttons`);
 let globalLink =
   "https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform?usp=dialog";
 
-let mextLink = "https://forms.gle/72JWLVBTUHxNnoDj9";
+let transferLink = "https://forms.gle/7J2TaXb9CRUXxvS26";
 
 let applyButtons = `
   <div >
@@ -17,9 +17,9 @@ let applyButtons = `
     <a
     class="btn btn-primary accent-button m-1"
     target="_blank"
-    href="${mextLink}"
+    href="${transferLink}"
     role="button"
-    >MEXT ကို ချိတ်</a
+    >Transfer ကို ချိတ်</a
     >
 
   </div>`;
