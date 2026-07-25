@@ -13,6 +13,22 @@ let scholarsDiariesContent = `
   <div class="row p-2">
 
     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
+      <iframe src="https://www.youtube.com/embed/uks7g55OGUw?si=zd9eqxv57pGHPyXs"
+            class="responsive-iframe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <h2 class="m-0">
+        MEXT Scholarship with GED&nbsp;
+
+      </h2>
+      <p class="textorange m-0">Interviewing <span class="fw-bold">Swan Yee Htun Wah</span></p>
+      <p class="textaccent m-1">Interviewed by Mya Thet Hmu</p>
+      <p class="m-1">"Scholars' Diaries" Video Series, Episode 3</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pb-3">
       <iframe src="https://www.youtube.com/embed/T2Wu9_0DPU0?si=28f9hm3nNzKufiZT"
             class="responsive-iframe"
             title="YouTube video player" frameborder="0"
