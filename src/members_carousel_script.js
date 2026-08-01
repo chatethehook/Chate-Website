@@ -521,22 +521,6 @@ const members = [
       >
     </p>
   </div>`,
-  `<div class="col p-3">
-    <img
-      src="media/members/Swan Tayza Aung.webp"
-      alt="Swan Tayza Aung"
-      class="rounded img-fluid"
-      style="width: 100%"
-      loading="lazy"
-      decoding="async"
-    />
-    <h2 class="text-center">Swan Tayza Aung</h2>
-    <p class="text-center">
-      <span class="textaccent"
-        >General Advisor</span
-      >
-    </p>
-  </div>`,
 ];
 
 export function initMembersCarousel() {
@@ -719,11 +703,6 @@ export function initMembersCarousel() {
                 ${members[32]}
               </div>
             </div>
-              <div class="carousel-item">
-              <div class="row">
-                ${members[33]}
-              </div>
-            </div>
 
 
 
@@ -826,7 +805,8 @@ export function initMembersCarousel() {
           <div class="carousel-item">
             <div class="row">
                ${members[32]}
-               ${members[33]}
+               <div class="col p-3">
+              </div>
                <div class="col p-3">
               </div>
                <div class="col p-3">
