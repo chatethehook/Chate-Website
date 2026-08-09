@@ -183,6 +183,52 @@ class SpecialHeader extends HTMLElement {
 
 
             `;
+    } else {
+      this.innerHTML = `
+
+            <a href="/">
+                <img class="logo" src="media/logo-transparent.webp" alt="" srcset="">
+            </a>
+
+            <hr \ />
+            <div class="row justify-content-start">
+                <div class="col-4 m-2 mt-3">
+                  ${socialLinks}
+                </div>
+                <div class="col-4">
+                  <nav class="navbar navbar-expand sticky-top navbar-transparent p-0">
+                      <div class="container-fluid m-2">
+                      <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNavAltMarkup"
+                          aria-controls="navbarNavAltMarkup"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                      >
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div
+                          class="collapse navbar-collapse justify-content-center"
+                          id="navbarNavAltMarkup"
+                          >
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="/"><h3 class= "header-links">Home</h3></a>
+                          <a class="nav-link" href="/events.html"><h3 class= "header-links">Events</h3></a>
+                          <a class="nav-link" href="/articles.html"><h3 class= "header-links">Articles</h3></a>
+                          <a class="nav-link" href="/videos.html"><h3 class= "header-links">Videos</h3></a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
+
+
+
+            `;
     }
   }
 }
@@ -202,9 +248,7 @@ class SpecialFooter extends HTMLElement {
                     <div class="col-2 mt-5" >
                         <br \>
                         <h3 class="fw-medium"> Events </h3>
-                        <!--
                         <a class="footer-link" target="_self" href="/chatenltinebin.html"><p class="m-0">ချိတ်နဲ့တိုင်ပင်</p></a>
-                        --->
                         <a class="footer-link" target="_self" href="/events.html#AboveBeyond"><p class="m-0"> Above & Beyond </p></a>
                         <a class="footer-link" target="_self" href="/events.html#SteppingStone"><p class="m-0"> Stepping Stone </p></a>
                         <a class="footer-link" target="_self" href="/events.html#KyaungShaut"><p class="m-0"> ကျောင်းလျှောက်ကြမယ် </p></a>
