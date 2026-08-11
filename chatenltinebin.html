@@ -19,7 +19,15 @@
       rel="stylesheet"
     />
     <style>
-
+      .advisor-card {
+        width: 100%;
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      .advisor-card:hover {
+        transform: translateY(-4px);
+      }
       .advisor-photo {
         width: 160px;
         height: 160px;
@@ -99,7 +107,8 @@
         <div class="container">
           <div class="row justify-content-center">
             <!-- 1. Kyaw Myo Naing (Reynolds) -->
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+               <div class="advisor-card border-light shadow rounded-5 m-2 p-4 d-flex flex-column">
                 <img
                   src="media/members/Kyaw Myo Naing.webp"
                   alt="Kyaw Myo Naing (Reynolds)"
@@ -159,10 +168,12 @@
                     >Meet</a
                   >
                 </div>
+               </div>
             </div>
 
             <!-- 2. Yee Mon Thet (Yveria) -->
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+               <div class="advisor-card border-light shadow rounded-5 m-2 p-4 d-flex flex-column">
               <img
                 src="media/chatenltinebin additional advisors/Yee Mon Thet.webp"
                 alt="Yee Mon Thet (Yveria)"
@@ -214,10 +225,12 @@
                   >Meet</a
                 >
               </div>
+               </div>
             </div>
 
             <!-- 3. Shwe Eain Linn -->
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+               <div class="advisor-card border-light shadow rounded-5 m-2 p-4 d-flex flex-column">
               <img
                 src="media/members/Shwe Eain Lin.webp"
                 alt="Shwe Eain Linn"
@@ -278,9 +291,11 @@
                 </div>
               </div>
             </div>
+            </div>
 
             <!-- 4. Yoon Ei Ko Ko -->
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+               <div class="advisor-card border-light shadow rounded-5 m-2 p-4 d-flex flex-column">
                 <img
                   src="media/members/Yoon Ei Ko Ko.webp"
                   alt="Yoon Ei Ko Ko"
@@ -338,10 +353,12 @@
                     >Meet</a
                   >
                 </div>
+               </div>
             </div>
 
             <!-- 5. Win Htut Aung (Nolan) -->
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+               <div class="advisor-card border-light shadow rounded-5 m-2 p-4 d-flex flex-column">
               <img
                 src="media/members/Win Htut Aung.webp"
                 alt="Win Htut Aung (Nolan)"
@@ -394,6 +411,7 @@
                   rel="noopener"
                   >Meet</a
                 >
+              </div>
               </div>
             </div>
           </div>
