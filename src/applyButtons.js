@@ -5,6 +5,9 @@ let globalLink =
 
 let transferLink = "https://forms.gle/7J2TaXb9CRUXxvS26";
 
+let chatenltinebinLink =
+  "https://newchatenltinebin.chatethehook.com/chatenltinebin.html";
+
 let applyButtons = `
   <div >
     <a
@@ -21,7 +24,7 @@ let applyButtons = `
     role="button"
     >Transfer ကို ချိတ်</a
     >
-
+<a class="btn btn-primary accent-button m-1" target="_blank" rel="noopener noreferrer" href="${chatenltinebinLink}" role="button" >ချိတ်နဲ့တိုင်ပင်</a>
   </div>`;
 
 buttons.innerHTML = applyButtons;
