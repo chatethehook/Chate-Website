@@ -1,71 +1,112 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Videos - ချိတ်</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="/media/logo-transparent.webp"
-        />
-        <link rel="stylesheet" href="src/style.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div class="container-fluid background-gray pb-3">
-            <special-header></special-header>
-        </div>
-        <div class="container-fluid background-gray pb-3">
-            <div class="locationbuttongrp p-3">
-                <!-- <button id="abovebeyond-button" class="selector clicked">
-                    Above & Beyond
-                </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos - ချိတ်</title>
+    <link rel="canonical" href="https://chatethehook.com/videos.html" />
+    <meta
+      name="description"
+      content="Watch video series from ချိတ် - The Hook: Scholars' Diaries and စုတုပြု, featuring essays and stories from Myanmar students admitted to top universities worldwide."
+    />
 
-                <button id="steppingstone-button" class="selector">
-                    A Stepping Stone
-                    </button> -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.ico" />
 
-                <button id="sutupyu-button" class="selector clicked">
-                    <span class="fw-bold"> စုတုပြု </span>
-                </button>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Videos - ချိတ် - The Hook" />
+    <meta
+      property="og:description"
+      content="Watch video series from ချိတ် - The Hook: Scholars' Diaries and စုတုပြု, featuring essays and stories from Myanmar students admitted to top universities worldwide."
+    />
+    <meta
+      property="og:image"
+      content="https://chatethehook.com/assets/logos/og-preview.webp"
+    />
+    <meta property="og:url" content="https://chatethehook.com/videos.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="my_MM" />
 
-                <button id="scholarsdiaries-button" class="selector">
-                    <span class="fw-bold"> Scholars' Diaries </span>
-                </button>
-            </div>
-        </div>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Videos - ချိတ် - The Hook" />
+    <meta
+      name="twitter:description"
+      content="Watch video series from ချိတ် - The Hook: Scholars' Diaries and စုတုပြု, featuring essays and stories from Myanmar students admitted to top universities worldwide."
+    />
+    <meta
+      name="twitter:image"
+      content="https://chatethehook.com/assets/logos/og-preview.webp"
+    />
 
-        <div
-            class="container-fluid background-gray px-5 pb-4"
-            id="videos-panel"
-        ></div>
-        <special-footer></special-footer>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-        <script type="module" src="src/HeaderFooter.js"></script>
-        <script type="module" src="src/videos_script.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
 
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://kit.fontawesome.com/1c1ce0b05a.js"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <!-- Google Fonts: Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <div class="container-fluid background-gray pb-3">
+      <header id="navbar"></header>
+    </div>
+
+    <!-- Category Filter Buttons -->
+    <div class="container-fluid background-gray pb-3">
+      <nav class="locationbuttongrp p-3" aria-label="Video category filter">
+        <!--
+        <button id="above-and-beyond-button" class="selector clicked">
+          Above & Beyond
+        </button>
+        <button id="stepping-stone-button" class="selector">
+          A Stepping Stone
+        </button>
+        -->
+        <button id="su-tu-pyu-button" class="selector clicked" type="button">
+          <span class="fw-bold">စုတုပြု</span>
+        </button>
+        <button id="scholars-diaries-button" class="selector" type="button">
+          <span class="fw-bold">Scholars' Diaries</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Video Listing Panel (populated by videos.js) -->
+    <main
+      class="container-fluid background-gray px-2 px-md-5 pb-4"
+      id="videos-panel"
+    ></main>
+
+    <!-- Site Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Page-Specific Script -->
+    <script type="module" src="js/pages/videos.js"></script>
+
+    <!-- Third-Party Libraries -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1c1ce0b05a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

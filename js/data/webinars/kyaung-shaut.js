@@ -1,0 +1,167 @@
+/**
+ * @file kyaung-shaut.js
+ * @description "ကျောင်းလျှောက်ကြမယ်" Webinar Series data
+ * @module data/webinars/kyaung-shaut
+ */
+
+/** @typedef {import('./types.js').WebinarEntry} WebinarEntry */
+
+/** @type {WebinarEntry[]} */
+export const KYAUNG_SHAUT = [
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/SwAWNbovm9U?si=N6cNQrh8zSR0ZT4j",
+    title: "Getting Ready for The Next Year College Application Season",
+    date: "02/01/2025",
+    presenter: "Soe Thway Ko, Swan Tayza Aung",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 20'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/_aZ2EyM0_xo?si=F6fQGiFvm7vftmdJ",
+    title: "Guide to University Education in Singapore: NUS Pathway Focus",
+    date: "07/12/2024",
+    presenter: "Yoon Su Lin",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 19'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/p3vHgpWsyuQ?si=oJUrviJ20MZnztZc",
+    title: "How to Build a Passion Project?",
+    date: "03/12/2024",
+    presenter: "Yoon Yati",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 18'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/BxII9HokTxY?si=izXiYOxEobYlcf4R",
+    title:
+      "Applying to Russell Group UK Universities for Masters' Degree with Chevening Scholarship",
+    date: "13/10/2024",
+    presenter: "Phyo Thiri",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 17'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/ujOhp7wzUF4?si=e9uIPtSWU_z5PVyl",
+    title: "UCAS Walkthrough",
+    date: "21/09/2024",
+    presenter: "Julia Moe Chan Myae",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 16'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/RM1r0l_KSGw?si=W9U1GGc-WNdHaeSE",
+    title: "CommonApp Walkthrough",
+    date: "08/09/2024",
+    presenter: "Aung Khant Paing",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 15'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/GVaAJLHp62A?si=_7GlIJczsuzH9scU",
+    title: "UWC and US Universities",
+    date: "25/08/2024",
+    presenter: "Htet Htet Paing",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 14'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/IIGXhLFzaxY?si=HxGiDrSKutbIqL0P",
+    title: "Study in the UK",
+    date: "18/08/2024",
+    presenter: "Yamin Thet @ Rachel Joy",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 13'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/pM91wTXkhJI?si=P5BtPrK89k7x1KmG",
+    title: "Stepping into UK Universities",
+    date: "08/08/2024",
+    presenter: "Swan Yee Htun Wah",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 12'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/jmHSHLbcIXc?si=X11wN_gyVV9-_w0i",
+    title: "Transferring from community college to universities",
+    date: "28/07/2024",
+    presenter: "Thet Htoo Naung",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 11'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/xn7rv-xiWAM?si=F3xTD-WwxZeaaeui",
+    title: "Fully Funded Undergraduate Scholarship in the US with a GED",
+    date: "21/07/2024",
+    presenter: "Allei Mar",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 10'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/C60d95ecPMg?si=mHv0uHckFzfwtFsD",
+    title: "Doing the Best with What I Have",
+    date: "14/07/2024",
+    presenter: "John Ten Khant",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 9'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/I-2qd55aBeA?si=S866eQe4PZDAxCO0",
+    title: "Extracurricular Activities for Colleges",
+    date: "01/07/2024",
+    presenter: "Yone Waddy Aung",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 8'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/sNl1rv3X39k?si=G72gCtCq4qutrH0q",
+    title: "Financial Aid at US Colleges",
+    date: "23/06/2024",
+    presenter: "Wai Yan Win Aung",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 7'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/pLIlUeuaELw?si=8Mu7mfcsoH7Z6XgK",
+    title: '"တက္ကသိုလ်များဆီသို့" Program မိတ်ဆက်',
+    date: "16/06/2024",
+    presenter: "ချိတ် Admissions Officers",
+    notes: [
+      "Official Program Announcement",
+      '"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 6',
+    ],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/sxHyH7kSoNU?si=gBx4uXoWJqyNnniA",
+    title: "My Journey from Community College to Columbia University",
+    date: "26/05/2024",
+    presenter: "Rachel Soe",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 4'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/YOwYQ56EZaA?si=1nCk3neoXNqL4by9",
+    title: "Misconceptions in College Applications",
+    date: "09/05/2024",
+    presenter: "Yin Min Thant",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 3'],
+  },
+  {
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/HRfzWAFDMQk?si=Yg7OvPHK8tSN_lju",
+    title: "Why LACs?",
+    date: "20/04/2024",
+    presenter: "Sai Nyi Bhone Htut, Myat Nadi Kyaw",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 2'],
+  },
+  {
+    mediaType: "image",
+    mediaSrc: "../../assets/webinars/ask-the-hook.webp",
+    title: "US College Admissions Overview",
+    date: "14/04/2024",
+    presenter: "Nyan Lin Htet",
+    notes: ['"ကျောင်းလျှောက်ကြမယ်" Webinar Series, Episode 1'],
+  },
+];
