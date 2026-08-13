@@ -53,68 +53,125 @@ export function renderSocialLinks() {
 function renderNavLinks(currentPath) {
   return NAV_LINKS.map(({ href, label }) => {
     const isActive = currentPath === href;
+
     return `
-    <a class="nav-link ${isActive ? "active" : ""}" ${isActive ? 'aria-current="page"' : ""} href="${href}">
-      <h3 class="header-links">${label}</h3>
-    </a>`;
+      <a
+        class="site-nav__link${isActive ? " site-nav__link--active" : ""}"
+        href="${href}"
+        ${isActive ? 'aria-current="page"' : ""}
+      >
+        ${label}
+      </a>
+    `;
   }).join("");
 }
 
-export function navbar() {
-  const currentPath = window.location.pathname;
-
+export function navbar(currentPath) {
   return `
-<a href="/">
-  <img class="logo" src="assets/logos/logo-transparent.webp" alt="Organization Logo">
-</a>
-<hr>
-<div class="container-fluid">
-  <div class="row align-items-center">
-    <div class="col-6 col-lg-4 mt-3">
-      ${renderSocialLinks()}
-    </div>
-    <div class="col-6 col-lg-8">
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-light sticky-top p-0" aria-label="Main navigation">
-        <div class="container-fluid px-0 justify-content-end">
+    <header class="site-header">
+      <div class="site-header__container">
+
+        <div class="site-header__social">
+          ${renderSocialLinks()}
+        </div>
+
+        <div class="site-header__menu">
           <button
-            class="navbar-toggler"
+            class="custom-navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#navbarOffcanvas"
             aria-controls="navbarOffcanvas"
-            aria-label="Toggle navigation"
+            aria-label="Open navigation menu"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="menu-bar menu-bar-1"></span>
+            <span class="menu-bar menu-bar-2"></span>
+            <span class="menu-bar menu-bar-3"></span>
           </button>
+        </div>
 
-          <div
-            class="offcanvas offcanvas-end offcanvas-lg nav-offcanvas"
-            tabindex="-1"
-            id="navbarOffcanvas"
-            aria-labelledby="navbarOffcanvasLabel"
-          >
-            <div class="offcanvas-header d-lg-none py-0">
-              <a href="/" class="w-30 h-30">
-                <img class="logo" src="assets/logos/logo-transparent.webp" alt="Organization Logo">
-              </a>
-              <h3 class="offcanvas-title fw-semibold" id="navbarOffcanvasLabel">ချိတ်-The Hook</h3>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                data-bs-target="#navbarOffcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body justify-content-lg-center">
-              <div class="navbar-nav ms-auto text-end text-lg-center">
-                ${renderNavLinks(currentPath)}
-              </div>
-            </div>
+        <div class="site-header__brand">
+          <a href="/" class="site-header__logo-link" aria-label="ချိတ်-The Hook home">
+            <img
+              class="site-header__logo"
+              src="assets/logos/logo-transparent.webp"
+              alt="ချိတ်-The Hook"
+            >
+          </a>
+        </div>
+
+        <nav class="site-header__navigation" aria-label="Main navigation">
+          <div class="site-nav">
+            ${renderNavLinks(currentPath)}
+          </div>
+        </nav>
+
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end nav-offcanvas"
+        tabindex="-1"
+        id="navbarOffcanvas"
+        aria-labelledby="navbarOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="/" class="site-header__mobile-logo-link" aria-label="ချိတ်-The Hook home">
+            <img
+              class="site-header__mobile-logo"
+              src="assets/logos/logo-transparent.webp"
+              alt="ချိတ်-The Hook"
+            >
+          </a>
+
+          <h2 class="offcanvas-title" id="navbarOffcanvasLabel">
+            ချိတ်-The Hook
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close navigation menu"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <nav class="mobile-nav-links" aria-label="Mobile navigation">
+            ${renderNavLinks(currentPath)}
+          </nav>
+          <div class="mobile-social-links">
+            ${renderSocialLinks()}
+          </div>
+          <div class="mobile-copyright">
+            <p>
+              © 2026
+              <a href="/">ချိတ်-The Hook</a>. All rights reserved.
+            </p>
           </div>
         </div>
-      </nav>
-    </div>
-  </div>
-</div>`;
+      </div>
+    </header>
+  `;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname;
+  const navbarContainer = document.querySelector("#navbar-container");
+
+  if (navbarContainer) {
+    navbarContainer.innerHTML = renderNavbar(currentPath);
+  }
+
+  const toggler = document.querySelector(".custom-navbar-toggler");
+  const offcanvas = document.querySelector("#navbarOffcanvas");
+
+  if (toggler && offcanvas) {
+    offcanvas.addEventListener("show.bs.offcanvas", () => {
+      toggler.classList.add("is-open");
+    });
+
+    offcanvas.addEventListener("hide.bs.offcanvas", () => {
+      toggler.classList.remove("is-open");
+    });
+  }
+});

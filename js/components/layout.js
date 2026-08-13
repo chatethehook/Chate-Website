@@ -4,13 +4,14 @@
  * @module components/layout
  */
 
-import { navbar } from "./navbar.js";
-import { footer } from "./footer.js";
+import { renderNavbar } from "./navbar.js";
+// import { renderFooter } from "./footer.js";
 
 export function mountLayout() {
   const navbarEl = document.getElementById("navbar");
   const footerEl = document.getElementById("footer");
 
-  if (navbarEl) navbarEl.innerHTML = navbar() || "";
-  if (footerEl) footerEl.innerHTML = footer() || "";
+  if (navbarEl)
+    navbarEl.innerHTML = renderNavbar(window.location.pathname) || "";
+  if (footerEl) footerEl.innerHTML = renderFooter() || "";
 }
