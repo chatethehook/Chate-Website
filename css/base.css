@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5ce1e6;
+  --text-color: #233142;
+  --text-accent: #0cb4bb;
+  --accent-color: #f2dea2;
+  --bg-color: #f6f6f6;
+  --bg-blue: #e1f3f4;
+  --contrast-color: #9b8f8f;
+  --social-nav-color: #4c6869;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Lexend", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
