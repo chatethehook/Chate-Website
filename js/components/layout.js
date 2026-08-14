@@ -4,14 +4,20 @@
  * @module components/layout
  */
 
-import { renderNavbar } from "./navbar.js";
-// import { renderFooter } from "./footer.js";
+import { renderNavbar, initNavbar } from "./navbar.js";
+import { renderFooter } from "./footer.js";
 
 export function mountLayout() {
-  const navbarEl = document.getElementById("navbar");
-  const footerEl = document.getElementById("footer");
+  const currentPath = window.location.pathname;
 
-  if (navbarEl)
-    navbarEl.innerHTML = renderNavbar(window.location.pathname) || "";
-  if (footerEl) footerEl.innerHTML = renderFooter() || "";
+  const navbarEl = document.getElementById("navbar");
+  if (navbarEl) {
+    navbarEl.innerHTML = renderNavbar(currentPath);
+    initNavbar(navbarEl);
+  }
+
+  const footerEl = document.getElementById("footer");
+  if (footerEl) {
+    footerEl.innerHTML = renderFooter();
+  }
 }

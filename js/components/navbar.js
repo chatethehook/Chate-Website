@@ -26,9 +26,13 @@ const SOCIAL_LINKS = [
     icon: "fa-tiktok",
     label: "TikTok",
   },
-  { href: "https://t.me/chatethehook", icon: "fa-telegram", label: "Telegram" },
   {
-    href: "https://www.linkedin.com/company/%E1%80%81%E1%80%BB%E1%80%AD%E1%80%90%E1%80%BA-the-hook/",
+    href: "https://t.me/chatethehook",
+    icon: "fa-telegram",
+    label: "Telegram",
+  },
+  {
+    href: "https://www.linkedin.com/company/%E1%80%81%E1%80%BB%E1%80%AD%E1%80%90%E1%BA%BA%E1%80%BA-the-hook/",
     icon: "fa-linkedin",
     label: "LinkedIn",
   },
@@ -44,54 +48,59 @@ const NAV_LINKS = [
 export function renderSocialLinks() {
   return SOCIAL_LINKS.map(
     ({ href, icon, label }) => `
-    <a class="social-media text-decoration-none" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="${label}">
-      <i class="fa-brands ${icon}" aria-hidden="true"></i>
-    </a>`,
+      <a
+        class="social-media"
+        href="${href}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="${label}"
+      >
+        <i class="fa-brands ${icon}" aria-hidden="true"></i>
+      </a>
+    `,
   ).join("");
 }
 
-function renderNavLinks(currentPath) {
+function renderNavLinks(currentPath, mobile = false) {
   return NAV_LINKS.map(({ href, label }) => {
     const isActive = currentPath === href;
 
     return `
       <a
-        class="site-nav__link${isActive ? " site-nav__link--active" : ""}"
+        class="site-nav__link${isActive ? " site-nav__link--active" : ""}${mobile ? " site-nav__link--mobile" : ""}"
         href="${href}"
         ${isActive ? 'aria-current="page"' : ""}
       >
-        ${label}
+        ${
+          mobile
+            ? '<span class="site-nav__arrow" aria-hidden="true">↗</span>'
+            : ""
+        }
+        <span class="site-nav__label">${label}</span>
       </a>
     `;
   }).join("");
 }
 
-export function navbar(currentPath) {
+export function renderNavbar(currentPath) {
+  const desktopNavLinks = renderNavLinks(currentPath);
+  const mobileNavLinks = renderNavLinks(currentPath, true);
+  const socialLinks = renderSocialLinks();
+
   return `
     <header class="site-header">
       <div class="site-header__container">
 
         <div class="site-header__social">
-          ${renderSocialLinks()}
-        </div>
-
-        <div class="site-header__menu">
-          <button
-            class="custom-navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarOffcanvas"
-            aria-controls="navbarOffcanvas"
-            aria-label="Open navigation menu"
-          >
-            <span class="menu-bar menu-bar-1"></span>
-            <span class="menu-bar menu-bar-2"></span>
-            <span class="menu-bar menu-bar-3"></span>
-          </button>
+          ${socialLinks}
         </div>
 
         <div class="site-header__brand">
-          <a href="/" class="site-header__logo-link" aria-label="ချိတ်-The Hook home">
+          <a
+            href="/"
+            class="site-header__logo-link"
+            aria-label="ချိတ်-The Hook home"
+          >
             <img
               class="site-header__logo"
               src="assets/logos/logo-transparent.webp"
@@ -100,52 +109,72 @@ export function navbar(currentPath) {
           </a>
         </div>
 
-        <nav class="site-header__navigation" aria-label="Main navigation">
+        <nav
+          class="site-header__navigation"
+          aria-label="Main navigation"
+        >
           <div class="site-nav">
-            ${renderNavLinks(currentPath)}
+            ${desktopNavLinks}
           </div>
         </nav>
 
+        <div class="site-header__menu">
+          <button
+            class="custom-navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvas"
+            aria-controls="navbarOffcanvas"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+          >
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </button>
+        </div>
       </div>
 
       <div
-        class="offcanvas offcanvas-end nav-offcanvas"
+        class="offcanvas offcanvas-start nav-offcanvas"
         tabindex="-1"
         id="navbarOffcanvas"
-        aria-labelledby="navbarOffcanvasLabel"
+        aria-label="Mobile navigation menu"
       >
-        <div class="offcanvas-header">
-          <a href="/" class="site-header__mobile-logo-link" aria-label="ချိတ်-The Hook home">
+        <div class="offcanvas-header nav-offcanvas__header">
+          <a
+            href="/"
+            class="site-header__mobile-logo-link"
+            aria-label="ချိတ်-The Hook home"
+          >
             <img
               class="site-header__mobile-logo"
               src="assets/logos/logo-transparent.webp"
               alt="ချိတ်-The Hook"
             >
           </a>
-
-          <h2 class="offcanvas-title" id="navbarOffcanvasLabel">
-            ချိတ်-The Hook
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close navigation menu"
-          ></button>
         </div>
 
-        <div class="offcanvas-body">
-          <nav class="mobile-nav-links" aria-label="Mobile navigation">
-            ${renderNavLinks(currentPath)}
+        <div class="offcanvas-body nav-offcanvas__body">
+          <nav
+            class="mobile-nav-links"
+            aria-label="Mobile navigation"
+          >
+            ${mobileNavLinks}
           </nav>
-          <div class="mobile-social-links">
-            ${renderSocialLinks()}
+
+          <div
+            class="mobile-social-links"
+            aria-label="Social media links"
+          >
+            ${socialLinks}
           </div>
+
           <div class="mobile-copyright">
             <p>
               © 2026
-              <a href="/">ချိတ်-The Hook</a>. All rights reserved.
+              <a href="/">ချိတ်-The Hook</a>.
+              All rights reserved.
             </p>
           </div>
         </div>
@@ -154,24 +183,23 @@ export function navbar(currentPath) {
   `;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPath = window.location.pathname;
-  const navbarContainer = document.querySelector("#navbar-container");
+export function initNavbar(navbarContainer) {
+  if (!navbarContainer) return;
 
-  if (navbarContainer) {
-    navbarContainer.innerHTML = renderNavbar(currentPath);
-  }
+  const toggler = navbarContainer.querySelector(".custom-navbar-toggler");
+  const offcanvas = navbarContainer.querySelector("#navbarOffcanvas");
 
-  const toggler = document.querySelector(".custom-navbar-toggler");
-  const offcanvas = document.querySelector("#navbarOffcanvas");
+  if (!toggler || !offcanvas) return;
 
-  if (toggler && offcanvas) {
-    offcanvas.addEventListener("show.bs.offcanvas", () => {
-      toggler.classList.add("is-open");
-    });
+  offcanvas.addEventListener("show.bs.offcanvas", () => {
+    toggler.classList.add("is-open");
+    toggler.setAttribute("aria-expanded", "true");
+    toggler.setAttribute("aria-label", "Close navigation menu");
+  });
 
-    offcanvas.addEventListener("hide.bs.offcanvas", () => {
-      toggler.classList.remove("is-open");
-    });
-  }
-});
+  offcanvas.addEventListener("hide.bs.offcanvas", () => {
+    toggler.classList.remove("is-open");
+    toggler.setAttribute("aria-expanded", "false");
+    toggler.setAttribute("aria-label", "Open navigation menu");
+  });
+}
