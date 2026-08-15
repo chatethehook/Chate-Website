@@ -23,7 +23,7 @@ let applyButtons = `
     role="button"
     >Transfer ကို ချိတ်</a
     >
-<a class="btn btn-primary header-button m-1" target="_blank" rel="noopener noreferrer" href="${chatenltinebinLink}" role="button" >ချိတ်နဲ့တိုင်ပင်</a>
+<a class="btn btn-primary header-button m-1" rel="noopener noreferrer" href="${chatenltinebinLink}" role="button" >ချိတ်နဲ့တိုင်ပင်</a>
   </div>`;
 
 buttons.innerHTML = applyButtons;
