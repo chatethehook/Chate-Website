@@ -5,8 +5,7 @@ let globalLink =
 
 let transferLink = "https://forms.gle/7J2TaXb9CRUXxvS26";
 
-let chatenltinebinLink =
-  "https://newchatenltinebin.chatethehook.com/chatenltinebin.html";
+let chatenltinebinLink = "https://chatethehook.com/chatenltinebin.html";
 
 let applyButtons = `
   <div >
