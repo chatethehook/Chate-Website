@@ -1,7 +1,7 @@
 /**
  * @file footer.js
- * @description Renders the footer section of the website, including logo, social links,
- * and grouped navigation columns (Events, Articles, Videos).
+ * @description Renders the footer section of the website, including logo,
+ * social links, and grouped navigation columns.
  * @module components/footer
  */
 
@@ -33,61 +33,86 @@ function renderFooterLinks(links) {
   return links
     .map(
       ({ label, href }) => `
-      <a class="site-footer__link" href="${href}">
-        <p class="m-0">${label}</p>
-      </a>`,
+        <a class="site-footer__link" href="${href}">
+          ${label}
+        </a>
+      `,
     )
     .join("");
 }
 
 export function renderFooter() {
   return `
-    <footer class="site-footer container-fluid px-4 py-5">
-      <div class="row g-4">
+    <footer class="site-footer">
+      <div class="site-footer__container px-4 py-5">
 
-        <div class="col-12 col-sm-6 col-md-3">
-          <img
-            class="site-footer__logo d-block mx-auto"
-            src="assets/logos/logo-transparent.webp"
-            alt="ချိတ်-The Hook"
-          >
-          <h3 class="site-footer__tagline text-center fw-semibold">
-            <span class="site-footer__tagline--chate">Chate</span> Your Dreams
-          </h3>
-          <div class="site-footer__social text-center">
-            ${renderSocialLinks()}
+        <div class="row g-4">
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="site-footer__brand">
+              <img
+                class="site-footer__logo"
+                src="assets/logos/logo-transparent.webp"
+                alt="ချိတ်-The Hook"
+              >
+
+              <h3 class="site-footer__tagline">
+                <span class="site-footer__tagline--chate">Chate</span>
+                Your Dreams
+              </h3>
+
+              <div class="site-footer__social">
+                ${renderSocialLinks()}
+              </div>
+            </div>
           </div>
+
+          <div class="col-6 col-md-2">
+            <h3 class="site-footer__heading">Events</h3>
+            <nav class="site-footer__links" aria-label="Events">
+              ${renderFooterLinks(EVENT_LINKS)}
+            </nav>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h3 class="site-footer__heading">Articles</h3>
+            <nav class="site-footer__links" aria-label="Articles">
+              ${renderFooterLinks(ARTICLE_LINKS)}
+            </nav>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h3 class="site-footer__heading">Videos</h3>
+            <nav class="site-footer__links" aria-label="Videos">
+              ${renderFooterLinks(VIDEO_LINKS)}
+            </nav>
+          </div>
+
         </div>
 
-        <div class="col-6 col-md-2">
-          <h3 class="site-footer__heading fw-medium">Events</h3>
-          ${renderFooterLinks(EVENT_LINKS)}
+        <div class="site-footer__divider"></div>
+
+        <div class="site-footer__copyright">
+          <p>
+            © 2026
+            <a
+              href="https://github.com/chatethehook/Chate-Website"
+              title="The Hook Official Website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ချိတ် - The Hook Official Website
+            </a>
+            <span class="site-footer__credit">by</span>
+            <a
+              href="https://chatethehook.com/"
+              title="The Hook"
+            >
+              ချိတ် - The Hook
+            </a>
+          </p>
         </div>
 
-        <div class="col-6 col-md-2">
-          <h3 class="site-footer__heading fw-medium">Articles</h3>
-          ${renderFooterLinks(ARTICLE_LINKS)}
-        </div>
-
-        <div class="col-6 col-md-2">
-          <h3 class="site-footer__heading fw-medium">Videos</h3>
-          ${renderFooterLinks(VIDEO_LINKS)}
-        </div>
-
-      </div>
-
-      <div class="site-footer__copyright mt-4">
-        <p>
-          © 2026
-          <a
-            href="https://github.com/chatethehook/Chate-Website"
-            title="The Hook Official Website"
-            target="_blank"
-            rel="noopener noreferrer"
-          >ချိတ် - The Hook Official Website</a>
-          by
-          <a href="https://chatethehook.com/" title="The Hook">ချိတ် - The Hook</a>
-        </p>
       </div>
     </footer>
   `;
