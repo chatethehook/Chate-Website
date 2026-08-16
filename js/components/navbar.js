@@ -40,6 +40,7 @@ const SOCIAL_LINKS = [
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
+  { href: "/advising.html", label: "Advising" },
   { href: "/events.html", label: "Events" },
   { href: "/articles.html", label: "Articles" },
   { href: "/videos.html", label: "Videos" },

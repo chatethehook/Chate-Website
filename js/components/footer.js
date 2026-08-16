@@ -8,6 +8,7 @@
 import { renderSocialLinks } from "./navbar.js";
 
 const EVENT_LINKS = [
+  { label: "Advising", href: "/advising.html" },
   { label: "Above & Beyond", href: "/events.html#above-and-beyond" },
   { label: "Stepping Stone", href: "/events.html#stepping-stone" },
   { label: "ကျောင်းလျှောက်ကြမယ်", href: "/events.html#kyaung-shaut" },
