@@ -235,6 +235,7 @@
   font-weight: 400;
   line-height: 1;
   transition: transform 0.2s ease;
+  font-family: "Noto Sans Symbols 2", "Segoe UI Symbol", sans-serif;
 }
 
 .mobile-nav-links .site-nav__link:hover .site-nav__arrow,
