@@ -3,5 +3,5 @@
  * @description Contains the Blogger API key used for fetching articles.
  * @module services/blogger-api-key
  */
-
-export const BLOGGER_API_KEY = "AIzaSyCJn0ZPR1n0Eqh4xWzTkL6GUE2qpjEWNwU";
+import BLOGGER_API_KEY from "./bloggerapikey.js";
+export default BLOGGER_API_KEY;
