@@ -5,60 +5,73 @@
  */
 
 export function mountHero() {
+  const heroContainer = document.getElementById("hero");
+
+  if (!heroContainer) return;
+
   const heroHTML = `
-    <div class="container-fluid blue-gradient pb-5">
-      <div class="row align-items-center">
-        <div class="col-md-6 d-flex">
-          <div class="container-fluid px-2 p-lg-5">
-            <img class="img-fluid rounded" src="assets/icons/spark-blue.webp" alt="Spark Icon" />
+    <section class="hero">
+      <div class="hero__container">
+        <div class="row align-items-center g-5">
 
-            <h1 class="text-right">
-              Creating free college application resources for
-              <span class="textaccent">Myanmar students</span>
-            </h1>
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <div class="hero__content">
+              <img
+                class="hero__spark"
+                src="assets/icons/spark-blue.webp"
+                alt=""
+                aria-hidden="true"
+              >
 
-            <div class="container m-1">
-              <div>
+              <h1 class="hero__title">
+                Creating free college application resources for
+                <span class="hero__highlight">
+                  Myanmar students
+                </span>
+              </h1>
+
+              <p class="hero__description">
+                Explore accessible resources and opportunities to help
+                Myanmar students navigate their college application journey.
+              </p>
+
+              <div class="hero__actions">
                 <a
-                  class="btn btn-primary header-button m-1"
+                  class="hero__button hero__button--primary"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://forms.gle/72JWLVBTUHxNnoDj9"
-                  role="button"
                 >
                   Global
                 </a>
-                <a 
-                  class="btn btn-primary accent-button m-1"
+
+                <a
+                  class="hero__button hero__button--accent"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://forms.gle/72JWLVBTUHxNnoDj9"
-                  role="button"
                 >
                   MEXT ကို ချိတ်
                 </a>
               </div>
             </div>
+          </div>
 
-            <br />
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="hero__visual">
+              <img
+                class="hero__image"
+                src="assets/home/chate-transparent.png"
+                alt="Chate's slogan - Chate your dreams"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
           </div>
         </div>
-
-        <div class="col-md-6 d-flex">
-          <img
-            class="img-fluid rounded mx-auto d-block"
-            src="assets/home/chate-transparent.png"
-            alt="Chate's slogan - Chate your dreams"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
       </div>
-    </div>
+    </section>
   `;
 
-  const heroContainer = document.getElementById("hero");
-  if (heroContainer) {
-    heroContainer.innerHTML = heroHTML;
-  }
+  heroContainer.innerHTML = heroHTML;
 }
