@@ -6,20 +6,21 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  color: var(--color-text);
   background: linear-gradient(
     to bottom,
     var(--color-surface) 0%,
     var(--color-surface) 55%,
     var(--color-primary) 100%
   );
-  color: var(--color-text);
 }
 
 /* Container */
 .hero__container {
+  width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: var(--space-20) var(--space-8) var(--space-20);
+  padding: var(--space-20) var(--space-8);
 }
 
 /* Content */
@@ -38,9 +39,9 @@
 .hero__title {
   margin: 0;
   color: var(--color-text);
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: var(--font-size-display-sm);
   font-weight: var(--font-weight-semibold);
-  line-height: 1.08;
+  line-height: var(--line-height-tight);
   letter-spacing: -0.03em;
 }
 
@@ -69,14 +70,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
+  min-height: 40px;
   padding: var(--space-2) var(--space-5);
   border: 1px solid transparent;
   border-radius: var(--radius-full);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   line-height: 1;
   text-decoration: none;
+  box-shadow: var(--shadow-sm);
   transition:
     background-color var(--transition-fast),
     color var(--transition-fast),
@@ -84,20 +86,26 @@
     transform var(--transition-fast);
 }
 
+.hero__button-burmese {
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
 .hero__button:hover,
 .hero__button:focus-visible {
   transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .hero__button--primary {
   background-color: var(--color-primary-strong);
-  color: #ffffff;
+  color: var(--color-surface);
 }
 
 .hero__button--primary:hover,
 .hero__button--primary:focus-visible {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-surface);
 }
 
 .hero__button--accent {
@@ -164,14 +172,6 @@
 @media (max-width: 575.98px) {
   .hero__container {
     padding: var(--space-12) var(--space-4) var(--space-16);
-  }
-
-  .hero__title {
-    font-size: 2.4rem;
-  }
-
-  .hero__description {
-    font-size: var(--font-size-sm);
   }
 
   .hero__image {

@@ -51,7 +51,7 @@ export function mountHero() {
                   rel="noopener noreferrer"
                   href="https://forms.gle/72JWLVBTUHxNnoDj9"
                 >
-                  MEXT ကို ချိတ်
+                  MEXT<span class="hero__button-burmese" lang="my">ကို ချိတ်</span>
                 </a>
               </div>
             </div>
@@ -68,6 +68,7 @@ export function mountHero() {
               >
             </div>
           </div>
+          
         </div>
       </div>
     </section>

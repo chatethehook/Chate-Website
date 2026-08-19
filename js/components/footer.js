@@ -11,7 +11,10 @@ const EVENT_LINKS = [
   { label: "Advising", href: "/advising.html" },
   { label: "Above & Beyond", href: "/events.html#above-and-beyond" },
   { label: "Stepping Stone", href: "/events.html#stepping-stone" },
-  { label: "ကျောင်းလျှောက်ကြမယ်", href: "/events.html#kyaung-shaut" },
+  {
+    label: '<span lang="my">ကျောင်းလျှောက်ကြမယ်</span>',
+    href: "/events.html#kyaung-shaut",
+  },
 ];
 
 const ARTICLE_LINKS = [
@@ -26,7 +29,10 @@ const ARTICLE_LINKS = [
 ];
 
 const VIDEO_LINKS = [
-  { label: "စုတုပြု Series", href: "/videos.html#su-tu-pyu" },
+  {
+    label: '<span lang="my">စုတုပြု</span> Series',
+    href: "/videos.html#su-tu-pyu",
+  },
   { label: "Scholars' Diaries", href: "/videos.html#scholars-diaries" },
 ];
 
@@ -102,14 +108,14 @@ export function renderFooter() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ချိတ် - The Hook Official Website
+              <span lang="my">ချိတ် - The Hook</span> Official Website
             </a>
             <span class="site-footer__credit">by</span>
             <a
               href="https://chatethehook.com/"
               title="The Hook"
             >
-              ချိတ် - The Hook
+              <span lang="my">ချိတ် - The Hook</span>
             </a>
           </p>
         </div>
