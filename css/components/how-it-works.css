@@ -2,7 +2,7 @@
 .how-it-works {
   width: 100%;
   background-color: var(--color-background);
-  padding-block: var(--space-16);
+  padding-block: var(--section-spacing);
 }
 
 /* Container */
