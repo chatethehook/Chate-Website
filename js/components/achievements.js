@@ -22,18 +22,19 @@ const achievementsData = [
 ];
 
 export function mountAchievements() {
-  const section = document.getElementById("achievements");
-  if (!section) return;
+  const achievementsContainer = document.getElementById("achievements");
 
-  section.innerHTML = `
-    <div class="container-fluid background-gray pt-3">
-      <div class="d-flex justify-content-center text-center">
-        <h1 class="m-3 p-2">
+  if (!achievementsContainer) return;
+
+  achievementsContainer.innerHTML = `
+    <div class="achievements">
+      <div class="achievements__container">
+        <h2 class="achievements__heading">
           Guided by Peers,
-          <span class="textaccent">Admitted Worldwide</span>
-        </h1>
+          <span class="achievements__highlight">Admitted Worldwide</span>
+        </h2>
+        <div id="achievements-carousel-container"></div>
       </div>
-      <div id="achievements-carousel-container"></div>
     </div>
   `;
 
@@ -41,19 +42,21 @@ export function mountAchievements() {
 }
 
 function initCarousel() {
-  const container = document.getElementById("achievements-carousel-container");
-  if (!container) return;
+  const achievementsCarouselContainer = document.getElementById(
+    "achievements-carousel-container",
+  );
 
-  const isMobile = () => window.matchMedia("(max-width: 576px)").matches;
+  if (!achievementsCarouselContainer) return;
 
   const createItem = (item) => `
-    <div class="col p-3">
-      <img src="assets/achievements/${item.filename}" 
-           alt="${item.alt}" 
-           class="rounded img-fluid" 
-           style="width: 100%" 
-           loading="lazy" 
-           decoding="async">
+    <div class="achievements__col">
+      <img
+        src="assets/achievements/${item.filename}"
+        alt="${item.alt}"
+        class="achievements__image"
+        loading="lazy"
+        decoding="async"
+      >
     </div>`;
 
   const createCarousel = (itemsPerSlide) => {
@@ -67,32 +70,56 @@ function initCarousel() {
 
       slidesHTML += `
         <div class="carousel-item ${i === 0 ? "active" : ""}">
-          <div class="row row-cols-1 row-cols-sm-3">${items}</div>
+          <div class="achievements__row">${items}</div>
         </div>`;
     }
 
     return `
-      <div id="achievements-carousel" class="carousel slide">
+      <div
+        id="achievements-carousel"
+        class="carousel slide achievements__carousel"
+        aria-label="Student achievements"
+      >
         <div class="carousel-inner">${slidesHTML}</div>
-        <a class="carousel-control-prev" href="#achievements-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <a
+          class="carousel-control-prev"
+          href="#achievements-carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#achievements-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+        <a
+          class="carousel-control-next"
+          href="#achievements-carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </a>
       </div>`;
   };
 
-  let currentIsMobile = isMobile();
+  function getItemsPerSlide() {
+    const width = window.innerWidth;
+    if (width <= 575.98) return 1;
+    if (width <= 991.98) return 2;
+    return 3;
+  }
+
+  let currentItemsPerSlide = getItemsPerSlide();
   let carouselInstance = null;
 
   function updateCarousel() {
     if (carouselInstance) {
-      carouselInstance.dispose();
+      carouselInstance.dispose(); // to clean up previous carousel
       carouselInstance = null;
     }
 
-    container.innerHTML = createCarousel(currentIsMobile ? 1 : 3);
+    achievementsCarouselContainer.innerHTML =
+      createCarousel(currentItemsPerSlide);
 
     const carouselEl = document.getElementById("achievements-carousel");
     carouselInstance = new bootstrap.Carousel(carouselEl, {
@@ -103,9 +130,9 @@ function initCarousel() {
   }
 
   function handleResize() {
-    const nowMobile = isMobile();
-    if (nowMobile !== currentIsMobile) {
-      currentIsMobile = nowMobile;
+    const nowItemsPerSlide = getItemsPerSlide();
+    if (nowItemsPerSlide !== currentItemsPerSlide) {
+      currentItemsPerSlide = nowItemsPerSlide;
       updateCarousel();
     }
   }

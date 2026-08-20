@@ -1,7 +1,6 @@
 /**
  * @file navbar.js
- * @description Renders the navigation bar of the website, including logo,
- * social media links, and primary nav menu with active-link highlighting.
+ * @description Renders the navigation bar of the website, including logo, social media links, and primary nav menu with active-link highlighting.
  * @module components/navbar
  */
 

@@ -1,7 +1,6 @@
 /**
  * @file footer.js
- * @description Renders the footer section of the website, including logo,
- * social links, and grouped navigation columns.
+ * @description Renders the footer section of the website, including logo, social links, and grouped navigation columns.
  * @module components/footer
  */
 
