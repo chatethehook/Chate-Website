@@ -48,17 +48,16 @@ function renderCard({ image, alt, html }) {
 
 export function mountHowItWorks() {
   const section = document.getElementById("how-it-works");
+
   if (!section) return;
 
   section.innerHTML = `
-    <div class="how-it-works">
-      <div class="how-it-works__container">
-        <h2 class="how-it-works__heading">
-          How <span lang="my">ချိတ်</span> Works
-        </h2>
-        <div class="how-it-works__grid">
-          ${CARDS.map(renderCard).join("")}
-        </div>
+    <div class="how-it-works__container">
+      <h2 class="how-it-works__heading">
+        How <span lang="my">ချိတ်</span> Works
+      </h2>
+      <div class="how-it-works__grid">
+        ${CARDS.map(renderCard).join("")}
       </div>
     </div>
   `;

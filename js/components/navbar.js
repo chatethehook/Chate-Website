@@ -105,98 +105,96 @@ export function renderNavbar(currentPath) {
   const socialLinks = renderSocialLinks();
 
   return `
-    <header class="site-header">
-      <div class="site-header__container">
+    <div class="site-header__container">
 
-        <div class="site-header__social">
+      <div class="site-header__social">
+        ${socialLinks}
+      </div>
+
+      <div class="site-header__brand">
+        <a
+          href="/"
+          class="site-header__logo-link"
+          aria-label="ချိတ်-The Hook home"
+        >
+          <img
+            class="site-header__logo"
+            src="/assets/logos/logo-transparent.webp"
+            alt="ချိတ်-The Hook"
+          >
+        </a>
+      </div>
+
+      <nav
+        class="site-header__navigation"
+        aria-label="Main navigation"
+      >
+        <div class="site-nav">
+          ${desktopNavLinks}
+        </div>
+      </nav>
+
+      <div class="site-header__menu">
+        <button
+          class="custom-navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvas"
+          aria-controls="navbarOffcanvas"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start nav-offcanvas"
+      tabindex="-1"
+      id="navbarOffcanvas"
+      aria-label="Mobile navigation menu"
+    >
+      <div class="offcanvas-header nav-offcanvas__header">
+        <a
+          href="/"
+          class="site-header__mobile-logo-link"
+          aria-label="ချိတ်-The Hook home"
+        >
+          <img
+            class="site-header__mobile-logo"
+            src="assets/logos/logo-transparent.webp"
+            alt="ချိတ်-The Hook"
+          >
+        </a>
+      </div>
+
+      <div class="offcanvas-body nav-offcanvas__body">
+        <nav
+          class="mobile-nav-links"
+          aria-label="Mobile navigation"
+        >
+          ${mobileNavLinks}
+        </nav>
+
+        <div
+          class="mobile-social-links"
+          aria-label="Social media links"
+        >
           ${socialLinks}
         </div>
 
-        <div class="site-header__brand">
-          <a
-            href="/"
-            class="site-header__logo-link"
-            aria-label="ချိတ်-The Hook home"
-          >
-            <img
-              class="site-header__logo"
-              src="/assets/logos/logo-transparent.webp"
-              alt="ချိတ်-The Hook"
-            >
-          </a>
-        </div>
-
-        <nav
-          class="site-header__navigation"
-          aria-label="Main navigation"
-        >
-          <div class="site-nav">
-            ${desktopNavLinks}
-          </div>
-        </nav>
-
-        <div class="site-header__menu">
-          <button
-            class="custom-navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarOffcanvas"
-            aria-controls="navbarOffcanvas"
-            aria-expanded="false"
-            aria-label="Open navigation menu"
-          >
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-          </button>
+        <div class="mobile-copyright">
+          <p>
+            © 2026
+            <a href="/"><span lang="my">ချိတ်</span>-The Hook</a>.
+            All rights reserved.
+          </p>
         </div>
       </div>
-
-      <div
-        class="offcanvas offcanvas-start nav-offcanvas"
-        tabindex="-1"
-        id="navbarOffcanvas"
-        aria-label="Mobile navigation menu"
-      >
-        <div class="offcanvas-header nav-offcanvas__header">
-          <a
-            href="/"
-            class="site-header__mobile-logo-link"
-            aria-label="ချိတ်-The Hook home"
-          >
-            <img
-              class="site-header__mobile-logo"
-              src="assets/logos/logo-transparent.webp"
-              alt="ချိတ်-The Hook"
-            >
-          </a>
-        </div>
-
-        <div class="offcanvas-body nav-offcanvas__body">
-          <nav
-            class="mobile-nav-links"
-            aria-label="Mobile navigation"
-          >
-            ${mobileNavLinks}
-          </nav>
-
-          <div
-            class="mobile-social-links"
-            aria-label="Social media links"
-          >
-            ${socialLinks}
-          </div>
-
-          <div class="mobile-copyright">
-            <p>
-              © 2026
-              <a href="/">ချိတ်-The Hook</a>.
-              All rights reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
+    </div>
   `;
 }
 

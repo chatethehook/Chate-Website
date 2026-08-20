@@ -27,14 +27,12 @@ export function mountAchievements() {
   if (!achievementsContainer) return;
 
   achievementsContainer.innerHTML = `
-    <div class="achievements">
-      <div class="achievements__container">
-        <h2 class="achievements__heading">
-          Guided by Peers,
-          <span class="achievements__highlight">Admitted Worldwide</span>
-        </h2>
-        <div id="achievements-carousel-container"></div>
-      </div>
+    <div class="achievements__container">
+      <h2 class="achievements__heading">
+        Guided by Peers,
+        <span class="achievements__highlight">Admitted Worldwide</span>
+      </h2>
+      <div id="achievements-carousel-container"></div>
     </div>
   `;
 

@@ -49,8 +49,7 @@ function renderFooterLinks(links) {
 
 export function renderFooter() {
   return `
-    <footer class="site-footer">
-      <div class="site-footer__container px-4 py-5">
+    <div class="site-footer__container px-4 py-5">
 
         <div class="row g-4">
 
@@ -120,6 +119,5 @@ export function renderFooter() {
         </div>
 
       </div>
-    </footer>
   `;
 }
