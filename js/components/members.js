@@ -8,14 +8,15 @@ import { MEMBERS } from "../data/members/index.js";
 
 export function mountMembers() {
   const section = document.getElementById("members");
+
   if (!section) return;
 
   section.innerHTML = `
-    <div class="container-fluid background-gray py-5">
-      <div class="justify-content-center p-0 d-flex m-3" style="padding-right: 50px">
-        <h1>Our <span class="textaccent">Team Members</span></h1>
-      </div>
-      <div id="member-carousel-container"></div>
+    <div class="members__container">
+      <h2 class="members__heading">
+        Our <span class="members__highlight">Team Members</span>
+      </h2>
+      <div id="members-carousel-container"></div>
     </div>
   `;
 
@@ -23,26 +24,36 @@ export function mountMembers() {
 }
 
 function initMembersCarousel() {
-  const container = document.getElementById("member-carousel-container");
+  const container = document.getElementById("members-carousel-container");
+
   if (!container) return;
 
-  const isMobile = () => window.matchMedia("(max-width: 576px)").matches;
+  function getItemsPerSlide() {
+    const width = window.innerWidth;
+    if (width <= 575.98) return 1;
+    if (width <= 991.98) return 2;
+    if (width <= 1199.98) return 3;
+    return 4;
+  }
 
   const renderMemberCard = (member) => `
-    <div class="col p-3">
-      <img 
-        src="assets/members/${member.filename}" 
-        alt="${member.alt}" 
-        class="rounded img-fluid" 
-        style="width: 100%" 
-        loading="lazy" 
-        decoding="async" 
-      />
-      <h2 class="text-center">${member.name}</h2>
-      <p class="text-center">
-        <span class="textaccent">${member.role}</span>
-      </p>
-      ${member.subtitle ? `<p class="text-center">${member.subtitle}</p>` : ""}
+    <div class="members__col">
+      <div class="members__card">
+        <img
+          src="assets/members/${member.filename}"
+          alt="${member.alt}"
+          class="members__image"
+          loading="lazy"
+          decoding="async"
+        >
+        <h3 class="members__name">${member.name}</h3>
+        <p class="members__role">${member.role}</p>
+        ${
+          member.subtitle
+            ? `<p class="members__subtitle">${member.subtitle}</p>`
+            : ""
+        }
+      </div>
     </div>`;
 
   const renderCarousel = (itemsPerSlide) => {
@@ -55,27 +66,70 @@ function initMembersCarousel() {
 
       slidesHTML += `
         <div class="carousel-item ${i === 0 ? "active" : ""}">
-          <div class="row row-cols-1 row-cols-sm-4">${slideItems}</div>
+          <div class="members__row">${slideItems}</div>
         </div>`;
     }
 
     return `
-      <div id="members-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="members-carousel"
+        class="carousel slide members__carousel"
+        aria-label="Team members"
+      >
         <div class="carousel-inner">${slidesHTML}</div>
-        <a class="carousel-control-prev" href="#members-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <a
+          class="carousel-control-prev"
+          href="#members-carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#members-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+        <a
+          class="carousel-control-next"
+          href="#members-carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </a>
       </div>`;
   };
 
+  let currentItemsPerSlide = getItemsPerSlide();
+  let carouselInstance = null;
+
   function updateCarousel() {
-    const itemsPerSlide = isMobile() ? 1 : 4;
-    container.innerHTML = renderCarousel(itemsPerSlide);
+    if (carouselInstance) {
+      carouselInstance.dispose();
+      carouselInstance = null;
+    }
+
+    container.innerHTML = renderCarousel(currentItemsPerSlide);
+
+    const carouselEl = document.getElementById("members-carousel");
+    carouselInstance = new bootstrap.Carousel(carouselEl, {
+      interval: 5000,
+      ride: "carousel",
+      touch: true,
+    });
+  }
+
+  function handleResize() {
+    const nowItemsPerSlide = getItemsPerSlide();
+    if (nowItemsPerSlide !== currentItemsPerSlide) {
+      currentItemsPerSlide = nowItemsPerSlide;
+      updateCarousel();
+    }
   }
 
   updateCarousel();
-  window.addEventListener("resize", updateCarousel);
+
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleResize, 200);
+  });
 }
