@@ -6,7 +6,6 @@
 
 const MYANMAR_SCRIPT_PATTERN = /[\u1000-\u109F]+/g;
 
-/* To */
 function wrapMyanmarScript(text) {
   if (!text) return "";
   return text.replace(

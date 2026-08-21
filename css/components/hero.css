@@ -129,7 +129,7 @@
 
 .hero__image {
   display: block;
-  width: min(100%, 620px);
+  width: min(100%, 740px);
   height: auto;
   object-fit: contain;
 }
@@ -165,17 +165,22 @@
   }
 
   .hero__image {
-    width: min(100%, 500px);
+    width: min(100%, 600px);
   }
 }
 
 @media (max-width: 575.98px) {
   .hero__container {
-    padding: var(--space-12) var(--space-4) var(--space-16);
+    padding: calc(var(--space-12) + 1rem) var(--space-4) var(--space-16);
   }
 
   .hero__image {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .hero__visual {
+    margin-top: var(--space-6);
   }
 }
 

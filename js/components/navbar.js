@@ -207,6 +207,7 @@ export function initNavbar(navbarContainer) {
   if (!toggler || !offcanvas) return;
 
   offcanvas.addEventListener("show.bs.offcanvas", () => {
+    navbarContainer.classList.remove("is-hidden");
     toggler.classList.add("is-open");
     toggler.setAttribute("aria-expanded", "true");
     toggler.setAttribute("aria-label", "Close navigation menu");
@@ -217,4 +218,22 @@ export function initNavbar(navbarContainer) {
     toggler.setAttribute("aria-expanded", "false");
     toggler.setAttribute("aria-label", "Open navigation menu");
   });
+
+  let previousScrollY = window.scrollY;
+
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+
+    navbarContainer.classList.toggle("is-scrolled", currentScrollY > 0);
+
+    if (currentScrollY <= 0 || currentScrollY < previousScrollY) {
+      navbarContainer.classList.remove("is-hidden");
+    } else if (!offcanvas.classList.contains("show")) {
+      navbarContainer.classList.add("is-hidden");
+    }
+
+    previousScrollY = currentScrollY;
+  }
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
 }
