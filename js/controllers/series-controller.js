@@ -13,8 +13,12 @@ export function initializeSeriesController({
   series,
   container,
   renderSeries,
+  getButtons,
 }) {
   if (!container) return;
+
+  let resolvedButtons = buttons;
+  let buttonsBound = false;
 
   function getActiveKey() {
     const hash = location.hash.replace("#", "");
@@ -24,19 +28,25 @@ export function initializeSeriesController({
   function update() {
     const activeKey = getActiveKey();
 
-    Object.entries(buttons).forEach(([key, button]) => {
+    container.innerHTML = renderSeries(series[activeKey]);
+    resolvedButtons = getButtons?.() ?? buttons;
+    buttonsBound = false;
+
+    Object.entries(resolvedButtons).forEach(([key, button]) => {
       button?.classList.toggle("clicked", key === activeKey);
     });
 
-    container.innerHTML = renderSeries(series[activeKey]);
     initializeLazyIframes();
-  }
 
-  Object.entries(buttons).forEach(([key, button]) => {
-    button?.addEventListener("click", () => {
-      location.hash = key;
-    });
-  });
+    if (!buttonsBound) {
+      Object.entries(resolvedButtons).forEach(([key, button]) => {
+        button?.addEventListener("click", () => {
+          location.hash = key;
+        });
+      });
+      buttonsBound = true;
+    }
+  }
 
   window.addEventListener("hashchange", update);
   update();

@@ -21,11 +21,6 @@ async function initVideosPage() {
 
   const videosPanel = document.getElementById("videos-panel");
 
-  const seriesButtons = {
-    "su-tu-pyu": document.getElementById("su-tu-pyu-button"),
-    "scholars-diaries": document.getElementById("scholars-diaries-button"),
-  };
-
   const videoSeries = {
     "su-tu-pyu": {
       titleMain: "စုတုပြု",
@@ -42,7 +37,11 @@ async function initVideosPage() {
   initializeSeriesController({
     defaultKey: DEFAULT_HASH,
     validKeys: VALID_HASHES,
-    buttons: seriesButtons,
+    buttons: {},
+    getButtons: () => ({
+      "su-tu-pyu": document.getElementById("su-tu-pyu-button"),
+      "scholars-diaries": document.getElementById("scholars-diaries-button"),
+    }),
     series: videoSeries,
     container: videosPanel,
     renderSeries: renderVideoGrid,

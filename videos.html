@@ -60,38 +60,13 @@
   </head>
   <body>
     <!-- Site Header -->
-    <div class="container-fluid background-gray pb-3">
-      <header id="navbar"></header>
-    </div>
-
-    <!-- Category Filter Buttons -->
-    <div class="container-fluid background-gray pb-3">
-      <nav class="locationbuttongrp p-3" aria-label="Video category filter">
-        <!--
-        <button id="above-and-beyond-button" class="selector clicked">
-          Above & Beyond
-        </button>
-        <button id="stepping-stone-button" class="selector">
-          A Stepping Stone
-        </button>
-        -->
-        <button id="su-tu-pyu-button" class="selector clicked" type="button">
-          <span class="fw-bold">စုတုပြု</span>
-        </button>
-        <button id="scholars-diaries-button" class="selector" type="button">
-          <span class="fw-bold">Scholars' Diaries</span>
-        </button>
-      </nav>
-    </div>
+    <header id="navbar" class="site-header" data-component="navbar"></header>
 
     <!-- Video Listing Panel (populated by videos.js) -->
-    <main
-      class="container-fluid background-gray px-2 px-md-5 pb-4"
-      id="videos-panel"
-    ></main>
+    <main id="videos-panel" class="videos-panel"></main>
 
     <!-- Site Footer -->
-    <footer id="footer"></footer>
+    <footer id="footer" class="site-footer" data-component="footer"></footer>
 
     <!-- Page-Specific Script -->
     <script type="module" src="js/pages/videos.js"></script>
