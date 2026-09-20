@@ -115,9 +115,68 @@
   font-weight: var(--font-weight-semibold);
 }
 
+/* Theme Toggle */
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: var(--space-6);
+  padding: 0;
+  border: 1px dotted var(--color-border);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-accent);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.theme-toggle::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+}
+
+.theme-toggle:hover {
+  border-style: solid;
+  border-color: var(--color-primary-strong);
+  color: var(--color-primary-strong);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-primary-strong);
+  outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+  font-size: var(--font-size-base);
+  line-height: 1;
+  transition: transform var(--transition-fast);
+}
+
+.theme-toggle:hover .theme-toggle__icon {
+  transform: rotate(20deg);
+}
+
 /* Mobile Menu Button */
 .site-header__menu {
   display: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
 }
 
 .custom-navbar-toggler {
@@ -325,8 +384,6 @@
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
   }
 
   .site-header__social,
@@ -363,6 +420,10 @@
   .site-nav__link,
   .site-nav__arrow,
   .social-media {
+    transition: none;
+  }
+  .theme-toggle,
+  .theme-toggle__icon {
     transition: none;
   }
 }

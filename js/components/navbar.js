@@ -4,6 +4,8 @@
  * @module components/navbar
  */
 
+import { initThemeToggle } from "../utils/theme-toggle.js";
+
 const SOCIAL_LINKS = [
   {
     href: "https://www.facebook.com/profile.php?id=61557409119325",
@@ -99,10 +101,28 @@ function renderNavLinks(currentPath, mobile = false) {
   }).join("");
 }
 
+function renderThemeToggle() {
+  return `
+  <button
+    class="theme-toggle"
+    id="theme-toggle"
+    type="button"
+    aria-label="Switch to dark theme"
+    aria-pressed="false"
+  >
+    <i
+      class="fa-solid fa-moon theme-toggle__icon"
+      aria-hidden="true"
+    ></i>
+  </button>
+`;
+}
+
 export function renderNavbar(currentPath) {
+  const socialLinks = renderSocialLinks();
   const desktopNavLinks = renderNavLinks(currentPath);
   const mobileNavLinks = renderNavLinks(currentPath, true);
-  const socialLinks = renderSocialLinks();
+  const desktopThemeToggle = renderThemeToggle();
 
   return `
     <div class="site-header__container">
@@ -132,9 +152,12 @@ export function renderNavbar(currentPath) {
         <div class="site-nav">
           ${desktopNavLinks}
         </div>
+        ${desktopThemeToggle}
       </nav>
 
       <div class="site-header__menu">
+        ${desktopThemeToggle}
+        
         <button
           class="custom-navbar-toggler"
           type="button"
@@ -200,6 +223,8 @@ export function renderNavbar(currentPath) {
 
 export function initNavbar(navbarContainer) {
   if (!navbarContainer) return;
+
+  initThemeToggle();
 
   const toggler = navbarContainer.querySelector(".custom-navbar-toggler");
   const offcanvas = navbarContainer.querySelector("#navbarOffcanvas");
