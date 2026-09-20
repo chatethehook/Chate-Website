@@ -123,6 +123,7 @@ export function renderNavbar(currentPath) {
   const desktopNavLinks = renderNavLinks(currentPath);
   const mobileNavLinks = renderNavLinks(currentPath, true);
   const desktopThemeToggle = renderThemeToggle();
+  const mobileThemeToggle = renderThemeToggle();
 
   return `
     <div class="site-header__container">
@@ -156,8 +157,8 @@ export function renderNavbar(currentPath) {
       </nav>
 
       <div class="site-header__menu">
-        ${desktopThemeToggle}
-        
+        ${mobileThemeToggle}
+      
         <button
           class="custom-navbar-toggler"
           type="button"
