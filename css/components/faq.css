@@ -121,6 +121,27 @@
   border-top: 1px solid var(--color-border);
 }
 
+@supports (interpolate-size: allow-keywords) {
+  .faq__item {
+    interpolate-size: allow-keywords;
+  }
+
+  .faq__item::details-content {
+    height: 0;
+    overflow: clip;
+    opacity: 0;
+    transition:
+      height 300ms ease,
+      opacity 200ms ease,
+      content-visibility 300ms allow-discrete;
+  }
+
+  .faq__item[open]::details-content {
+    height: auto;
+    opacity: 1;
+  }
+}
+
 .faq__paragraph {
   margin: 0 0 var(--space-4);
   color: var(--color-text-muted);
@@ -178,6 +199,7 @@
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .faq__item,
+  .faq__item::details-content,
   .faq__icon::before,
   .faq__icon::after,
   .faq__link {
