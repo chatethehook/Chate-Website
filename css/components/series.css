@@ -11,26 +11,35 @@
 
 /* Series Heading */
 .series-heading {
+  position: relative;
+  isolation: isolate;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   padding: var(--space-10) var(--container-padding);
   min-height: 50vh;
   min-height: 50dvh;
-  margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--space-6);
-  background: linear-gradient(
-    135deg,
-    var(--color-text) 0%,
-    var(--color-text-muted) 100%
-  );
-  color: var(--color-text-inverse);
+  background-color: #e1f3f4;
+  color: #ffffff;
+}
+
+.series-heading::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../assets/series-banners/mit.png") center / cover no-repeat;
 }
 
 .series-heading__filters {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,7 +52,7 @@
   border: 1px solid var(--color-primary);
   border-radius: var(--radius-full);
   background-color: transparent;
-  color: var(--color-text-inverse);
+  color: #ffffff;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   line-height: 1;
@@ -59,18 +68,20 @@
 .series-heading__filters .selector:focus-visible {
   border-color: var(--color-accent);
   background-color: var(--color-accent);
-  color: var(--color-text);
+  color: #233142;
   transform: translateY(-2px);
 }
 
 .series-heading__filters .selector.clicked {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: #233142;
 }
 
 .series-heading__title {
-  color: var(--color-text-inverse);
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
   font-size: clamp(1.875rem, 4vw, 2.75rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
@@ -78,7 +89,7 @@
 }
 
 .series-heading__highlight {
-  color: var(--color-primary-strong);
+  color: #0cb4bb;
 }
 
 /* Grid */

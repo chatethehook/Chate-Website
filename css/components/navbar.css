@@ -162,9 +162,21 @@
 }
 
 .theme-toggle__icon {
-  font-size: var(--font-size-base);
-  line-height: 1;
-  transition: transform var(--transition-fast);
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform var(--transition-base);
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
 }
 
 .theme-toggle:hover .theme-toggle__icon {

@@ -10,16 +10,11 @@ function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
 
   document.querySelectorAll(".theme-toggle").forEach((toggle) => {
-    const icon = toggle.querySelector(".theme-toggle__icon");
-
     toggle.setAttribute(
       "aria-label",
       isDark ? "Switch to light theme" : "Switch to dark theme",
     );
     toggle.setAttribute("aria-pressed", String(isDark));
-
-    icon?.classList.toggle("fa-moon", !isDark);
-    icon?.classList.toggle("fa-sun", isDark);
   });
 }
 
