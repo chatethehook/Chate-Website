@@ -56,9 +56,15 @@ export function renderFooter() {
         <div class="col-12 col-sm-6 col-md-3">
           <div class="site-footer__brand">
             <img
-              class="site-footer__logo"
-              src="assets/logos/logo-transparent.webp"
+              class="site-footer__logo logo--light"
+              src="assets/logos/logo-on-light.webp"
               alt="ချိတ်-The Hook"
+            >
+            <img
+              class="site-footer__logo logo--dark"
+              src="assets/logos/logo-on-dark.webp"
+              alt=""
+              aria-hidden="true"
             >
 
             <h3 class="site-footer__tagline">

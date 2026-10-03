@@ -150,9 +150,15 @@ export function renderNavbar(currentPath) {
           aria-label="ချိတ်-The Hook home"
         >
           <img
-            class="site-header__logo"
-            src="assets/logos/logo-transparent.webp"
+            class="site-header__logo logo--light"
+            src="assets/logos/logo-on-light.webp"
             alt="ချိတ်-The Hook"
+          >
+          <img
+            class="site-header__logo logo--dark"
+            src="assets/logos/logo-on-dark.webp"
+            alt=""
+            aria-hidden="true"
           >
         </a>
       </div>
@@ -199,9 +205,15 @@ export function renderNavbar(currentPath) {
           aria-label="ချိတ်-The Hook home"
         >
           <img
-            class="site-header__mobile-logo"
-            src="assets/logos/logo-transparent.webp"
+            class="site-header__mobile-logo logo--light"
+            src="assets/logos/logo-on-light.webp"
             alt="ချိတ်-The Hook"
+          >
+          <img
+            class="site-header__mobile-logo logo--dark"
+            src="assets/logos/logo-on-dark.webp"
+            alt=""
+            aria-hidden="true"
           >
         </a>
       </div>
