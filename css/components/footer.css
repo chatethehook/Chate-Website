@@ -29,6 +29,14 @@
   object-fit: contain;
 }
 
+.site-footer__logo.logo--dark {
+  display: none;
+}
+
+[data-theme="dark"] .site-footer__logo.logo--dark {
+  display: block;
+}
+
 .site-footer__tagline {
   margin-block: var(--space-3) var(--space-4);
   color: var(--color-text);
