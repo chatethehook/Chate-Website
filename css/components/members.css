@@ -1,6 +1,7 @@
 /* Members */
 .members {
   width: 100%;
+  height: 650px;
   background-color: var(--color-background);
   padding-block: var(--section-spacing);
 }

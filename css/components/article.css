@@ -8,10 +8,16 @@
   padding-block: var(--space-20);
   color: var(--color-text-muted);
   font-size: var(--font-size-lg);
-  text-align: center;
 }
 
 .series-state--error {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 50vh;
+  padding-block: 0;
+  text-align: center;
   color: var(--color-danger);
 }
 

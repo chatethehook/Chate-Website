@@ -43,7 +43,7 @@ export function mountMembers() {
         <p class="members__role">${member.role}</p>
         ${
           member.subtitle
-            ? `<p class="members__subtitle">${member.subtitle}</p>`
+            ? `<p class="members__subtitle">${member.subtitle || ""}</p>`
             : ""
         }
       </div>
