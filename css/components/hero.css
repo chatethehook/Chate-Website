@@ -15,6 +15,10 @@
   );
 }
 
+[data-theme="dark"] .hero {
+  background: var(--color-surface-accent);
+}
+
 /* Container */
 .hero__container {
   width: 100%;
@@ -110,7 +114,7 @@
 
 .hero__button--accent {
   background-color: var(--color-accent);
-  color: var(--color-text);
+  color: #233142;
 }
 
 .hero__button--accent:hover,
