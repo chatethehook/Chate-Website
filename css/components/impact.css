@@ -1,12 +1,8 @@
 /* Impact */
 .impact {
   width: 100%;
-  background: linear-gradient(
-    135deg,
-    var(--color-text) 0%,
-    var(--color-text-muted) 100%
-  );
-  color: var(--color-text-inverse);
+  background-color: var(--color-surface-accent);
+  color: var(--color-text);
   padding-block: var(--section-spacing);
 }
 
@@ -22,7 +18,7 @@
 /* Heading */
 .impact__heading {
   margin: 0 0 var(--space-10);
-  color: var(--color-text-inverse);
+  color: var(--color-text);
   font-size: clamp(1.875rem, 4vw, 2.75rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
@@ -65,7 +61,7 @@
 
 .impact__video-caption {
   margin: var(--space-3) 0 0;
-  color: var(--color-text-inverse);
+  color: var(--color-text);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-sm);
   text-align: center;
