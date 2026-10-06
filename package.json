@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "live-server",
-    "build": "npm run build:css",
-    "build:css": "esbuild css/entries/*.css --bundle --minify --outdir=css/dist --asset-names=assets/[name]-[hash] --loader:.svg=file --loader:.webp=file --loader:.ttf=file"
+    "dev": "live-server"
   },
   "repository": {
     "type": "git",
@@ -21,7 +19,6 @@
   },
   "homepage": "https://github.com/chatethehook/Chate-Website#readme",
   "devDependencies": {
-    "esbuild": "^0.28.2",
     "live-server": "^1.2.2"
   },
   "dependencies": {
