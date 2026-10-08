@@ -363,12 +363,13 @@
 
 .mobile-social-links .social-media {
   font-size: var(--font-size-lg);
+  color: #4c6869;
 }
 
 /* Mobile Copyright */
 .mobile-copyright {
   margin-top: var(--space-4);
-  color: var(--color-text-subtle);
+  color: #6b6363;
   font-size: var(--font-size-sm);
   text-align: center;
 }
