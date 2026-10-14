@@ -8,6 +8,7 @@ import { mountLayout } from "../components/layout.js";
 import { renderAdvisorCards } from "../components/advisor-card.js";
 import { renderAdvisorModals } from "../components/advisor-modal.js";
 import { ADVISORS } from "../data/advisors/index.js";
+import { syncThemeAwareImages } from "../utils/theme-toggle.js";
 
 export function mountAdvising() {
   const panel = document.getElementById("advising");
@@ -24,6 +25,7 @@ export function mountAdvising() {
     </div>
     ${renderAdvisorModals(ADVISORS)}
   `;
+  syncThemeAwareImages();
 }
 
 async function initAdvisingPage() {

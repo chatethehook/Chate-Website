@@ -6,7 +6,7 @@
 
 /** @typedef {import('./types.js').AdvisorEntry} AdvisorEntry */
 
-/** @type {MemberEntry[]} */
+/** @type {AdvisorEntry[]} */
 export const ADVISORS = [
   {
     id: "kyaw-myo-naing",
@@ -59,7 +59,8 @@ export const ADVISORS = [
     universities: [
       {
         name: "Monash University",
-        logo: "../../../assets/advising-uni-logos/logo-monash.webp",
+        logo: "../../../assets/advising-uni-logos/logo-monash-on-light.webp",
+        logoDark: "../../../assets/advising-uni-logos/logo-monash-on-dark.webp",
       },
     ],
     calendlyUrl: "https://calendly.com/thetyeemon77/advising-session",
@@ -92,7 +93,9 @@ export const ADVISORS = [
     universities: [
       {
         name: "University of British Columbia",
-        logo: "../../../assets/advising-uni-logos/logo-british-columbia.webp",
+        logo: "../../../assets/advising-uni-logos/logo-british-columbia-on-light.webp",
+        logoDark:
+          "../../../assets/advising-uni-logos/logo-british-columbia-on-dark.webp",
       },
       {
         name: "Hong Kong University",

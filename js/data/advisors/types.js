@@ -7,7 +7,8 @@
 /**
  * @typedef {Object} University
  * @property {string} name University name, used as image alt text.
- * @property {string} logo Path to the university's logo image.
+ * @property {string} logo Path to the university's light-theme/default logo image.
+ * @property {string} [logoDark] Optional path to the dark-theme logo image.
  */
 
 /**

@@ -10,8 +10,12 @@ import { wrapMyanmarScript } from "../utils/text-utils.js";
 function renderUniversityLogos(universities) {
   return universities
     .map(
-      ({ name, logo }) =>
-        `<img class="advisor-card__uni-logo" src="${escapeHtml(logo)}" alt="${escapeHtml(name)}" loading="lazy">`,
+      ({ name, logo, logoDark }) => {
+        const lightLogo = escapeHtml(logo);
+        const darkLogo = escapeHtml(logoDark ?? logo);
+
+        return `<img class="advisor-card__uni-logo" src="${lightLogo}" data-logo-light="${lightLogo}" data-logo-dark="${darkLogo}" alt="${escapeHtml(name)}" loading="lazy">`;
+      },
     )
     .join("");
 }
