@@ -4,6 +4,9 @@
  * @module data/advisors
  */
 
+/** @typedef {import('./types.js').AdvisorEntry} AdvisorEntry */
+
+/** @type {MemberEntry[]} */
 export const ADVISORS = [
   {
     id: "kyaw-myo-naing",
