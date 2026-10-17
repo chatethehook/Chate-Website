@@ -31,7 +31,6 @@ export function renderSeriesCard({
     .map(
       ({ text, label, value, className = "series-card__detail" }) => `
       <p class="${className}">
-        ${label ? `${label} ` : ""}
         ${value ? `${wrapMyanmarScript(text)} <span class="series-card__name">${wrapMyanmarScript(value)}</span>` : wrapMyanmarScript(text)}
       </p>
     `,

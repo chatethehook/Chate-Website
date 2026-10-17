@@ -7,6 +7,7 @@
 import { mountLayout } from "../components/layout.js";
 import { renderWebinarGrid } from "../components/webinar-grid.js";
 import {
+  WHITE_COAT_MEMOIRS,
   ABOVE_AND_BEYOND,
   STEPPING_STONE,
   KYAUNG_SHAUT,
@@ -21,15 +22,21 @@ async function initEventsPage() {
   }
 
   const VALID_HASHES = new Set([
+    "white-coat-memoirs",
     "above-and-beyond",
     "stepping-stone",
     "kyaung-shaut",
   ]);
-  const DEFAULT_HASH = "above-and-beyond";
+  const DEFAULT_HASH = "white-coat-memoirs";
 
   const eventsPanel = document.getElementById("events-panel");
 
   const eventSeries = {
+    "white-coat-memoirs": {
+      titleMain: "White Coat Memoirs",
+      titleAccent: "Webinars",
+      entries: WHITE_COAT_MEMOIRS,
+    },
     "above-and-beyond": {
       titleMain: "Above & Beyond",
       titleAccent: "Webinars",
@@ -54,6 +61,9 @@ async function initEventsPage() {
     container: eventsPanel,
     renderSeries: renderWebinarGrid,
     getButtons: () => ({
+      "white-coat-memoirs": document.getElementById(
+        "white-coat-memoirs-button",
+      ),
       "above-and-beyond": document.getElementById("above-and-beyond-button"),
       "stepping-stone": document.getElementById("stepping-stone-button"),
       "kyaung-shaut": document.getElementById("kyaung-shaut-button"),

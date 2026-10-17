@@ -8,6 +8,7 @@ import { renderSeriesCard } from "./series-card.js";
 import { renderSeriesHeading } from "./series-heading.js";
 
 const FILTERS = [
+  { key: "white-coat-memoirs", label: "White Coat Memoirs" },
   { key: "above-and-beyond", label: "Above & Beyond" },
   { key: "stepping-stone", label: "A Stepping Stone" },
   { key: "kyaung-shaut", label: "ကျောင်းလျှောက်ကြမယ်", lang: "my" },
@@ -27,7 +28,6 @@ export function renderWebinarGrid(series) {
           },
           {
             text: entry.presenter,
-            label: "Presented by",
             className: "series-card__metadata",
           },
         ],
