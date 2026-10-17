@@ -9,6 +9,14 @@
 /** @type {VideoEntry[]} */
 export const SU_TU_PYU = [
   {
+    videoSrc: "https://www.youtube.com/embed/o4Q-Co-C6x4?si=FDUQPfpV7XRwVIG5",
+    title: "Cambridge Accepted Essay",
+    rolePrefix: "Written by",
+    personName: "Swan Htet Nay Khaing",
+    secondaryLine: "Read by Yonn Yati Win",
+    notes: ['"စုတုပြု" Video Series, Episode 15'],
+  },
+  {
     videoSrc: "https://www.youtube.com/embed/pYs7wKK-G3g?si=0E_42spWZ1Wta6vC",
     title: "Child Dream Scholarship Essay",
     rolePrefix: "Written by",
