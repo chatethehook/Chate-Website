@@ -52,6 +52,15 @@ export function mountHero() {
               >
                 MEXT<span class="hero__button-burmese" lang="my">ကို ချိတ်</span>
               </a>
+
+              <a
+                class="hero__button hero__button--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdUB3dDCviY-ulazV8MAx4ueI9nXT70F_D1ZSyXOWhOyyZo7g/viewform?usp=publish-editor"
+              >
+                UWC<span class="hero__button-burmese" lang="my"> ခရီးအိမ်မက်</span>
+              </a>
             </div>
           </div>
         </div>
