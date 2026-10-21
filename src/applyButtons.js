@@ -5,6 +5,9 @@ let globalLink =
 
 let transferLink = "https://forms.gle/7J2TaXb9CRUXxvS26";
 
+let uwcLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdUB3dDCviY-ulazV8MAx4ueI9nXT70F_D1ZSyXOWhOyyZo7g/viewform?usp=publish-editor";
+
 let applyButtons = `
   <div >
     <a
@@ -20,6 +23,13 @@ let applyButtons = `
     href="${transferLink}"
     role="button"
     >Transfer ကို ချိတ်</a
+    >
+    <a
+    class="btn btn-primary header-button m-1"
+    target="_blank"
+    href="${uwcLink}"
+    role="button"
+    >UWC ခရီးအိမ်မက်</a
     >
   </div>`;
 
