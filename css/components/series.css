@@ -72,7 +72,7 @@
   transform: translateY(-2px);
 }
 
-.series-heading__filters .selector.clicked {
+.series-heading__filters .selector.is-active {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #233142;

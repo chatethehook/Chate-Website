@@ -1,5 +1,5 @@
 /**
- * @main.js
+ * @file main.js
  * @description Entry point for the Chate website. Initializes the layout and mounts all main components.
  * @module main
  */
@@ -12,7 +12,7 @@ import { mountImpact } from "./components/impact.js";
 import { mountMembers } from "./components/members.js";
 import { mountFAQ } from "./components/faq.js";
 
-function init() {
+function initializeHomePage() {
   mountLayout();
   mountHero();
   mountAchievements();
@@ -22,4 +22,4 @@ function init() {
   mountFAQ();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded", initializeHomePage);

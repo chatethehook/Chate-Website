@@ -108,7 +108,7 @@ async function initArticlesPage() {
 
     ARTICLE_FILTERS.forEach(({ key }) => {
       const button = document.getElementById(`${key}-button`);
-      button?.classList.toggle("clicked", key === activeKey);
+      button?.classList.toggle("is-active", key === activeKey);
       button?.addEventListener("click", () => {
         location.hash = key;
       });
@@ -222,7 +222,7 @@ async function initArticlesPage() {
     }
   }
 
-  function update() {
+  function updateArticlesPage() {
     const activeKey = resolveActiveKey(VALID_KEYS, DEFAULT_HASH);
     const cachedItems = readArticlesCache()[activeKey];
     const shouldShowSkeletons = !cachedItems || !hasVisitedArticlesPage();
@@ -249,8 +249,8 @@ async function initArticlesPage() {
     });
   }
 
-  window.addEventListener("hashchange", update);
-  update();
+  window.addEventListener("hashchange", updateArticlesPage);
+  updateArticlesPage();
 }
 
 initArticlesPage();

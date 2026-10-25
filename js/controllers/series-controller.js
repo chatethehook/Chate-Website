@@ -20,13 +20,13 @@ export function initializeSeriesController({
 
   let resolvedButtons = buttons; // Buttons currently used by the controller
 
-  function update() {
+  function updateActiveSeries() {
     const activeKey = resolveActiveKey(validKeys, defaultKey);
     container.innerHTML = renderSeries(series[activeKey]);
     resolvedButtons = getButtons?.() ?? buttons;
 
     Object.entries(resolvedButtons).forEach(([key, button]) => {
-      button?.classList.toggle("clicked", key === activeKey);
+      button?.classList.toggle("is-active", key === activeKey);
       button?.addEventListener("click", () => {
         location.hash = key;
       });
@@ -35,6 +35,6 @@ export function initializeSeriesController({
     initializeLazyIframes();
   }
 
-  window.addEventListener("hashchange", update);
-  update();
+  window.addEventListener("hashchange", updateActiveSeries);
+  updateActiveSeries();
 }
