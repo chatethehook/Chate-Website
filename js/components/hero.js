@@ -48,9 +48,9 @@ export function mountHero() {
                 class="hero__button hero__button--accent"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://forms.gle/72JWLVBTUHxNnoDj9"
+                href="https://forms.gle/7J2TaXb9CRUXxvS26"
               >
-                MEXT<span class="hero__button-burmese" lang="my">ကို ချိတ်</span>
+                Transfer<span class="hero__button-burmese" lang="my">ကို ချိတ်</span>
               </a>
 
               <a
