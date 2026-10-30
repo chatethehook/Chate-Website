@@ -8,11 +8,6 @@
   padding-block: var(--space-20);
   color: var(--color-text-muted);
   font-size: var(--font-size-lg);
-  background: linear-gradient(
-    180deg,
-    var(--color-surface-accent) 0%,
-    var(--color-background) 100%
-  );
 }
 
 .series-state--error {
@@ -31,6 +26,11 @@
   width: 100%;
   padding-top: calc(var(--space-12) + var(--space-24));
   padding-bottom: var(--section-spacing);
+  background: linear-gradient(
+    180deg,
+    var(--color-surface-accent) 0%,
+    var(--color-background) 100%
+  );
 }
 
 .article-reader__article {
