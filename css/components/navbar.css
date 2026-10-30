@@ -214,7 +214,7 @@
 
 .custom-navbar-toggler .menu-bar {
   display: block;
-  height: 1.5px;
+  height: 2px;
   border-radius: var(--radius-sm);
   background-color: var(--color-text-muted);
   transform-origin: center;
@@ -225,7 +225,7 @@
 }
 
 .custom-navbar-toggler .menu-bar:nth-child(1) {
-  width: 45%;
+  width: 50%;
 }
 
 .custom-navbar-toggler .menu-bar:nth-child(2) {
