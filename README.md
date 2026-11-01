@@ -12,6 +12,8 @@ Author
 
 Oattra Kyaw (Chate Developer Team)
 <br>
+Ruben Htun (Chate Developer Team)
+<br>
 Sai Nyi Nyi Lwin (Chate Developer Team)
 <br>
 Shoon Lai Paing (Chate Content Team, Developer Team)

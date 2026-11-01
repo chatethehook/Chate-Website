@@ -1,0 +1,202 @@
+/* Series Panel */
+.series-panel {
+  width: 100%;
+  padding-block: var(--section-spacing);
+  background: linear-gradient(
+    180deg,
+    var(--color-surface-accent) 0%,
+    var(--color-background) 100%
+  );
+}
+
+/* Series Heading */
+.series-heading {
+  position: relative;
+  isolation: isolate;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: var(--space-10) var(--container-padding);
+  min-height: 50vh;
+  min-height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  background-color: #e1f3f4;
+  color: #ffffff;
+}
+
+.series-heading::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../assets/series-banners/mit.webp") center / cover no-repeat;
+}
+
+.series-heading__filters {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.series-heading__filters .selector {
+  min-height: var(--space-10);
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-full);
+  background-color: transparent;
+  color: #ffffff;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.series-heading__filters .selector:hover,
+.series-heading__filters .selector:focus-visible {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: #233142;
+  transform: translateY(-2px);
+}
+
+.series-heading__filters .selector.is-active {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #233142;
+}
+
+.series-heading__title {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  text-align: center;
+}
+
+.series-heading__highlight {
+  color: #0cb4bb;
+}
+
+/* Grid */
+.series-grid {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+  margin-inline: auto;
+  padding-block: var(--section-spacing);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* Card */
+.series-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.series-card__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  background-color: var(--color-border);
+}
+
+.series-card__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.series-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.series-card__title {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.series-card__date {
+  margin: var(--space-1) 0 0;
+  color: var(--color-primary-strong);
+  font-size: var(--font-size-sm);
+}
+
+.series-card__metadata {
+  margin: var(--space-1) 0 0;
+  color: var(--color-warning);
+  font-size: var(--font-size-sm);
+}
+
+.series-card__name {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-semibold);
+}
+
+.series-card__secondary {
+  margin: var(--space-1) 0 0;
+  color: var(--color-primary-strong);
+  font-size: var(--font-size-sm);
+}
+
+.series-card__note {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Responsive */
+@media (max-width: 1199.98px) {
+  .series-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .series-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .series-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .series-heading__filters .selector {
+    transition: none;
+  }
+}

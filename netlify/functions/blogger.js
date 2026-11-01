@@ -20,7 +20,7 @@ export default async function proxyBloggerRequest(req) {
   } else {
     const max = Math.max(
       1,
-      Math.min(Number(url.searchParams.get("maxResults")) || 12, 40),
+      Math.min(Number(url.searchParams.get("maxResults")) || 12, 20),
     );
     params.set("maxResults", max);
 

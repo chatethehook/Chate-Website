@@ -1,0 +1,6 @@
+@import "../base.css";
+@import "../components/navbar.css";
+@import "../components/footer.css";
+@import "../components/advising.css";
+@import "../components/advisor-card.css";
+@import "../components/advisor-modal.css";
