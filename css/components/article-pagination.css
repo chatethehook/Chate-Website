@@ -60,6 +60,15 @@
   color: var(--color-text);
 }
 
+.article-listing__ellipsis {
+  display: inline-flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 var(--space-1);
+  color: var(--color-text-muted);
+  user-select: none;
+}
+
 /* Prev/Next Arrows */
 .article-listing__page-icon {
   width: 1rem;

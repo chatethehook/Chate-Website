@@ -14,11 +14,35 @@
   grid-column: 1 / -1;
   display: grid;
   place-items: center;
+  align-content: center;
+  row-gap: var(--space-4);
   width: 100%;
   min-height: 50vh;
   padding-block: 0;
   text-align: center;
   color: var(--color-danger);
+}
+
+.series-state__retry {
+  min-height: var(--space-10);
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.series-state__retry:hover,
+.series-state__retry:focus-visible {
+  border-color: var(--color-primary-strong);
+  color: var(--color-primary-strong);
 }
 
 /* Article Reader Panel */
