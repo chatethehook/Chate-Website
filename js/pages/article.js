@@ -59,6 +59,17 @@ async function initArticlePage() {
     return;
   }
 
+  panel.addEventListener("click", (event) => {
+    if (event.target.closest("[data-retry]")) {
+      loadArticle(panel, articleId);
+    }
+  });
+
+  await loadArticle(panel, articleId);
+}
+
+async function loadArticle(panel, articleId) {
+  showLoadingOverlay();
   renderState(panel);
 
   try {
@@ -71,18 +82,30 @@ async function initArticlePage() {
 
     renderArticle(panel, article);
     updateTabTitle(article);
-    hideLoadingOverlay();
   } catch (err) {
     console.error("Failed to load article:", err);
-    renderState(panel, "This article could not be loaded right now.", "error");
+    renderState(
+      panel,
+      "This article could not be loaded right now.",
+      "error",
+      true,
+    );
+  } finally {
     hideLoadingOverlay();
   }
 }
 
-function renderState(panel, message, modifier) {
+function renderState(panel, message, modifier, canRetry = false) {
   panel.innerHTML = `
     <div class="article-reader__article">
-      <p class="series-state series-state--${modifier}">${escapeHtml(message)}</p>
+      <p class="series-state series-state--${modifier}">
+        ${escapeHtml(message)}
+        ${
+          canRetry
+            ? '<button type="button" class="series-state__retry" data-retry>Try again</button>'
+            : ""
+        }
+      </p>
     </div>
   `;
 }
