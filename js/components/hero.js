@@ -39,7 +39,7 @@ export function mountHero() {
                 class="hero__button hero__button--primary"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://forms.gle/72JWLVBTUHxNnoDj9"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf4pknYO2KCBWIgbzz2FowlWdgTNbnplDcVZgvetM3VgDMKvQ/viewform"
               >
                 Global
               </a>
@@ -76,7 +76,7 @@ export function mountHero() {
             >
           </div>
         </div>
-        
+
       </div>
     </div>
   `;
