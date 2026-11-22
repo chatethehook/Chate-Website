@@ -14,7 +14,7 @@ export const HANDWRITTEN = [
     title: "ရေးကြမယ် - Handwritten",
     date: "25/10/2026",
     presenter: "Rachel Jo",
-    notes: ["Workshop (day 4)"],
+    notes: ["Workshop (Day 4)"],
   },
   {
     mediaType: "video",
@@ -22,7 +22,7 @@ export const HANDWRITTEN = [
     title: "ရေးကြမယ် - Handwritten",
     date: "24/10/2026",
     presenter: "Shoon Lai Paing",
-    notes: ["Workshop (day 3)"],
+    notes: ["Workshop (Day 3)"],
   },
   {
     mediaType: "video",
@@ -30,7 +30,7 @@ export const HANDWRITTEN = [
     title: "ရေးကြမယ် - Handwritten",
     date: "23/10/2026",
     presenter: "Phuu Pwint Thura",
-    notes: ["Workshop (day 2)"],
+    notes: ["Workshop (Day 2)"],
   },
   {
     mediaType: "video",
@@ -38,6 +38,6 @@ export const HANDWRITTEN = [
     title: "ရေးကြမယ် - Handwritten",
     date: "20/10/2026",
     presenter: "Mike Morony",
-    notes: ["Workshop (day 1)"],
+    notes: ["Workshop (Day 1)"],
   },
 ];
