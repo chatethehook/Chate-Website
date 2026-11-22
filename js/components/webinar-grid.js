@@ -12,6 +12,7 @@ const FILTERS = [
   { key: "above-and-beyond", label: "Above & Beyond" },
   { key: "stepping-stone", label: "A Stepping Stone" },
   { key: "kyaung-shaut", label: "ကျောင်းလျှောက်ကြမယ်", lang: "my" },
+  { key: "handwritten", label: "ရေးကြမယ်", lang: "my" },
 ];
 
 export function renderWebinarGrid(series) {

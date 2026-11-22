@@ -11,6 +11,7 @@ import {
   ABOVE_AND_BEYOND,
   STEPPING_STONE,
   KYAUNG_SHAUT,
+  HANDWRITTEN,
 } from "../data/webinars/index.js";
 import { initializeSeriesController } from "../controllers/series-controller.js";
 
@@ -26,6 +27,7 @@ async function initEventsPage() {
     "above-and-beyond",
     "stepping-stone",
     "kyaung-shaut",
+    "handwritten",
   ]);
   const DEFAULT_HASH = "white-coat-memoirs";
 
@@ -52,6 +54,11 @@ async function initEventsPage() {
       titleAccent: "Webinars",
       entries: KYAUNG_SHAUT,
     },
+    handwritten: {
+      titleMain: "ရေးကြမယ်",
+      titleAccent: "Workshop",
+      entries: HANDWRITTEN,
+    },
   };
 
   initializeSeriesController({
@@ -67,6 +74,7 @@ async function initEventsPage() {
       "above-and-beyond": document.getElementById("above-and-beyond-button"),
       "stepping-stone": document.getElementById("stepping-stone-button"),
       "kyaung-shaut": document.getElementById("kyaung-shaut-button"),
+      handwritten: document.getElementById("handwritten-button"),
     }),
   });
 }

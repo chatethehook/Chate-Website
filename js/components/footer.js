@@ -15,6 +15,10 @@ const EVENT_LINKS = [
     label: '<span lang="my">ကျောင်းလျှောက်ကြမယ်</span>',
     href: "/events.html#kyaung-shaut",
   },
+  {
+    label: '<span lang="my">ရေးကြမယ်</span>',
+    href: "/events.html#handwritten",
+  },
 ];
 
 const ARTICLE_LINKS = [
