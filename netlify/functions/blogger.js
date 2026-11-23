@@ -27,7 +27,7 @@ export default async function proxyBloggerRequest(req) {
     const pageToken = url.searchParams.get("pageToken");
     const label = url.searchParams.get("label");
     if (pageToken) params.set("pageToken", pageToken);
-    if (label) params.set("label", label);
+    if (label) params.set("labels", label);
   }
 
   const res = await fetch(`${target}?${params}`);
