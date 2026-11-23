@@ -196,7 +196,7 @@
   z-index: calc(var(--z-sticky) + 1045);
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: var(--space-1);
   width: 32px;
@@ -214,8 +214,8 @@
 
 .custom-navbar-toggler .menu-bar {
   display: block;
-  height: 2px;
-  border-radius: var(--radius-sm);
+  height: 3px;
+  border-radius: 1px;
   background-color: var(--color-text-muted);
   transform-origin: center;
   transition:
@@ -225,20 +225,20 @@
 }
 
 .custom-navbar-toggler .menu-bar:nth-child(1) {
-  width: 50%;
+  width: 70%;
 }
 
 .custom-navbar-toggler .menu-bar:nth-child(2) {
-  width: 80%;
-}
-
-.custom-navbar-toggler .menu-bar:nth-child(3) {
   width: 60%;
 }
 
+.custom-navbar-toggler .menu-bar:nth-child(3) {
+  width: 70%;
+}
+
 .custom-navbar-toggler.is-open .menu-bar:nth-child(1) {
-  width: 80%;
-  transform: translateY(5.5px) rotate(45deg);
+  width: 70%;
+  transform: translateY(7px) rotate(45deg);
 }
 
 .custom-navbar-toggler.is-open .menu-bar:nth-child(2) {
@@ -246,8 +246,8 @@
 }
 
 .custom-navbar-toggler.is-open .menu-bar:nth-child(3) {
-  width: 80%;
-  transform: translateY(-5.5px) rotate(-45deg);
+  width: 70%;
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Mobile Offcanvas */
